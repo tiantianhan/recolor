@@ -10,10 +10,30 @@ Mat src; Mat dst;
 char window_name1[] = "Unprocessed Image";
 char window_name2[] = "Processed Image";
 
+/**
+ * usage: recolor input_file_path param1 param2 param3
+ *   input_file_path: path from current location to input image
+ *   param1: alpha in y = alpha * x + beta brightening
+ *   param2: beta in y = alpha * x + beta brightening
+ *   param3: unused
+ * saves output image to output folder
+ */
 int main( int argc, char** argv )
 {
     /// Load the source image
-    src = imread( argv[1], 1 );
+    src = imread( argv[1], IMREAD_COLOR);
+
+    if(argc < 4){
+    	String message = "usage: recolor input_file_path param1 param2 param3\n"
+    			"    input_file_path: path from current location to input image\n"
+    			"    param1: alpha in y = alpha * x + beta brightening\n"
+				"    param2: beta in y = alpha * x + beta brightening\n"
+				"    param3: unused\n"
+				"    output: saves output image to output folder\n";
+    	printf("%s", message.c_str());
+    	cout.flush();
+    	return 0;
+    }
 
     //target rgb
     Vec3b target_col = Vec3b(255, 0, 0);
