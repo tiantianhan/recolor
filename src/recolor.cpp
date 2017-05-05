@@ -32,8 +32,6 @@ int main( int argc, char** argv )
     }
 
     // show input
-    namedWindow( window_name1, WINDOW_NORMAL );
-    imshow("Unprocessed Image",src);
     printf("Target Color R, G, B = %d, %d, %d\n", target_col(0), target_col(1), target_col(2)); cout.flush();
 
     // calculation
@@ -52,11 +50,8 @@ int main( int argc, char** argv )
     	}
     }
 
-    // show output
-    namedWindow( window_name2, WINDOW_NORMAL );
-    imshow("Processed Image",dst);
-
-    waitKey();
+    // print output
+    imwrite("outputs/output.jpg", dst);
 
     return 0;
 }
