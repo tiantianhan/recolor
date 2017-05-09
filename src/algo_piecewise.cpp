@@ -15,6 +15,8 @@ using namespace std;
 using namespace cv;
 
 int piecewise_process(Mat src, Mat dst, Scalar target, Scalar average){
+	 printf("Applying piecewise process...\n"); cout.flush();
+
     // process
     double src_col = 0.0;
     double dst_col = 0.0;

@@ -1,0 +1,8 @@
+DEBUG: image name name inputs/hand_light.jpg
+DEBUG: loaded image  w = 1000 h = 854
+DEBUG: mask name inputs/hand_light_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 854
+Input params b = 75.38, g = 108.19, r =162.22
+DEBUG: image average b = 130.08, g = 153.18, r =199.70
+Applying linear process...
+DEBUG: color difference b = -54.70, g = -44.99, r =-37.48

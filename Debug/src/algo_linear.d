@@ -1,4 +1,4 @@
-src/recolor.o: ../src/recolor.cpp \
+src/algo_linear.o: ../src/algo_linear.cpp ../src/algo_linear.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.h \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/core/core_c.h \
@@ -52,8 +52,9 @@ src/recolor.o: ../src/recolor.cpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/objdetect.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/objdetect/detection_based_tracker.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/imgproc/imgproc.hpp \
-  /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp \
-  ../src/algo_piecewise.hpp ../src/algo_linear.hpp
+  /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp
+
+../src/algo_linear.hpp:
 
 /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp:
 
@@ -162,7 +163,3 @@ src/recolor.o: ../src/recolor.cpp \
 /usr/local/Cellar/opencv3/3.2.0/include/opencv2/imgproc/imgproc.hpp:
 
 /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp:
-
-../src/algo_piecewise.hpp:
-
-../src/algo_linear.hpp:

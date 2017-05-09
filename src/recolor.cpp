@@ -4,6 +4,7 @@
 #include "opencv2/highgui/highgui.hpp"
 
 #include "algo_piecewise.hpp"
+#include "algo_linear.hpp"
 
 using namespace std;
 using namespace cv;
@@ -59,22 +60,8 @@ int main( int argc, char** argv )
     	has_mask = true;
     }
 
-    /*double alpha = input_params(0);
-    double beta = input_params(1);
-
-    if(alpha <= 0 || alpha > 10.0){
-		perror("ERROR: check input, strange value for input params");
-		return 1;
-    }
-
-    if(beta < -255 || beta > 255){
-		perror("ERROR: check input, strange value for input params");
-		return 1;
-    }*/
-
     // show input
     printf("Input params b = %.2f, g = %.2f, r =%.2f\n", input_params(0), input_params(1), input_params(2)); cout.flush();
-//    printf("Input params alpha = %.2f, beta = %.2f\n", alpha, beta); cout.flush();
 
     // calculations
     Scalar target = Scalar(input_params(0), input_params(1), input_params(2));
@@ -89,7 +76,8 @@ int main( int argc, char** argv )
 
     // process
     Mat dst = Mat::zeros( src.size(), src.type());
-    piecewise_process(src, dst, target, average);
+    //piecewise_process(src, dst, target, average);
+    linear_process(src, dst, target, average);
 
     //DEBUG, draw average colors
     rectangle(dst, Point(dst.cols - 7, dst.rows - 14), Point(dst.cols - 2, dst.rows - 9), average, CV_FILLED);
@@ -99,9 +87,9 @@ int main( int argc, char** argv )
     imwrite("outputs/output.jpg", dst);
 
     //DEBUG
-    if(has_mask){
-    	imwrite("outputs/got_mask.jpg", average_col_mask);
-    }
+//    if(has_mask){
+//    	imwrite("outputs/got_mask.jpg", average_col_mask);
+//    }
 
     return 0;
 }

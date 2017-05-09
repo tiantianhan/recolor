@@ -1,0 +1,7 @@
+DEBUG: image name name inputs/hand_dark.jpg
+DEBUG: loaded image  w = 1000 h = 715
+DEBUG: mask name inputs/hand_dark_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 715
+Input params b = 121.73, g = 134.91, r =160.90
+DEBUG: image average b = 65.20, g = 91.83, r =139.01
+DEBUG: color difference b = 56.53, g = 43.08, r =21.89
