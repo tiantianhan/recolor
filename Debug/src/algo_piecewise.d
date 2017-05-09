@@ -1,4 +1,4 @@
-src/recolor.o: ../src/recolor.cpp \
+src/algo_piecewise.o: ../src/algo_piecewise.cpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.h \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/core/core_c.h \

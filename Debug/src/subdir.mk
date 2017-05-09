@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/algo_piecewise.cpp \
 ../src/recolor.cpp 
 
 OBJS += \
+./src/algo_piecewise.o \
 ./src/recolor.o 
 
 CPP_DEPS += \
+./src/algo_piecewise.d \
 ./src/recolor.d 
 
 

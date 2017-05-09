@@ -3,6 +3,8 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
+#include "algo_piecewise.hpp"
+
 using namespace std;
 using namespace cv;
 
@@ -86,25 +88,8 @@ int main( int argc, char** argv )
     printf("DEBUG: image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
 
     // process
-    double src_col = 0.0;
-    double dst_col = 0.0;
     Mat dst = Mat::zeros( src.size(), src.type());
-    for(int y = 0; y < src.rows; y++){
-    	for(int x = 0; x < src.cols; x++){
-    		for(int c = 0; c < 3; c++){
-    			src_col = src.at<Vec3b>(y,x)[c];
-    			if(src_col > average(c)){
-    				dst_col = 255.0 - ((255.0 - src_col) * (255.0 - target(c)) / (255.0 - average(c)));
-    				//printf("DEBUG: srccolor %f dstcolor %f ", src_col, dst_col); cout.flush();
-
-    			} else {
-    				dst_col = src_col * (target(c) / average(c));
-    			}
-
-    			dst.at<Vec3b>(y,x)[c] = dst_col;
-    		}
-    	}
-    }
+    piecewise_process(src, dst, target, average);
 
     //DEBUG, draw average colors
     rectangle(dst, Point(dst.cols - 7, dst.rows - 14), Point(dst.cols - 2, dst.rows - 9), average, CV_FILLED);
