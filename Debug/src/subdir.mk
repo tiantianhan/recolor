@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/algo_darkspot_correct.cpp \
 ../src/algo_linear.cpp \
 ../src/algo_piecewise.cpp \
 ../src/recolor.cpp 
 
 OBJS += \
+./src/algo_darkspot_correct.o \
 ./src/algo_linear.o \
 ./src/algo_piecewise.o \
 ./src/recolor.o 
 
 CPP_DEPS += \
+./src/algo_darkspot_correct.d \
 ./src/algo_linear.d \
 ./src/algo_piecewise.d \
 ./src/recolor.d 

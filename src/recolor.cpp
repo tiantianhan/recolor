@@ -5,6 +5,7 @@
 
 #include "algo_piecewise.hpp"
 #include "algo_linear.hpp"
+#include "algo_darkspot_correct.hpp"
 
 using namespace std;
 using namespace cv;
@@ -19,8 +20,9 @@ int main( int argc, char** argv )
 			"    param1: average B\n"
 			"    param2: average G\n"
 			"    param3: average R\n"
-			"    param4: file_path_to_mask (optional)\n"
-			"    output: saves output image to output folder\n";
+			"    file_path_to_mask (optional): path to the mask image, a black and white image"
+					"showing which region of the input image to obtain the average color from.\n"
+			"    output: saves output image to outputs folder\n";
     if(argc < 5){
     	printf("%s", usage.c_str()); cout.flush();
     	return 0;
@@ -76,8 +78,12 @@ int main( int argc, char** argv )
 
     // process
     Mat dst = Mat::zeros( src.size(), src.type());
-    //piecewise_process(src, dst, target, average);
-    linear_process(src, dst, target, average);
+    piecewise_process(src, dst, target, average);
+    //linear_process(src, dst, target, average);
+    //DEBUG draw intermediate
+    imwrite("outputs/pw_intermediate.jpg", dst);
+
+    darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
 
     //DEBUG, draw average colors
     rectangle(dst, Point(dst.cols - 7, dst.rows - 14), Point(dst.cols - 2, dst.rows - 9), average, CV_FILLED);
@@ -85,11 +91,6 @@ int main( int argc, char** argv )
 
     // print output
     imwrite("outputs/output.jpg", dst);
-
-    //DEBUG
-//    if(has_mask){
-//    	imwrite("outputs/got_mask.jpg", average_col_mask);
-//    }
 
     return 0;
 }
