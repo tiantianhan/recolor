@@ -17,15 +17,16 @@ using namespace cv;
  */
 int main( int argc, char** argv )
 {
-	String usage = "usage: recolor input_file_path param1 param2 param3 file_path_to_mask\n"
+	String usage = "usage: recolor input_file_path param1 param2 param3 -mfile file_path_to_mask "
+			"-ofile file_path_to_output\n"
 			"    input_file_path: path from current location to input image\n"
 			"    param1: average B\n"
 			"    param2: average G\n"
 			"    param3: average R\n"
 			"    file_path_to_mask (optional): path to the mask image, a black and white image"
 					"showing which region of the input image to obtain the average color from.\n"
-			"    output: saves output image to outputs folder\n";
-    if(argc < 5){
+			"    file_path_to_output (optional): name and location to save the output image\n";
+    if(argc < 5 || argc > 9){
     	printf("%s", usage.c_str()); cout.flush();
     	return 0;
     }
@@ -39,9 +40,6 @@ int main( int argc, char** argv )
     /// Load the source image
     printf("DEBUG: image name %s\n", argv[1]);
     Mat src = imread( argv[1], IMREAD_COLOR); //reads 3 channel BGR
-    string input_filename = remove_extension(string(argv[1]));
-    input_filename = remove_paths(input_filename);
-    //printf("DEBUG: input filename rem paths %s\n", input_filename.c_str());
 
     // check input
     if(src.size().width <= 20 || src.size().height <= 20){
@@ -54,9 +52,9 @@ int main( int argc, char** argv )
     // get mask if provided
     Mat average_col_mask;
     bool has_mask = false;
-    if(argc >= 6){
-    	printf("DEBUG: mask name %s\n", argv[5]);
-    	average_col_mask = imread(argv[5], IMREAD_GRAYSCALE);
+    if(argc >= 7 && (strcmp(argv[5], "-mfile") == 0)){
+    	printf("DEBUG: mask name %s\n", argv[6]);
+    	average_col_mask = imread(argv[6], IMREAD_GRAYSCALE);
 
     	if(average_col_mask.size().width != src.size().width || average_col_mask.size().height != src.size().height){
     		perror("ERROR: check input, mask size doesn't match image size\n");
@@ -65,6 +63,14 @@ int main( int argc, char** argv )
 
     	printf("DEBUG: loaded image mask w = %d h = %d\n", average_col_mask.size().width, average_col_mask.size().height); cout.flush();
     	has_mask = true;
+    }
+
+    // get output file path if provided
+    string output_path = "outputs/"; //default
+    if(argc >= 9 && (strcmp(argv[7], "-ofile") == 0)){
+
+    	output_path = string(argv[8]);
+    	printf("DEBUG: got out path %s\n", output_path.c_str()); cout.flush();
     }
 
     // show input
@@ -86,7 +92,8 @@ int main( int argc, char** argv )
     piecewise_process(src, dst, target, average);
     //linear_process(src, dst, target, average);
     //DEBUG draw intermediate
-    imwrite("outputs/" + input_filename + "-pw_intermediate.jpg", dst);
+    imwrite(output_path + "-pw_intermediate.jpg", dst);
+
     darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
 
     //DEBUG, draw average colors
@@ -94,7 +101,9 @@ int main( int argc, char** argv )
     rectangle(dst, Point(dst.cols - 7, dst.rows - 7), Point(dst.cols - 2, dst.rows - 2), target, CV_FILLED);
 
     // print output
-    imwrite("outputs/" + input_filename + "-output.jpg", dst);
+    imwrite(output_path + "-output.jpg", dst);
+
+    printf("Done."); cout.flush();
 
     return 0;
 }
