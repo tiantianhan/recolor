@@ -103,7 +103,7 @@ int main( int argc, char** argv )
     // print output
     imwrite(output_path + "-output.jpg", dst);
 
-    printf("Done."); cout.flush();
+    printf("Done.\n"); cout.flush();
 
     return 0;
 }
