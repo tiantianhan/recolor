@@ -13,8 +13,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
-using namespace std;
-using namespace cv;
 
-int linear_process(Mat src, Mat dst, Scalar target, Scalar average);
+int linear_process(cv::Mat src, cv::Mat dst, cv::Scalar target, cv::Scalar average);
 #endif /* ALGO_LINEAR_HPP_ */

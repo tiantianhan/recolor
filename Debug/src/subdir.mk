@@ -7,19 +7,22 @@ CPP_SRCS += \
 ../src/algo_darkspot_correct.cpp \
 ../src/algo_linear.cpp \
 ../src/algo_piecewise.cpp \
-../src/recolor.cpp 
+../src/recolor.cpp \
+../src/utils.cpp 
 
 OBJS += \
 ./src/algo_darkspot_correct.o \
 ./src/algo_linear.o \
 ./src/algo_piecewise.o \
-./src/recolor.o 
+./src/recolor.o \
+./src/utils.o 
 
 CPP_DEPS += \
 ./src/algo_darkspot_correct.d \
 ./src/algo_linear.d \
 ./src/algo_piecewise.d \
-./src/recolor.d 
+./src/recolor.d \
+./src/utils.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

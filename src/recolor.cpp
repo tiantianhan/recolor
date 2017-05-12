@@ -7,6 +7,8 @@
 #include "algo_linear.hpp"
 #include "algo_darkspot_correct.hpp"
 
+#include "utils.hpp"
+
 using namespace std;
 using namespace cv;
 
@@ -35,8 +37,11 @@ int main( int argc, char** argv )
     }
 
     /// Load the source image
-    printf("DEBUG: image name name %s\n", argv[1]);
+    printf("DEBUG: image name %s\n", argv[1]);
     Mat src = imread( argv[1], IMREAD_COLOR); //reads 3 channel BGR
+    string input_filename = remove_extension(string(argv[1]));
+    input_filename = remove_paths(input_filename);
+    //printf("DEBUG: input filename rem paths %s\n", input_filename.c_str());
 
     // check input
     if(src.size().width <= 20 || src.size().height <= 20){
@@ -65,7 +70,7 @@ int main( int argc, char** argv )
     // show input
     printf("Input params b = %.2f, g = %.2f, r =%.2f\n", input_params(0), input_params(1), input_params(2)); cout.flush();
 
-    // calculations
+    // average colours
     Scalar target = Scalar(input_params(0), input_params(1), input_params(2));
     Scalar average;
     if(has_mask){
@@ -81,8 +86,7 @@ int main( int argc, char** argv )
     piecewise_process(src, dst, target, average);
     //linear_process(src, dst, target, average);
     //DEBUG draw intermediate
-    imwrite("outputs/pw_intermediate.jpg", dst);
-
+    imwrite("outputs/" + input_filename + "-pw_intermediate.jpg", dst);
     darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
 
     //DEBUG, draw average colors
@@ -90,7 +94,7 @@ int main( int argc, char** argv )
     rectangle(dst, Point(dst.cols - 7, dst.rows - 7), Point(dst.cols - 2, dst.rows - 2), target, CV_FILLED);
 
     // print output
-    imwrite("outputs/output.jpg", dst);
+    imwrite("outputs/" + input_filename + "-output.jpg", dst);
 
     return 0;
 }

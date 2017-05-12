@@ -13,9 +13,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
-using namespace std;
-using namespace cv;
-
-int piecewise_process(Mat src, Mat dst, Scalar target, Scalar average);
+int piecewise_process(cv::Mat src, cv::Mat dst, cv::Scalar target, cv::Scalar average);
 
 #endif /* ALGO_PIECEWISE_HPP_ */

@@ -13,13 +13,10 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
-using namespace std;
-using namespace cv;
-
 /*
  * Removes dark spots from hand, strength of effect controlled by alpha, alpha > 1
  */
-int darkcorrect_process(Mat src, Mat dst, Scalar average, double alpha);
+int darkcorrect_process(cv::Mat src, cv::Mat dst, cv::Scalar average, double alpha);
 
 
 #endif /* ALGO_DARKSPOT_CORRECT_HPP_ */
