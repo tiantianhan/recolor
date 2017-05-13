@@ -66,11 +66,18 @@ int main( int argc, char** argv )
     }
 
     // get output file path if provided
-    string output_path = "outputs/"; //default
+    string output_path = "outputs/out.jpg"; //default
+    string intermed_name = "outputs/out";
+    bool has_outpath = false;
     if(argc >= 9 && (strcmp(argv[7], "-ofile") == 0)){
 
     	output_path = string(argv[8]);
     	printf("DEBUG: got out path %s\n", output_path.c_str()); cout.flush();
+
+    	intermed_name = remove_extension(output_path);
+    	printf("DEBUG: got intermediate name %s\n", intermed_name.c_str()); cout.flush();
+
+    	has_outpath = true;
     }
 
     // show input
@@ -92,7 +99,7 @@ int main( int argc, char** argv )
     piecewise_process(src, dst, target, average);
     //linear_process(src, dst, target, average);
     //DEBUG draw intermediate
-    imwrite(output_path + "-pw_intermediate.jpg", dst);
+    imwrite(intermed_name + "-pw_intermediate.jpg", dst);
 
     darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
 
@@ -101,7 +108,7 @@ int main( int argc, char** argv )
     rectangle(dst, Point(dst.cols - 7, dst.rows - 7), Point(dst.cols - 2, dst.rows - 2), target, CV_FILLED);
 
     // print output
-    imwrite(output_path + "-output.jpg", dst);
+    imwrite(output_path, dst);
 
     printf("Done.\n"); cout.flush();
 
