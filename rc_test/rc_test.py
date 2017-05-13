@@ -5,7 +5,8 @@ print "Initializing..."
 #config TODO - put this in a config file that the tester reads?
 recolor_path = "../Debug/./recolor";
 input_path = "../inputs/";
-output_path = "../rc_test/outputs/";
+output_path = "../rc_test/outputs/debug/";
+test_description = "****This is a debug test****\n"
 
 class HandImage:
 	name = ""
@@ -25,17 +26,30 @@ hands = {'hand_brown': HandImage("hand_brown", ["75.38", "108.19", "162.22"]), \
 		 'hand_light': HandImage("hand_light", ["130.08", "153.18", "199.70"]), \
 		 'hand_pale': HandImage("hand_pale", ["121.73", "134.91", "160.90"])}
 
+
+def log(filepath, text):
+	with open(filepath, 'w') as f:
+		f.write(text)
+
 def test_recol(orig_hand, target_hand):
+	""" tests the recolor program with an original hand image and a target hand image, writing
+		resulting image and log to the output file
+	"""
 	print "\nTesting " + orig_hand.name +  " to " + target_hand.name + "..."
+	output_name = orig_hand.name + "_to_" + target_hand.name
+
 	recol_out = subprocess.check_output([recolor_path, \
 		input_path + orig_hand.filepath, \
 		target_hand.average_color[0], target_hand.average_color[1], target_hand.average_color[2], \
 		"-mfile", input_path + orig_hand.maskpath, \
-		"-ofile", output_path + orig_hand.name + "-to-" + target_hand.name]);
+		"-ofile", output_path + output_name]);
 
 	print "##### recolor output start #####"
 	print recol_out
 	print "##### recolor output end #####\n"
+
+	log(output_path + output_name + "-log.txt", test_description + recol_out)
+
 
 print "Testing recolor..."
 test_recol(hands['hand_brown'], hands['hand_dark']);
