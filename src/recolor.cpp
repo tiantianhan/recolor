@@ -34,12 +34,6 @@ int main( int argc, char** argv )
     	return 0;
     }
 
-    //input params
-    Scalar input_params = Scalar(0.0, 0.0, 0.0);
-    for(int i = 2; i < argc; i++){
-    	input_params(i - 2) = atof(argv[i]);
-    }
-
     /// Load the source image
     printf("DEBUG: image name %s\n", argv[1]);
     Mat src = imread( argv[1], IMREAD_COLOR); //reads 3 channel BGR
@@ -52,20 +46,46 @@ int main( int argc, char** argv )
 
 	printf("DEBUG: loaded image  w = %d h = %d\n", src.size().width, src.size().height); cout.flush();
 
+    // Load input params
+    Scalar input_params = Scalar(0.0, 0.0, 0.0);
+    for(int i = 2; i < argc; i++){
+    	input_params(i - 2) = atof(argv[i]);
+    }
+
+    // show input params
+    printf("Input params b = %.2f, g = %.2f, r =%.2f\n", input_params(0), input_params(1), input_params(2)); cout.flush();
+
+    // default algorithm
+    int algo = PIECEWISE_DARKSPOT;
+
     // default no mask
     Mat average_col_mask;
     bool has_mask = false;
 
     // default output path
-    string output_path = "outputs/out.jpg"; //default
+    string output_path = "outputs/out.jpg";
     string intermed_name = "outputs/out";
     bool has_outpath = false;
 
     // get optional arguments if provided
     for(int i = 5; i < argc - 1; i++){
-//    	if(strcmp(argv[i], "-algo") == 0){
-//    		i
-//    	}
+    	if(strcmp(argv[i], "-algo") == 0){
+    		if(strcmp(argv[i + 1], "linear") == 0){
+    			algo = LINEAR;
+    			printf("Using algorithm %s\n", "Linear"); cout.flush();
+
+    		} else if(strcmp(argv[i + 1], "pw") == 0){
+    			algo = PIECEWISE;
+    			printf("Using algorithm %s\n", "Piecewise"); cout.flush();
+
+    		} else if(strcmp(argv[i + 1], "pw_dark_corr") == 0){
+    			algo = PIECEWISE_DARKSPOT;
+    			printf("Using algorithm %s\n", "Piecewise + dark correction"); cout.flush();
+
+    		} else {
+    			perror("WARNING: invalid algorithm name, using default\n");
+    		}
+    	}
 
     	// get average color mask for input if provided
         if(strcmp(argv[i], "-mfile") == 0){
@@ -92,11 +112,7 @@ int main( int argc, char** argv )
 
         	has_outpath = true;
         }
-
     }
-
-    // show input
-    printf("Input params b = %.2f, g = %.2f, r =%.2f\n", input_params(0), input_params(1), input_params(2)); cout.flush();
 
     // average colours
     Scalar target = Scalar(input_params(0), input_params(1), input_params(2));
@@ -111,12 +127,17 @@ int main( int argc, char** argv )
 
     // process
     Mat dst = Mat::zeros( src.size(), src.type());
-    //piecewise_process(src, dst, target, average);
-    linear_process(src, dst, target, average);
-    //DEBUG draw intermediate
-    //imwrite(intermed_name + "-pw_intermediate.jpg", dst);
 
-    //darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
+    if(algo == LINEAR){
+    	linear_process(src, dst, target, average);
+    } else if(algo == PIECEWISE){
+    	piecewise_process(src, dst, target, average);
+    } else if(algo == PIECEWISE_DARKSPOT){
+    	piecewise_process(src, dst, target, average);
+        //DEBUG draw intermediate
+        imwrite(intermed_name + "-pw_intermediate.jpg", dst);
+    	darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
+    }
 
     //DEBUG, draw average colors
     rectangle(dst, Point(dst.cols - 7, dst.rows - 14), Point(dst.cols - 2, dst.rows - 9), average, CV_FILLED);
@@ -125,7 +146,7 @@ int main( int argc, char** argv )
     // print output
     imwrite(output_path, dst);
 
-    printf("Done.\n"); cout.flush();
+    printf("Recolor done.\n"); cout.flush();
 
     return 0;
 }
