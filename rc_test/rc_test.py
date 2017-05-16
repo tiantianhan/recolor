@@ -50,11 +50,18 @@ def test_recol(orig_hand, target_hand):
 	log(output_path + output_name + "-log.txt", test_description + recol_out)
 
 print "Testing recolor..."
+test_recol(hands['hand_dark'], hands['hand_brown']);
+test_recol(hands['hand_dark'], hands['hand_light']);
+test_recol(hands['hand_dark'], hands['hand_pale']);
+
 test_recol(hands['hand_brown'], hands['hand_dark']);
 test_recol(hands['hand_brown'], hands['hand_light']);
 test_recol(hands['hand_brown'], hands['hand_pale']);
 
-test_recol(hands['hand_dark'], hands['hand_light']);
-test_recol(hands['hand_dark'], hands['hand_pale']);
-
+test_recol(hands['hand_light'], hands['hand_dark']);
+test_recol(hands['hand_light'], hands['hand_brown']);
 test_recol(hands['hand_light'], hands['hand_pale']);
+
+test_recol(hands['hand_pale'], hands['hand_dark']);
+test_recol(hands['hand_pale'], hands['hand_brown']);
+test_recol(hands['hand_pale'], hands['hand_light']);

@@ -7,6 +7,8 @@
 #include "algo_linear.hpp"
 #include "algo_darkspot_correct.hpp"
 
+#include "algo_flags.hpp"
+
 #include "utils.hpp"
 
 using namespace std;
@@ -18,15 +20,16 @@ using namespace cv;
 int main( int argc, char** argv )
 {
 	String usage = "usage: recolor input_file_path param1 param2 param3 -mfile file_path_to_mask "
-			"-ofile file_path_to_output\n"
+			"-ofile file_path_to_output -algo algorithm\n"
 			"    input_file_path: path from current location to input image\n"
 			"    param1: average B\n"
 			"    param2: average G\n"
 			"    param3: average R\n"
 			"    file_path_to_mask (optional): path to the mask image, a black and white image"
 					"showing which region of the input image to obtain the average color from.\n"
-			"    file_path_to_output (optional): name and location to save the output image\n";
-    if(argc < 5 || argc > 9){
+			"    file_path_to_output (optional): name and location to save the output image\n"
+			"	 algorithm (optional): can be linear, pw or pw_dark_corr\n";
+    if(argc < 5 || argc > 11){
     	printf("%s", usage.c_str()); cout.flush();
     	return 0;
     }
@@ -49,35 +52,47 @@ int main( int argc, char** argv )
 
 	printf("DEBUG: loaded image  w = %d h = %d\n", src.size().width, src.size().height); cout.flush();
 
-    // get mask if provided
+    // default no mask
     Mat average_col_mask;
     bool has_mask = false;
-    if(argc >= 7 && (strcmp(argv[5], "-mfile") == 0)){
-    	printf("DEBUG: mask name %s\n", argv[6]);
-    	average_col_mask = imread(argv[6], IMREAD_GRAYSCALE);
 
-    	if(average_col_mask.size().width != src.size().width || average_col_mask.size().height != src.size().height){
-    		perror("ERROR: check input, mask size doesn't match image size\n");
-        	return 1;
-        }
-
-    	printf("DEBUG: loaded image mask w = %d h = %d\n", average_col_mask.size().width, average_col_mask.size().height); cout.flush();
-    	has_mask = true;
-    }
-
-    // get output file path if provided
+    // default output path
     string output_path = "outputs/out.jpg"; //default
     string intermed_name = "outputs/out";
     bool has_outpath = false;
-    if(argc >= 9 && (strcmp(argv[7], "-ofile") == 0)){
 
-    	output_path = string(argv[8]);
-    	printf("DEBUG: got out path %s\n", output_path.c_str()); cout.flush();
+    // get optional arguments if provided
+    for(int i = 5; i < argc - 1; i++){
+//    	if(strcmp(argv[i], "-algo") == 0){
+//    		i
+//    	}
 
-    	intermed_name = remove_extension(output_path);
-    	printf("DEBUG: got intermediate name %s\n", intermed_name.c_str()); cout.flush();
+    	// get average color mask for input if provided
+        if(strcmp(argv[i], "-mfile") == 0){
+        	printf("DEBUG: mask name %s\n", argv[i + 1]);
+        	average_col_mask = imread(argv[i + 1], IMREAD_GRAYSCALE);
 
-    	has_outpath = true;
+        	if(average_col_mask.size().width != src.size().width || average_col_mask.size().height != src.size().height){
+        		perror("ERROR: check input, mask size doesn't match image size\n");
+            	return 1;
+            }
+
+        	printf("DEBUG: loaded image mask w = %d h = %d\n", average_col_mask.size().width, average_col_mask.size().height); cout.flush();
+        	has_mask = true;
+        }
+
+        // get the output path if provided
+        if(strcmp(argv[i], "-ofile") == 0){
+
+        	output_path = string(argv[i + 1]);
+        	printf("DEBUG: got out path %s\n", output_path.c_str()); cout.flush();
+
+        	intermed_name = remove_extension(output_path);
+        	printf("DEBUG: got intermediate name %s\n", intermed_name.c_str()); cout.flush();
+
+        	has_outpath = true;
+        }
+
     }
 
     // show input
@@ -96,12 +111,12 @@ int main( int argc, char** argv )
 
     // process
     Mat dst = Mat::zeros( src.size(), src.type());
-    piecewise_process(src, dst, target, average);
-    //linear_process(src, dst, target, average);
+    //piecewise_process(src, dst, target, average);
+    linear_process(src, dst, target, average);
     //DEBUG draw intermediate
-    imwrite(intermed_name + "-pw_intermediate.jpg", dst);
+    //imwrite(intermed_name + "-pw_intermediate.jpg", dst);
 
-    darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
+    //darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
 
     //DEBUG, draw average colors
     rectangle(dst, Point(dst.cols - 7, dst.rows - 14), Point(dst.cols - 2, dst.rows - 9), average, CV_FILLED);

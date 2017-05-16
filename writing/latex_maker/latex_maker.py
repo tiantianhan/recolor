@@ -10,18 +10,45 @@ code = ""
 
 originals_path = "../inputs/";
 results_path = "../rc_test/outputs/debug/"
-sequence = [{"PY_HAND_ORIG": "hand_dark", \
-			"PY_HAND_TARG": "hand_pale", \
-			"PY_HAND_RES": "hand_dark_to_hand_pale"}]
 # sequence = [{"PY_HAND_ORIG": "hand_dark", \
 # 			"PY_HAND_TARG": "hand_pale", \
-# 			"PY_HAND_RES": "hand_dark_to_hand_pale"}, \
-# 			"PY_HAND_ORIG": "hand_pale", \
-# 			"PY_HAND_TARG": "hand_dark", \
-# 			"PY_HAND_RES": "hand_pale_to_hand_dark"},
-# 			"PY_HAND_ORIG": "hand_dark", \
-# 			"PY_HAND_TARG": "hand_light", \
-# 			"PY_HAND_RES": "hand_dark_to_hand_light"}]
+# 			"PY_HAND_RES": "hand_dark_to_hand_pale"}]
+sequence = [{"PY_HAND_ORIG": "hand_dark", \
+			"PY_HAND_TARG": "hand_brown", \
+			"PY_HAND_RES": "hand_dark_to_hand_brown"}, \
+			{"PY_HAND_ORIG": "hand_dark", \
+			"PY_HAND_TARG": "hand_light", \
+			"PY_HAND_RES": "hand_dark_to_hand_light"},
+			{"PY_HAND_ORIG": "hand_dark", \
+			"PY_HAND_TARG": "hand_pale", \
+			"PY_HAND_RES": "hand_dark_to_hand_pale"},
+			{"PY_HAND_ORIG": "hand_brown", \
+			"PY_HAND_TARG": "hand_dark", \
+			"PY_HAND_RES": "hand_brown_to_hand_dark"}, \
+			{"PY_HAND_ORIG": "hand_brown", \
+			"PY_HAND_TARG": "hand_light", \
+			"PY_HAND_RES": "hand_brown_to_hand_light"},
+			{"PY_HAND_ORIG": "hand_brown", \
+			"PY_HAND_TARG": "hand_pale", \
+			"PY_HAND_RES": "hand_brown_to_hand_pale"},
+			{"PY_HAND_ORIG": "hand_light", \
+			"PY_HAND_TARG": "hand_dark", \
+			"PY_HAND_RES": "hand_light_to_hand_dark"}, \
+			{"PY_HAND_ORIG": "hand_light", \
+			"PY_HAND_TARG": "hand_brown", \
+			"PY_HAND_RES": "hand_light_to_hand_brown"},
+			{"PY_HAND_ORIG": "hand_light", \
+			"PY_HAND_TARG": "hand_pale", \
+			"PY_HAND_RES": "hand_light_to_hand_pale"},
+			{"PY_HAND_ORIG": "hand_pale", \
+			"PY_HAND_TARG": "hand_dark", \
+			"PY_HAND_RES": "hand_pale_to_hand_dark"}, \
+			{"PY_HAND_ORIG": "hand_pale", \
+			"PY_HAND_TARG": "hand_brown", \
+			"PY_HAND_RES": "hand_pale_to_hand_brown"},
+			{"PY_HAND_ORIG": "hand_pale", \
+			"PY_HAND_TARG": "hand_light", \
+			"PY_HAND_RES": "hand_pale_to_hand_light"}]
 
 
 # load "template" code for header
