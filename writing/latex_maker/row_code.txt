@@ -1,0 +1,11 @@
+  \label{row:PY_NAME_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{PY_HAND_ORIG}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{PY_HAND_TARG}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{PY_HAND_RES}
+  \end{minipage} \\
+\hline

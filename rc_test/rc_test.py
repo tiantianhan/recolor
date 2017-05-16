@@ -1,4 +1,3 @@
-#import re # import regular expressions module
 import subprocess
 
 print "Initializing..."
@@ -36,7 +35,7 @@ def test_recol(orig_hand, target_hand):
 		resulting image and log to the output file
 	"""
 	print "\nTesting " + orig_hand.name +  " to " + target_hand.name + "..."
-	output_name = orig_hand.name + "_to_" + target_hand.name
+	output_name = orig_hand.name + "_to_" + target_hand.name + ".jpg"
 
 	recol_out = subprocess.check_output([recolor_path, \
 		input_path + orig_hand.filepath, \
@@ -50,7 +49,6 @@ def test_recol(orig_hand, target_hand):
 
 	log(output_path + output_name + "-log.txt", test_description + recol_out)
 
-
 print "Testing recolor..."
 test_recol(hands['hand_brown'], hands['hand_dark']);
 test_recol(hands['hand_brown'], hands['hand_light']);
@@ -60,15 +58,3 @@ test_recol(hands['hand_dark'], hands['hand_light']);
 test_recol(hands['hand_dark'], hands['hand_pale']);
 
 test_recol(hands['hand_light'], hands['hand_pale']);
-
-# project = "./" # specify the project folder
-# in_file = "{}example.txt".format(project) # path to the txt-file relative to the project folder
-
-# with open(in_file) as f:    # loads the file
-#     content = f.read()
-#     keys = re.findall(r"%(.+):", content)   # find the keys using RegEx
-#     values = re.findall(r":\s*([\w\W]+?)\s*(?:%|$)", content) # find the values using RegEx
-
-# options = zip(keys, values) # combining keys and values in one nested list
-
-# print options

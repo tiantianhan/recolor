@@ -1,0 +1,12 @@
+****This is a debug test****
+DEBUG: image name ../inputs/hand_light.jpg
+DEBUG: loaded image  w = 1000 h = 854
+DEBUG: mask name ../inputs/hand_light_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 854
+DEBUG: got out path ../rc_test/outputs/debug/hand_light_to_hand_pale.jpg
+DEBUG: got intermediate name ../rc_test/outputs/debug/hand_light_to_hand_pale
+Input params b = 121.73, g = 134.91, r =160.90
+DEBUG: image average b = 130.08, g = 153.18, r =199.70
+Applying piecewise process...
+Applying darkspot correct process...
+Done.
