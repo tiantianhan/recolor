@@ -1,0 +1,14 @@
+Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots
+
+DEBUG: image name ../inputs/hand_light.jpg
+DEBUG: loaded image  w = 1000 h = 854
+Input params b = 75.38, g = 108.19, r =162.22
+DEBUG: mask name ../inputs/hand_light_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 854
+DEBUG: got out path ../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_hand_brown.jpg
+DEBUG: got intermediate name ../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_hand_brown
+Using algorithm Piecewise + dark correction
+DEBUG: image average b = 130.08, g = 153.18, r =199.70
+Applying piecewise process...
+Applying darkspot correct process...
+Recolor done.

@@ -1,12 +1,13 @@
 ****This is a debug test****
 DEBUG: image name ../inputs/hand_dark.jpg
 DEBUG: loaded image  w = 1000 h = 715
+Input params b = 130.08, g = 153.18, r =199.70
 DEBUG: mask name ../inputs/hand_dark_mask.jpg
 DEBUG: loaded image mask w = 1000 h = 715
 DEBUG: got out path ../rc_test/outputs/debug/hand_dark_to_hand_light.jpg
 DEBUG: got intermediate name ../rc_test/outputs/debug/hand_dark_to_hand_light
-Input params b = 130.08, g = 153.18, r =199.70
+Using algorithm Piecewise + dark correction
 DEBUG: image average b = 65.20, g = 91.83, r =139.01
 Applying piecewise process...
 Applying darkspot correct process...
-Done.
+Recolor done.

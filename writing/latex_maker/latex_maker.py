@@ -3,16 +3,27 @@ import os
 
 frame_code_file = "frame_code.txt" # txt file containing the latex code for table
 row_code_file = "row_code.txt" # txt file containing the latex code for each row
-basic_info = {"PY_NAME": "boost_test", \
-	"PY_DESC": "Test results of simple addition / subtraction brightening function."};
+
+# basic_info = {"PY_NAME": "debug_test", \
+#  	"PY_DESC": "Test results of a debug run."};
+#results_path = "../rc_test/outputs/debug/"
+
+# basic_info = {"PY_NAME": "boost_test", \
+#  	"PY_DESC": "Test results of simple addition / subtraction brightening function."};
+#results_path = "../rc_test/outputs/20170516_boost_test/"
+
+# basic_info = {"PY_NAME": "prop_test", \
+#  	"PY_DESC": "Test results of brightening proportionally based on distance of color to the average."};
+# results_path = "../rc_test/outputs/20170516_proportional_test/"
+
+basic_info = {"PY_NAME": "prop_correct_test", \
+	"PY_DESC": "Test results of proportional brightening with correction for dark spots"};
+results_path = "../rc_test/outputs/20170516_proportional_corrected_test/"
+
 out_file = basic_info['PY_NAME']+"-summary.tex"
 code = ""
 
 originals_path = "../inputs/";
-results_path = "../rc_test/outputs/debug/"
-# sequence = [{"PY_HAND_ORIG": "hand_dark", \
-# 			"PY_HAND_TARG": "hand_pale", \
-# 			"PY_HAND_RES": "hand_dark_to_hand_pale"}]
 sequence = [{"PY_HAND_ORIG": "hand_dark", \
 			"PY_HAND_TARG": "hand_brown", \
 			"PY_HAND_RES": "hand_dark_to_hand_brown"}, \

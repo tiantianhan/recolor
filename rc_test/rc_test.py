@@ -4,8 +4,22 @@ print "Initializing..."
 #config TODO - put this in a config file that the tester reads?
 recolor_path = "../Debug/./recolor";
 input_path = "../inputs/";
-output_path = "../rc_test/outputs/debug/";
-test_description = "****This is a debug test****\n"
+
+#output_path = "../rc_test/outputs/debug/";
+#test_description = "***This is a debug run****\n\n";
+# algorithm = "pw_dark_corr"
+
+#output_path = "../rc_test/outputs/20170516_boost_test/";
+#test_description = "Full test of all hands in dataset 1 with simple brightening algorithm\n\n";
+# algorithm = "linear"
+
+# output_path = "../rc_test/outputs/20170516_proportional_test/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm\n\n";
+# algorithm = "pw"
+
+output_path = "../rc_test/outputs/20170516_proportional_corrected_test/";
+test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots\n\n";
+algorithm = "pw_dark_corr"
 
 class HandImage:
 	name = ""
@@ -41,7 +55,8 @@ def test_recol(orig_hand, target_hand):
 		input_path + orig_hand.filepath, \
 		target_hand.average_color[0], target_hand.average_color[1], target_hand.average_color[2], \
 		"-mfile", input_path + orig_hand.maskpath, \
-		"-ofile", output_path + output_name]);
+		"-ofile", output_path + output_name, \
+		"-algo", algorithm]);
 
 	print "##### recolor output start #####"
 	print recol_out

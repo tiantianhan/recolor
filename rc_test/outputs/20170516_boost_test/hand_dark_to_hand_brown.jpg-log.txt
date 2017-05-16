@@ -1,0 +1,14 @@
+Full test of all hands in dataset 1 with simple brightening algorithm
+
+DEBUG: image name ../inputs/hand_dark.jpg
+DEBUG: loaded image  w = 1000 h = 715
+Input params b = 75.38, g = 108.19, r =162.22
+DEBUG: mask name ../inputs/hand_dark_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 715
+DEBUG: got out path ../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown.jpg
+DEBUG: got intermediate name ../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown
+Using algorithm Linear
+DEBUG: image average b = 65.20, g = 91.83, r =139.01
+Applying linear process...
+DEBUG: color difference b = 10.18, g = 16.36, r =23.21
+Recolor done.
