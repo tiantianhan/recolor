@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  17 MAY 2017 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  17 MAY 2017 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**dark_spot_remove_rpt.tex
+**dark_spot_remove_rpt
 (./dark_spot_remove_rpt.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 22 language(s) loaded.
@@ -179,107 +179,7 @@ LaTeX Info: Redefining \] on input line 2740.
 )
 \c@rowcntr=\count110
 
-(./dark_spot_remove_rpt.aux
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:boost_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-
-LaTeX Warning: Label `row:prop_correct_test_1' multiply defined.
-
-)
+(./dark_spot_remove_rpt.aux)
 \openout1 = `dark_spot_remove_rpt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -294,7 +194,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
- (/usr/local/texlive/2016basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen124
@@ -395,22 +296,114 @@ Package pdftex.def Info: images/hand_pale.jpg used on input line 60.
 (pdftex.def)             Requested size: 77.99881pt x 58.68666pt.
 
 [2 <./images/hand_dark.jpg> <./images/hand_brown.jpg> <./images/hand_light.jpg>
- <./images/hand_pale.jpg>] [3] [4] (./latex_maker/boost_test-summary.tex
-<../inputs/hand_dark.jpg, id=26, 1003.75pt x 717.68124pt>
+ <./images/hand_pale.jpg>]
+<../inputs/hand_brown.jpg, id=16, 738.76pt x 526.96875pt>
+File: ../inputs/hand_brown.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_brown.jpg>
+Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 95.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+
+<../inputs/hand_dark.jpg, id=17, 1003.75pt x 717.68124pt>
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
 
 <use ../inputs/hand_dark.jpg>
-Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 8.
+Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 98.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
-<../inputs/hand_brown.jpg, id=27, 738.76pt x 526.96875pt>
+<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg, id=18, 738
+.76pt x 526.96875pt>
+File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg Graphi
+c file (type jpg)
+
+<use ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg>
+Package pdftex.def Info: ../rc_test/outputs/20170516_boost_test/hand_brown_to_h
+and_dark.jpg used on input line 101.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+File: ../inputs/hand_brown.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_brown.jpg>
+Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 105.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+
+<../inputs/hand_light.jpg, id=19, 1003.75pt x 857.2025pt>
+File: ../inputs/hand_light.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_light.jpg>
+Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 108.
+(pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
+
+<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg, id=20, 73
+8.76pt x 526.96875pt>
+File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg Graph
+ic file (type jpg)
+
+<use ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg>
+Package pdftex.def Info: ../rc_test/outputs/20170516_boost_test/hand_brown_to_h
+and_light.jpg used on input line 111.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+File: ../inputs/hand_brown.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_brown.jpg>
+Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 115.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+
+<../inputs/hand_pale.jpg, id=21, 803.0pt x 604.2575pt>
+File: ../inputs/hand_pale.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_pale.jpg>
+Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 118.
+(pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
+
+<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.jpg, id=22, 738
+.76pt x 526.96875pt>
+File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.jpg Graphi
+c file (type jpg)
+
+<use ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.jpg>
+Package pdftex.def Info: ../rc_test/outputs/20170516_boost_test/hand_brown_to_h
+and_pale.jpg used on input line 121.
+(pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
+
+Overfull \hbox (19.63914pt too wide) in alignment at lines 89--124
+ [] [] [] [] 
+ []
+
+[3] [4 <../inputs/hand_brown.jpg> <../inputs/hand_dark.jpg> <../rc_test/outputs
+/20170516_boost_test/hand_brown_to_hand_dark.jpg> <../inputs/hand_light.jpg> <.
+./rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg> <../inputs/
+hand_pale.jpg> <../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.
+jpg>]
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.141 \end{equation}
+                    
+? ^^[[A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.141 \end{equation}
+                    
+? 
+[5] (./latex_maker/boost_test-summary.tex
+File: ../inputs/hand_dark.jpg Graphic file (type jpg)
+ <use ../inputs/hand_dark.jpg>
+Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 8.
+(pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 File: ../inputs/hand_brown.jpg Graphic file (type jpg)
 
 <use ../inputs/hand_brown.jpg>
 Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 11.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown.jpg, id=28, 100
+<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown.jpg, id=39, 100
 3.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown.jpg Graphi
 c file (type jpg)
@@ -424,15 +417,12 @@ File: ../inputs/hand_dark.jpg Graphic file (type jpg)
 <use ../inputs/hand_dark.jpg>
 Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 18.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
-
-<../inputs/hand_light.jpg, id=29, 1003.75pt x 857.2025pt>
 File: ../inputs/hand_light.jpg Graphic file (type jpg)
-
-<use ../inputs/hand_light.jpg>
+ <use ../inputs/hand_light.jpg>
 Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 21.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg, id=30, 100
+<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg, id=40, 100
 3.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg Graphi
 c file (type jpg)
@@ -446,15 +436,12 @@ File: ../inputs/hand_dark.jpg Graphic file (type jpg)
 <use ../inputs/hand_dark.jpg>
 Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 28.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
-
-<../inputs/hand_pale.jpg, id=31, 803.0pt x 604.2575pt>
 File: ../inputs/hand_pale.jpg Graphic file (type jpg)
-
-<use ../inputs/hand_pale.jpg>
+ <use ../inputs/hand_pale.jpg>
 Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 31.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_pale.jpg, id=32, 1003
+<../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_pale.jpg, id=41, 1003
 .75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_pale.jpg Graphic
  file (type jpg)
@@ -472,9 +459,6 @@ File: ../inputs/hand_dark.jpg Graphic file (type jpg)
  <use ../inputs/hand_dark.jpg>
 Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 41.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
-
-<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg, id=33, 738
-.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg Graphi
 c file (type jpg)
 
@@ -491,9 +475,6 @@ File: ../inputs/hand_light.jpg Graphic file (type jpg)
  <use ../inputs/hand_light.jpg>
 Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 51.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
-
-<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg, id=34, 73
-8.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg Graph
 ic file (type jpg)
 
@@ -510,9 +491,6 @@ File: ../inputs/hand_pale.jpg Graphic file (type jpg)
  <use ../inputs/hand_pale.jpg>
 Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 61.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
-
-<../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.jpg, id=35, 738
-.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_pale.jpg Graphi
 c file (type jpg)
 
@@ -530,7 +508,7 @@ File: ../inputs/hand_dark.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 71.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_dark.jpg, id=36, 100
+<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_dark.jpg, id=42, 100
 3.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_light_to_hand_dark.jpg Graphi
 c file (type jpg)
@@ -549,7 +527,7 @@ File: ../inputs/hand_brown.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 81.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_brown.jpg, id=37, 10
+<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_brown.jpg, id=43, 10
 03.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_light_to_hand_brown.jpg Graph
 ic file (type jpg)
@@ -568,7 +546,7 @@ File: ../inputs/hand_pale.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 91.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_pale.jpg, id=38, 100
+<../rc_test/outputs/20170516_boost_test/hand_light_to_hand_pale.jpg, id=44, 100
 3.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_light_to_hand_pale.jpg Graphi
 c file (type jpg)
@@ -587,7 +565,7 @@ File: ../inputs/hand_dark.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 101.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_dark.jpg, id=39, 803.
+<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_dark.jpg, id=45, 803.
 0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_dark.jpg Graphic
  file (type jpg)
@@ -606,7 +584,7 @@ File: ../inputs/hand_brown.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 111.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_brown.jpg, id=40, 803
+<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_brown.jpg, id=46, 803
 .0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_brown.jpg Graphi
 c file (type jpg)
@@ -625,7 +603,7 @@ File: ../inputs/hand_light.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 121.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
-<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_light.jpg, id=41, 803
+<../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_light.jpg, id=47, 803
 .0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_light.jpg Graphi
 c file (type jpg)
@@ -639,18 +617,14 @@ Overfull \hbox (22.58078pt too wide) in alignment at lines 1--127
  [] [] [] [] 
  []
 
-[5 <../inputs/hand_dark.jpg> <../inputs/hand_brown.jpg> <../rc_test/outputs/201
-70516_boost_test/hand_dark_to_hand_brown.jpg> <../inputs/hand_light.jpg> <../rc
-_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg> <../inputs/hand_
-pale.jpg> <../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_pale.jpg> <
-../rc_test/outputs/20170516_boost_test/hand_brown_to_hand_dark.jpg> <../rc_test
-/outputs/20170516_boost_test/hand_brown_to_hand_light.jpg>] [6 <../rc_test/outp
-uts/20170516_boost_test/hand_brown_to_hand_pale.jpg> <../rc_test/outputs/201705
-16_boost_test/hand_light_to_hand_dark.jpg> <../rc_test/outputs/20170516_boost_t
-est/hand_light_to_hand_brown.jpg> <../rc_test/outputs/20170516_boost_test/hand_
-light_to_hand_pale.jpg> <../rc_test/outputs/20170516_boost_test/hand_pale_to_ha
-nd_dark.jpg> <../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_brown.jp
-g>]) [7 <../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_light.jpg>]
+[6 <../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_brown.jpg> <../rc_
+test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg> <../rc_test/outpu
+ts/20170516_boost_test/hand_dark_to_hand_pale.jpg>] [7 <../rc_test/outputs/2017
+0516_boost_test/hand_light_to_hand_dark.jpg> <../rc_test/outputs/20170516_boost
+_test/hand_light_to_hand_brown.jpg> <../rc_test/outputs/20170516_boost_test/han
+d_light_to_hand_pale.jpg> <../rc_test/outputs/20170516_boost_test/hand_pale_to_
+hand_dark.jpg> <../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_brown.
+jpg>]) [8 <../rc_test/outputs/20170516_boost_test/hand_pale_to_hand_light.jpg>]
 (./latex_maker/prop_test-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
  <use ../inputs/hand_dark.jpg>
@@ -663,7 +637,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 11.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_brown.jpg, id=
-52, 1003.75pt x 717.68124pt>
+58, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_brown.jpg
  Graphic file (type jpg)
 
@@ -681,7 +655,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 21.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_light.jpg, id=
-53, 1003.75pt x 717.68124pt>
+59, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_light.jpg
  Graphic file (type jpg)
 
@@ -698,8 +672,8 @@ File: ../inputs/hand_pale.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 31.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
-<../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_pale.jpg, id=5
-4, 1003.75pt x 717.68124pt>
+<../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_pale.jpg, id=6
+0, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_pale.jpg 
 Graphic file (type jpg)
 
@@ -718,7 +692,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 41.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_dark.jpg, id=
-55, 738.76pt x 526.96875pt>
+61, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_dark.jpg
  Graphic file (type jpg)
 
@@ -736,7 +710,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 51.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg, id
-=56, 738.76pt x 526.96875pt>
+=62, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jp
 g Graphic file (type jpg)
 
@@ -755,7 +729,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 61.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_pale.jpg, id=
-57, 738.76pt x 526.96875pt>
+63, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_pale.jpg
  Graphic file (type jpg)
 
@@ -773,7 +747,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 71.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_dark.jpg, id=
-58, 1003.75pt x 857.2025pt>
+64, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_dark.jpg
  Graphic file (type jpg)
 
@@ -791,7 +765,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 81.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_brown.jpg, id
-=59, 1003.75pt x 857.2025pt>
+=65, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_brown.jp
 g Graphic file (type jpg)
 
@@ -810,7 +784,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 91.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_pale.jpg, id=
-60, 1003.75pt x 857.2025pt>
+66, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_light_to_hand_pale.jpg
  Graphic file (type jpg)
 
@@ -828,7 +802,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 101.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_dark.jpg, id=6
-1, 803.0pt x 604.2575pt>
+7, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_dark.jpg 
 Graphic file (type jpg)
 
@@ -847,7 +821,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 111.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_brown.jpg, id=
-62, 803.0pt x 604.2575pt>
+68, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_brown.jpg
  Graphic file (type jpg)
 
@@ -865,7 +839,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 121.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_light.jpg, id=
-63, 803.0pt x 604.2575pt>
+69, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_test/hand_pale_to_hand_light.jpg
  Graphic file (type jpg)
 
@@ -878,18 +852,18 @@ Overfull \hbox (22.58078pt too wide) in alignment at lines 1--127
  [] [] [] [] 
  []
 
-[8 <../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_brown.jpg> 
+[9 <../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_brown.jpg> 
 <../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_light.jpg> <..
 /rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_pale.jpg> <../rc_
 test/outputs/20170516_proportional_test/hand_brown_to_hand_dark.jpg> <../rc_tes
 t/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg> <../rc_test/
-outputs/20170516_proportional_test/hand_brown_to_hand_pale.jpg>]) [9 <../rc_tes
-t/outputs/20170516_proportional_test/hand_light_to_hand_dark.jpg> <../rc_test/o
-utputs/20170516_proportional_test/hand_light_to_hand_brown.jpg> <../rc_test/out
-puts/20170516_proportional_test/hand_light_to_hand_pale.jpg> <../rc_test/output
-s/20170516_proportional_test/hand_pale_to_hand_dark.jpg> <../rc_test/outputs/20
-170516_proportional_test/hand_pale_to_hand_brown.jpg> <../rc_test/outputs/20170
-516_proportional_test/hand_pale_to_hand_light.jpg>]
+outputs/20170516_proportional_test/hand_brown_to_hand_pale.jpg>]) [10 <../rc_te
+st/outputs/20170516_proportional_test/hand_light_to_hand_dark.jpg> <../rc_test/
+outputs/20170516_proportional_test/hand_light_to_hand_brown.jpg> <../rc_test/ou
+tputs/20170516_proportional_test/hand_light_to_hand_pale.jpg> <../rc_test/outpu
+ts/20170516_proportional_test/hand_pale_to_hand_dark.jpg> <../rc_test/outputs/2
+0170516_proportional_test/hand_pale_to_hand_brown.jpg> <../rc_test/outputs/2017
+0516_proportional_test/hand_pale_to_hand_light.jpg>]
 (./latex_maker/prop_correct_test-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
  <use ../inputs/hand_dark.jpg>
@@ -902,7 +876,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 11.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand_brow
-n.jpg, id=70, 1003.75pt x 717.68124pt>
+n.jpg, id=76, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand
 _brown.jpg Graphic file (type jpg)
 
@@ -921,7 +895,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 21.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand_ligh
-t.jpg, id=71, 1003.75pt x 717.68124pt>
+t.jpg, id=77, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand
 _light.jpg Graphic file (type jpg)
 
@@ -940,7 +914,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 31.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand_pale
-.jpg, id=72, 1003.75pt x 717.68124pt>
+.jpg, id=78, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand
 _pale.jpg Graphic file (type jpg)
 
@@ -959,7 +933,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 41.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_hand_dar
-k.jpg, id=73, 738.76pt x 526.96875pt>
+k.jpg, id=79, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_han
 d_dark.jpg Graphic file (type jpg)
 
@@ -978,7 +952,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 51.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_hand_lig
-ht.jpg, id=74, 738.76pt x 526.96875pt>
+ht.jpg, id=80, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_han
 d_light.jpg Graphic file (type jpg)
 
@@ -997,7 +971,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 61.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_hand_pal
-e.jpg, id=75, 738.76pt x 526.96875pt>
+e.jpg, id=81, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_brown_to_han
 d_pale.jpg Graphic file (type jpg)
 
@@ -1016,7 +990,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 71.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_hand_dar
-k.jpg, id=76, 1003.75pt x 857.2025pt>
+k.jpg, id=82, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_han
 d_dark.jpg Graphic file (type jpg)
 
@@ -1035,7 +1009,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 81.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_hand_bro
-wn.jpg, id=77, 1003.75pt x 857.2025pt>
+wn.jpg, id=83, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_han
 d_brown.jpg Graphic file (type jpg)
 
@@ -1054,7 +1028,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 91.
 (pdftex.def)             Requested size: 113.09312pt x 85.10258pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_hand_pal
-e.jpg, id=78, 1003.75pt x 857.2025pt>
+e.jpg, id=84, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_light_to_han
 d_pale.jpg Graphic file (type jpg)
 
@@ -1073,7 +1047,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 101.
 (pdftex.def)             Requested size: 113.09312pt x 80.86159pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand_dark
-.jpg, id=79, 803.0pt x 604.2575pt>
+.jpg, id=85, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand
 _dark.jpg Graphic file (type jpg)
 
@@ -1092,7 +1066,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 111.
 (pdftex.def)             Requested size: 113.08627pt x 80.66615pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand_brow
-n.jpg, id=80, 803.0pt x 604.2575pt>
+n.jpg, id=86, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand
 _brown.jpg Graphic file (type jpg)
 
@@ -1111,7 +1085,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 121.
 (pdftex.def)             Requested size: 113.09312pt x 96.58153pt.
 
 <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand_ligh
-t.jpg, id=81, 803.0pt x 604.2575pt>
+t.jpg, id=87, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand
 _light.jpg Graphic file (type jpg)
 
@@ -1125,44 +1099,43 @@ Overfull \hbox (22.58078pt too wide) in alignment at lines 1--127
  [] [] [] [] 
  []
 
-[10 <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand_
+[11 <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_to_hand_
 brown.jpg> <../rc_test/outputs/20170516_proportional_corrected_test/hand_dark_t
 o_hand_light.jpg> <../rc_test/outputs/20170516_proportional_corrected_test/hand
 _dark_to_hand_pale.jpg> <../rc_test/outputs/20170516_proportional_corrected_tes
 t/hand_brown_to_hand_dark.jpg> <../rc_test/outputs/20170516_proportional_correc
 ted_test/hand_brown_to_hand_light.jpg> <../rc_test/outputs/20170516_proportiona
-l_corrected_test/hand_brown_to_hand_pale.jpg>]) [11 <../rc_test/outputs/2017051
+l_corrected_test/hand_brown_to_hand_pale.jpg>]) [12 <../rc_test/outputs/2017051
 6_proportional_corrected_test/hand_light_to_hand_dark.jpg> <../rc_test/outputs/
 20170516_proportional_corrected_test/hand_light_to_hand_brown.jpg> <../rc_test/
 outputs/20170516_proportional_corrected_test/hand_light_to_hand_pale.jpg> <../r
 c_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand_dark.jpg>
  <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_hand_bro
 wn.jpg> <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale_to_h
-and_light.jpg>] (./dark_spot_remove_rpt.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+and_light.jpg>] (./dark_spot_remove_rpt.aux) ) 
 Here is how much of TeX's memory you used:
- 3968 strings out of 494447
- 69135 string characters out of 6166766
- 135305 words of memory out of 5000000
- 7232 multiletter control sequences out of 15000+600000
- 8561 words of font info for 31 fonts, out of 8000000 for 9000
+ 4006 strings out of 494447
+ 70115 string characters out of 6166766
+ 135696 words of memory out of 5000000
+ 7270 multiletter control sequences out of 15000+600000
+ 8868 words of font info for 32 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,9n,46p,949b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb>
-Output written on dark_spot_remove_rpt.pdf (11 pages, 3305163 bytes).
+ 42i,10n,46p,945b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016b
+asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2
+016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
+e/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/tex
+live/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on dark_spot_remove_rpt.pdf (12 pages, 3329951 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

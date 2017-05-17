@@ -1,4 +1,4 @@
-  \label{row:PY_NAME_1} &
+  \label{row:PY_NAME_PY_ROW_NAME} &
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{PY_HAND_ORIG}
   \end{minipage} & 
