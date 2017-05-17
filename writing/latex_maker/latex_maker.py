@@ -8,13 +8,13 @@ row_code_file = "row_code.txt" # txt file containing the latex code for each row
 #  	"PY_DESC": "Test results of a debug run."};
 # results_path = "../rc_test/outputs/20170516_proportional_corrected_test/"
 
-basic_info = {"PY_NAME": "boost_test", \
- 	"PY_DESC": "Test results of simple addition / subtraction brightening function."};
-results_path = "../rc_test/outputs/20170516_boost_test/"
+# basic_info = {"PY_NAME": "boost_test", \
+#  	"PY_DESC": "Test results of simple addition / subtraction brightening function."};
+# results_path = "../rc_test/outputs/20170516_boost_test/"
 
-# basic_info = {"PY_NAME": "prop_test", \
-#  	"PY_DESC": "Test results of brightening proportionally based on distance of color to the average."};
-# results_path = "../rc_test/outputs/20170516_proportional_test/"
+basic_info = {"PY_NAME": "prop_test", \
+ 	"PY_DESC": "Test results of brightening proportionally based on distance of color to the average."};
+results_path = "../rc_test/outputs/20170516_proportional_test/"
 
 # basic_info = {"PY_NAME": "prop_correct_test", \
 # 	"PY_DESC": "Test results of proportional brightening with correction for dark spots"};
