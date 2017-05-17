@@ -3,6 +3,11 @@
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{etoolbox}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+
+\newcommand*\mean[1]{\bar{#1}}
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
@@ -16,28 +21,76 @@
 
 \begin{document}
 
-%\section{List of Tables}
+\listoffigures
 \listoftables
+
+\pagebreak
 
 \section{Background and Literature Review}
 \subsection{Survey of online methods for changing and matching skin colour in Photoshop}
 %TODO text
 
 \section{Methods}
-We tested progressive iterations of the algorithm on a set of hand images with varying skintones. The images are as follows:
-%TODO The different hand images and their average skin colours. The masks used to obtain the area used to find the average skin colours of the hand can be found on the github repo for this project, under inputs/
+To accomplish the objective of recolouring the skintone of a hand to a target colour, we wrote algorithms in C++ in Eclipse on OS X using OpenCV libraries. Eclipse is used to compile each iteration of the algorithm into an debug-mode excutable program named Recolor. For ease of testing, as the algorithm is modified, we add more functionality to the Recolor program and retain the ability to use previous versions of the algorithm. We use a custom Python script to run new versions of Recolor from the terminal to test it. All of the relevant code and its versions are hosted on a git repository at https://github.com/tiantianhan/recolor 
 
-We iterated from simple to more complex algorithms, at each step testing the algorithm on the hand images and evaluating the results. For each test, we call the recolor program to transform the image of one hand to have the skintone of the hand in another image. We perform the transformation, for each iteration of the algorithm, on all possible combinations of our test images, paying particular attention to the extreme cases as well as cases that start with a midtoned hand (as this is the most likely use case for applications that change a model's hand to match a range of skintones). We evaluate the resulting images subjectively, based on whether the processed hand looks believably like a hand naturally of that skintone, and note any flaws that we attempt to correct with the next iteration of the algorithm.
+Recolor takes as input a hand image as well as a mask instructing it where to find the average skin colour of the hand, and a desired target skin colour. (Other flags and inputs are also used for testing purposes, see the Appendix for a full description of the usage.) Recolor then outputs the processed image where the skintone is adjusted to the target colour.
 
-Below we summarize the results of each algorithm and our evaluation of the results.
+We iterated from simple to more complex algorithms, at each step testing the algorithm and evaluating the results. We tested progressive iterations on a set of hand images with varying skintones. The images are are shown in Figure \ref{img:input_hands_1}.
+
+%all images that are not test results will be copied to the images folder
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.20\textwidth}
+        \includegraphics[width=\textwidth]{images/hand_dark}
+        \caption{}\label{img:input_hands_1_dark}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.20\textwidth}
+        \includegraphics[width=\textwidth]{images/hand_brown}
+        \caption{}\label{img:input_hands_1_brown}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.20\textwidth}
+        \includegraphics[width=\textwidth]{images/hand_light}
+        \caption{}\label{img:input_hands_1_light}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.20\textwidth}
+        \includegraphics[width=\textwidth]{images/hand_pale}
+        \caption{}\label{img:input_hands_1_pale}
+    \end{subfigure}
+    \caption{Different hand images used for testing}\label{img:input_hands_1}
+\end{figure}
+
+ For each test, we called the Recolor program to transform the image of one hand to have the skintone of the hand in another image, then visually compared the processed image to the image of the target hand. We performed the process on all possible combinations of our test images, paying particular attention to the extreme cases, transforming from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa, as well as cases that start with a hand with midtone skin such as in Figure \ref{img:input_hands_1_brown} (as this is the most likely use case for applications that change a model's hand to match a range of skintones). We evaluated the resulting images subjectively, based on whether the processed hand looks believably like a hand naturally of that skintone, and noted any flaws that we then attempted to correct with the next iteration of the algorithm.
+
+In the following subsections we summarize the results of each algorithm and our evaluation of the results.
 
 \subsection{Simple brightness addition / subtraction}
-%TODO text
-See Appendix for full results.
+To begin, we performed a simple addition of a value to each of the $rgb$ channels of the hand, such that the average colour of the hand in the processed image is equal to the average color of the hand in the target image. The algorithm is shown in Equation \ref{eq:boost_algo}.
+
+\begin{equation} \label{eq:boost_algo}
+r' = r + \delta_r
+\end{equation}
+
+Where 
+
+\begin{equation*}
+\delta_r = \mean{r_t} - \mean{r}
+\end{equation*}
+
+With the same equation applying for the $g$ and $b$ channels.
+
+See Table \ref{tab:boost_test} in the Appendix for full results.
 
 \subsection{Proportional adjustment relative to average color}
 %TODO text
-See Appendix for full results.
+See Table \ref{tab:prop_test} in the Appendix for full results.
+
+\subsection{Proportional brightening with dark spot correction}
+%TODO text
+See Table \ref{tab:prop_correct_test} in the Appendix for full results.
 
 \pagebreak
 
