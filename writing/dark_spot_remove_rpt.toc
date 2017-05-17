@@ -1,13 +1,15 @@
 \contentsline {section}{\numberline {1}Background and Literature Review}{3}
 \contentsline {subsection}{\numberline {1.1}Survey of online methods for changing and matching skin colour in Photoshop}{3}
-\contentsline {section}{\numberline {2}Methods}{3}
-\contentsline {subsection}{\numberline {2.1}Simple brightness addition / subtraction}{4}
-\contentsline {subsubsection}{\numberline {2.1.1}Algorithm}{4}
-\contentsline {subsubsection}{\numberline {2.1.2}Results}{4}
-\contentsline {subsubsection}{\numberline {2.1.3}Evaluation}{5}
-\contentsline {subsection}{\numberline {2.2}Proportional adjustment relative to average color}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Algorithm}{6}
-\contentsline {subsubsection}{\numberline {2.2.2}Results}{6}
-\contentsline {subsubsection}{\numberline {2.2.3}Evaluation}{7}
-\contentsline {subsection}{\numberline {2.3}Proportional brightening with dark spot correction}{7}
-\contentsline {section}{\numberline {A}Appendix A}{8}
+\contentsline {section}{\numberline {2}Methods}{4}
+\contentsline {subsection}{\numberline {2.1}Simple brightness addition / subtraction}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Algorithm}{5}
+\contentsline {subsubsection}{\numberline {2.1.2}Results}{5}
+\contentsline {subsubsection}{\numberline {2.1.3}Evaluation}{6}
+\contentsline {subsection}{\numberline {2.2}Proportional adjustment relative to average color}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Algorithm}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Results}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Evaluation}{8}
+\contentsline {subsection}{\numberline {2.3}Proportional brightening with dark spot correction}{9}
+\contentsline {section}{\numberline {A}Complete results for simple brightening}{10}
+\contentsline {section}{\numberline {B}Complete results for proportional adjustment}{13}
+\contentsline {section}{\numberline {C}Complete results for proportional adjustment with darkspot correction}{16}
