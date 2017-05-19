@@ -1,2 +1,2 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Different hand images used for testing\relax }}{6}
-\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of algorithm 1\hbox {} and 3\hbox {} results for transforming a dark hand (Figure 1a\hbox {}) to a light hand (Figure 1c\hbox {}).\relax }}{10}
+\contentsline {figure}{\numberline {1}{\ignorespaces Different hand images used for testing\relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of algorithm \ref {eq:boost_algo} and \ref {eq:prop_algo} results for transforming a dark hand (Figure \ref {img:input_hands_1_dark}) to a light hand (Figure \ref {img:input_hands_1_light}).\relax }}{10}{figure.caption.14}
