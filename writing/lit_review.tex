@@ -1,0 +1,27 @@
+%literature review
+\subsection{Survey of methods for changing and matching skin colour in Photoshop}
+
+The are a wide range of online video tutorials available for adjusting human skintone in individual images using Photoshop. The purposes of these videos include giving the subject of an image the appearance of a tan, matching the skintone of the subject to a desired skintone on another individual, or matching the skintone of a subject's face to the rest of the subject's body, which is often a slightly different colour \cite{photoshop:tan} \cite{photoshop:match_other} \cite{photoshop:match_body}. We surveyed a range of these videos and summarize the techniques of the most relevant videos with reasonably realistic results. See Appendix \ref{app:photoshop} for a more detailed description of three of these Photoshop processes. 
+
+\subsubsection*{Summary of Photoshop techniques}
+
+Levels and curves are frequently used for small brightness adjustments \cite{photoshop:obama} \cite{photoshop:match_body} \cite{photoshop:match_other}. For large brightness adjustments, one technique was found (see Appendix \ref{app:photoshop_obama}), where the skin area is brightened in a conversion to black and white, and then the luminosity blend mode is used to place the colour back into the image. Sometimes highlights and shadows are adjusted separately; curves or the ``blend if" function (which blends in an effect only if the original pixel is above a certain threshold of brightness) can be used to achieve this effect \cite{photoshop:tan}.
+
+There are many different methods to match colour, and the colour can be adjusted separately from the brightness or simultaneously - often one would affect the other \cite{photoshop:match_body} \cite{photoshop:match_other}. Methods for matching colour include matching the ratios of cyan, magenta and yellow by making adjustments with the selective colour tool, or using curves or levels on individual colour channels, adjustments are made either by eye or to numerically match a target color \cite{photoshop:selective} \cite{photoshop:match_body} \cite{photoshop:match_other}. Often to reduce the vividness of the colour adjustments the saturation must be slightly decreased \cite{photoshop:obama} \cite{photoshop:match_body}.
+
+After all other effects are applied, the opacity of the overall effect is often reduced from 100\% for a more natural appearance \cite{photoshop:obama} \cite{photoshop:match_body}.
+
+\subsubsection*{Limitations of Photoshop techniques}
+Many adjustments are specific to each image and the specific, numerical amount of adjustment often have to be judged by eye
+
+\subsubsection*{Plausibility of reproducing the Photoshop effects in OpenCV for this project}
+Many of the common techniques used could probably be reproduced. Specifically, the following can probably be reproduced since the math is understood and specific formulas can be found online: 
+Effects involving levels and curves for adjusting both overall brightness and individual colour channels
+Effects involving adjusting the HSV values
+Effects involving the different blending modes and opacity 
+
+There are however a few common effects used that seem like “black boxes” and might not be reproducible, more research is needed:
+Recreating the effects achieved by using the Black and White adjustment layer
+The selective colour tool
+
+that have a similar purpose to this project and whose effects can plausibly be duplicated.

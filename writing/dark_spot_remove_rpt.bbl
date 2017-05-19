@@ -21,8 +21,36 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{IEEEexample:TBPmisc}
-M.~Coates, A.~Hero, R.~Nowak, and B.~Yu, ``Internet tomography,'' May 2002, to
-  be published.
+\bibitem{photoshop:obama}
+\BIBentryALTinterwordspacing
+J.~Shaver. (2014) How to change a person's skin color from dark to light in
+  photoshop. [Online]. Available:
+  \url{http://www.designpanoply.com/blog/how-to-change-a-persons-skin-color-from-dark-to-light-in-photoshop}
+\BIBentrySTDinterwordspacing
+
+\bibitem{photoshop:match_body}
+\BIBentryALTinterwordspacing
+Phlearn. (2014) How to match skin tones in photoshop. [Online]. Available:
+  \url{https://www.youtube.com/watch?v=5-DE49Muc0g}
+\BIBentrySTDinterwordspacing
+
+\bibitem{photoshop:match_other}
+\BIBentryALTinterwordspacing
+PiXimperfect. (2017) How to match skin tone in photoshop cc 2017. [Online].
+  Available: \url{https://www.youtube.com/watch?v=zEeknlHydfE}
+\BIBentrySTDinterwordspacing
+
+\bibitem{photoshop:tan}
+\BIBentryALTinterwordspacing
+Phlearn. (2016) How to get a tan in photoshop. [Online]. Available:
+  \url{https://www.youtube.com/watch?v=Har8CSjei2k}
+\BIBentrySTDinterwordspacing
+
+\bibitem{photoshop:selective}
+\BIBentryALTinterwordspacing
+M.~Woloszynowicz. (2014) How to accurately match skin tones using selective
+  color in photoshop. [Online]. Available:
+  \url{https://www.youtube.com/watch?v=IOYFhumpmv8}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

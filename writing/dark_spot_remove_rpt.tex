@@ -7,6 +7,7 @@
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage[nottoc]{tocbibind}
 
 %for clickable table of contents
 \usepackage{hyperref}
@@ -43,41 +44,11 @@
 \pagebreak
 
 \section{Background and Literature Review}
-\subsection{Survey of methods for changing and matching skin colour in Photoshop online}
-
-The are a wide range of online video tutorials available for adjusting human skintone using Photoshop. The purposes of these videos include giving the subject of an image the appearance of a tan, matching the skintone of the subject to a desired skintone on another individual, or matching the skintone of a subjects face to the rest of the subject's body, which is often a slightly different colour. We surveyed a range of these videos and summarize the techniques of the most relevant videos with the most realistic results. In Appendix \ref{app:photoshop} are the detailed summary of three of these Photoshop processes. Testing: \cite{IEEEexample:TBPmisc}
-
-\subsubsection*{Summary of Photoshop techniques}
-
-Levels and curves are frequently used for small brightness adjustments. For large brightness adjustments one technique was found (Appendix \ref{app:photoshop_obama}), where the skin area is brightened in a conversion to black and white, and then the luminosity blend mode is used to place the colour back into the image Sometimes highlights and shadows are adjusted separately, curves or the “blend if” function (which blends in an effect only if the pixel is above a certain threshold of brightness) can be used to achieve this effect.
-
-There are many different methods to match colour, the colour may be adjusted separately from the brightness or simultaneously, often one would affect the other. Methods for matching colour include:
-- Matching the ratios of C, M and Y by making adjustments with the selective colour tool
-- Using curves or levels on individual colour channels, adjustments are made either by eye or to numerically match a target color
-
-Often to reduce the vividness of the colour adjustments some adjustment to the saturation must be made.
-
-Often the opacity of the overall effect is reduced for a more natural appearance.
-
-\subsubsection*{Limitations of Photoshop techniques}
-Many adjustments are specific to each image and the specific, numerical amount of adjustment often have to be judged by eye
-
-\subsubsection*{Plausibility of reproducing the Photoshop effects in OpenCV for this project}
-Many of the common techniques used could probably be reproduced. Specifically, the following can probably be reproduced since the math is understood and specific formulas can be found online: 
-Effects involving levels and curves for adjusting both overall brightness and individual colour channels
-Effects involving adjusting the HSV values
-Effects involving the different blending modes and opacity 
-
-There are however a few common effects used that seem like “black boxes” and might not be reproducible, more research is needed:
-Recreating the effects achieved by using the Black and White adjustment layer
-The selective colour tool
-
-that have a similar purpose to this project and whose effects can plausibly be duplicated.
-
+\input{lit_review}
 \pagebreak
 
 \section{Methods}
-To accomplish the objective of recolouring the skintone of a hand to a target colour, we wrote algorithms in C++ in Eclipse on OS X using OpenCV libraries. Eclipse is used to compile each iteration of the algorithm into an debug-mode excutable program named Recolor. For ease of testing, as the algorithm is modified, we add more functionality to the Recolor program and retain the ability to use previous versions of the algorithm. We use a custom Python script to run new versions of Recolor from the terminal to test it. All of the relevant code and its versions are hosted on a git repository at https://github.com/tiantianhan/recolor 
+To accomplish the objective of recolouring the skintone of a hand to a target colour, we wrote algorithms in C++ in Eclipse on OS X using OpenCV libraries. Eclipse is used to compile each iteration of the algorithm into an debug-mode excutable program named Recolor. For ease of testing, as the algorithm is modified, we add more functionality to the Recolor program and retain the ability to use previous versions of the algorithm. We use a custom Python script to run new versions of Recolor from the terminal to test it. All of the relevant code and its versions are hosted on a git repository at https://github.com/tiantianhan/recolor
 
 Recolor takes as input a hand image as well as a mask instructing it where to find the average skin colour of the hand, and a desired target skin colour. (Other flags and inputs are also used for testing purposes, see Appendix \ref{app:boost} for a full description of the usage.) Recolor then outputs the processed image where the skintone is adjusted to the target colour.
 
@@ -294,6 +265,9 @@ See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr_a10}, \ref{
 
 \pagebreak
 
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,my_references}
+\pagebreak
 
 \appendix
 
@@ -320,10 +294,5 @@ See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr_a10}, \ref{
 
 \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}\label{app:prop_corr_a3}
 \input{latex_maker/prop_correct_test_a3-summary}
-
-\addcontentsline{toc}{chapter}{References}
-\bibliographystyle{IEEEtran}
-\bibliography{IEEEexample}
-\pagebreak
 
 \end{document}
