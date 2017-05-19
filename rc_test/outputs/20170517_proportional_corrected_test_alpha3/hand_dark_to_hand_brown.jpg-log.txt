@@ -1,0 +1,16 @@
+Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 3
+
+DEBUG: image name ../inputs/hand_dark.jpg
+DEBUG: loaded image  w = 1000 h = 715
+Input params b = 75.38, g = 108.19, r =162.22
+DEBUG: mask name ../inputs/hand_dark_mask.jpg
+DEBUG: loaded image mask w = 1000 h = 715
+DEBUG: got out path ../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_dark_to_hand_brown.jpg
+DEBUG: got intermediate name ../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_dark_to_hand_brown
+Using algorithm Piecewise + dark correction
+DEBUG: image average b = 65.20, g = 91.83, r =139.01
+Applying piecewise process...
+DEBUG: new image average b = 73.55, g = 105.78, r =159.12
+Applying darkspot correct process...
+Average b = 73.550878, g = 105.778577, r = 159.120775, Alpha = 3.000000
+Recolor done.

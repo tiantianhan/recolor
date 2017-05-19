@@ -1,3 +1,8 @@
-\contentsline {table}{\numberline {3}{\ignorespaces Test results of simple addition / subtraction brightening function.\relax }}{10}
-\contentsline {table}{\numberline {4}{\ignorespaces Test results of brightening proportionally based on distance of color to the average.\relax }}{13}
-\contentsline {table}{\numberline {5}{\ignorespaces Test results of proportional brightening with correction for dark spots\relax }}{16}
+\contentsline {table}{\numberline {3}{\ignorespaces Results of \relax }}{12}
+\contentsline {table}{\numberline {4}{\ignorespaces Results of \relax }}{13}
+\contentsline {table}{\numberline {5}{\ignorespaces Results of \relax }}{14}
+\contentsline {table}{\numberline {6}{\ignorespaces Test results of simple addition / subtraction brightening function.\relax }}{15}
+\contentsline {table}{\numberline {7}{\ignorespaces Test results of brightening proportionally based on distance of color to the average.\relax }}{18}
+\contentsline {table}{\numberline {8}{\ignorespaces Test results of proportional brightening with correction for dark spots\relax }}{21}
+\contentsline {table}{\numberline {9}{\ignorespaces Test results of proportional brightening with correction for dark spots\relax }}{24}
+\contentsline {table}{\numberline {10}{\ignorespaces Test results of proportional brightening with correction for dark spots, alpha = 3\relax }}{27}

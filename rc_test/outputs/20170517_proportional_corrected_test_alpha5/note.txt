@@ -1,0 +1,1 @@
+Note: recolor was fixed for this test to take the new average of the hand and not assume the average is equal to the target colour for the dark spot correction. Also, alpha value is printed into the log

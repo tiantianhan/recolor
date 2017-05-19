@@ -1,4 +1,5 @@
-****This is a debug test****
+***This is a debug run****
+
 DEBUG: image name ../inputs/hand_light.jpg
 DEBUG: loaded image  w = 1000 h = 854
 Input params b = 75.38, g = 108.19, r =162.22
@@ -9,5 +10,7 @@ DEBUG: got intermediate name ../rc_test/outputs/debug/hand_light_to_hand_brown
 Using algorithm Piecewise + dark correction
 DEBUG: image average b = 130.08, g = 153.18, r =199.70
 Applying piecewise process...
+DEBUG: new image average b = 78.28, g = 110.76, r =165.38
 Applying darkspot correct process...
+Average b = 78.279386, g = 110.764065, r = 165.384369, Alpha = 5.000000
 Recolor done.

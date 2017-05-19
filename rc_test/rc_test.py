@@ -5,8 +5,8 @@ print "Initializing..."
 recolor_path = "../Debug/./recolor";
 input_path = "../inputs/";
 
-#output_path = "../rc_test/outputs/debug/";
-#test_description = "***This is a debug run****\n\n";
+# output_path = "../rc_test/outputs/debug/";
+# test_description = "***This is a debug run****\n\n";
 # algorithm = "pw_dark_corr"
 
 #output_path = "../rc_test/outputs/20170516_boost_test/";
@@ -17,8 +17,20 @@ input_path = "../inputs/";
 # test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm\n\n";
 # algorithm = "pw"
 
-output_path = "../rc_test/outputs/20170516_proportional_corrected_test/";
-test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots\n\n";
+# output_path = "../rc_test/outputs/20170516_proportional_corrected_test/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots\n\n";
+# algorithm = "pw_dark_corr"
+
+# output_path = "../rc_test/outputs/20170517_proportional_corrected_test_alpha5/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots\n\n";
+# algorithm = "pw_dark_corr"
+
+# output_path = "../rc_test/outputs/20170517_proportional_corrected_test_alpha10/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 10\n\n";
+# algorithm = "pw_dark_corr"
+
+output_path = "../rc_test/outputs/20170517_proportional_corrected_test_alpha3/";
+test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 3\n\n";
 algorithm = "pw_dark_corr"
 
 class HandImage:

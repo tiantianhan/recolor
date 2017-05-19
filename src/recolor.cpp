@@ -136,7 +136,17 @@ int main( int argc, char** argv )
     	piecewise_process(src, dst, target, average);
         //DEBUG draw intermediate
         imwrite(intermed_name + "-pw_intermediate.jpg", dst);
-    	darkcorrect_process(dst, dst, target, 5.0); //using target colour as new average colour
+
+        // Get average colour again
+        if(has_mask){
+        	average = mean(dst, average_col_mask);
+        } else {
+    		Mat average_roi = dst( Rect(dst.rows/2 - 5,dst.rows/2 + 5,10,10) );
+    		average = mean(average_roi);
+    	}
+        printf("DEBUG: new image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
+
+    	darkcorrect_process(dst, dst, average, 3.0); //using target colour as new average colour
     }
 
     //DEBUG, draw average colors

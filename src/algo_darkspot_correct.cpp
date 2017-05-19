@@ -12,6 +12,7 @@ using namespace cv;
 
 int darkcorrect_process(Mat src, Mat dst, Scalar average, double alpha){
 	 printf("Applying darkspot correct process...\n"); cout.flush();
+	 printf("Average b = %f, g = %f, r = %f, Alpha = %f\n", average(0), average(1), average(2), alpha); cout.flush();
 
 	    // process
 	    double src_col = 0.0;

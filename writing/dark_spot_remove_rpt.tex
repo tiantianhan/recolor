@@ -30,8 +30,37 @@
 \pagebreak
 
 \section{Background and Literature Review}
-\subsection{Survey of online methods for changing and matching skin colour in Photoshop}
-%TODO text
+\subsection{Survey of methods for changing and matching skin colour in Photoshop online}
+
+The are a wide range of online video tutorials available for adjusting human skintone using Photoshop. The purposes of these videos include giving the subject of an image the appearance of a tan, matching the skintone of the subject to a desired skintone on another individual, or matching the skintone of a subjects face to the rest of the subject's body, which is often a slightly different colour. We surveyed a range of these videos and summarize the techniques of the most relevant videos with the most realistic results. In Appendix \ref{app:photoshop} are the detailed summary of three of these Photoshop processes.
+
+\subsubsection{Summary of Photoshop techniques}
+
+Levels and curves are frequently used for small brightness adjustments. For large brightness adjustments one technique was found (Appendix Source 1), where the skin area is brightened in a conversion to black and white, and then the luminosity blend mode is used to place the colour back into the image Sometimes highlights and shadows are adjusted separately, curves or the “blend if” function (which blends in an effect only if the pixel is above a certain threshold of brightness) can be used to achieve this effect.
+
+There are many different methods to match colour, the colour may be adjusted separately from the brightness or simultaneously, often one would affect the other. Methods for matching colour include:
+- Matching the ratios of C, M and Y by making adjustments with the selective colour tool
+- Using curves or levels on individual colour channels, adjustments are made either by eye or to numerically match a target color
+
+Often to reduce the vividness of the colour adjustments some adjustment to the saturation must be made.
+
+Often the opacity of the overall effect is reduced for a more natural appearance.
+
+\subsubsection{Limitations of Photoshop techniques}
+Many adjustments are specific to each image and the specific, numerical amount of adjustment often have to be judged by eye
+
+\subsubsection{Plausibility of reproducing the Photoshop effects in OpenCV for this project}
+Many of the common techniques used could probably be reproduced. Specifically, the following can probably be reproduced since the math is understood and specific formulas can be found online: 
+Effects involving levels and curves for adjusting both overall brightness and individual colour channels
+Effects involving adjusting the HSV values
+Effects involving the different blending modes and opacity 
+
+There are however a few common effects used that seem like “black boxes” and might not be reproducible, more research is needed:
+Recreating the effects achieved by using the Black and White adjustment layer
+The selective colour tool
+
+that have a similar purpose to this project and whose effects can plausibly be duplicated.
+
 \pagebreak
 
 \section{Methods}
@@ -228,11 +257,86 @@ We noted however, that this method noticeably does not correct for, and even exa
 
 \subsection{Proportional brightening with dark spot correction}
 
-See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr} for full results.
+\subsubsection{Algorithm}
+We attempted to correct the dark spot issue by significantly reducing the absolute difference between dark pixels and the average colour, ensuring that the dark spots would instead have colours close to the average. We perform this correction on the output of the proportional adjustment algorithm.
+
+\begin{equation} \label{eq:prop_algo}
+  r'' = \left.
+  \begin{dcases}
+    \displaystyle \mean{r'} - \frac{(\mean{r'} - r')}{\alpha}, & \text{for } r' < \mean{r'} \\
+    \displaystyle r', & \text{for } r' \geq \mean{r'} \\
+  \end{dcases}
+  \right.\\
+\end{equation}
+
+Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
+
+\subsubsection{Results}
+See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{app:prop_corr_a3} for full results for a range of values for $\alpha$. %TODO
+
+\subsubsection{Evaluation}
+> there are improvements for dark spots for brown to light hand as expected\\
+> particularly for large alpha, there is no true black in image, so same ``high-key" effect, possibly can get rid of with another curve or peicewise func instead of straight line?
+> algorithm not meant to be used on light hand to dark hand - in fact an opposite effect should be used
 
 \pagebreak
 
 \appendix
+
+\section{Summary of Photoshop techniques for changing skintone from select online video tutorials}
+\subsection{How to Change a Person's Skin Color from Dark to Light in Photoshop}
+\begin{longtable}{|c|c|}
+    \caption{Results of }\\
+    \hline
+    Original & Results \\
+    \hline
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_orig}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_res}
+  \end{minipage} \\
+    \hline
+\end{longtable}
+\pagebreak
+
+\subsection{How to Change a Person's Skin Color from Dark to Light in Photoshop}
+\begin{longtable}{|c||c|c|c|}
+    \caption{Results of }\\
+    \hline
+    Original & Target & Results \\
+    \hline
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_body_orig}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_body_targ}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_body_res}
+  \end{minipage} \\
+    \hline
+\end{longtable}
+\pagebreak
+
+\subsection{How to Change a Person's Skin Color from Dark to Light in Photoshop}
+\begin{longtable}{|c||c|c|c|}
+    \caption{Results of }\\
+    \hline
+    No. & Original & Target & Results \\
+    \hline  \ref{row:prop_test_hand_dark_to_hand_light} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_orig}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_orig}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_res}
+  \end{minipage} \\
+    \hline
+\end{longtable}
+\pagebreak
 
 \section{Complete results for simple brightening}\label{app:boost}
 \input{latex_maker/boost_test-summary}
@@ -242,7 +346,15 @@ See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr} for full r
 \input{latex_maker/prop_test-summary}
 \pagebreak
 
-\section{Complete results for proportional adjustment with darkspot correction}\label{app:prop_corr}
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 10$}\label{app:prop_corr_a10}
 \input{latex_maker/prop_correct_test-summary}
+\pagebreak
+
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_a5}
+\input{latex_maker/prop_correct_test_a5-summary}
+\pagebreak
+
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}\label{app:prop_corr_a3}
+\input{latex_maker/prop_correct_test_a3-summary}
 
 \end{document}
