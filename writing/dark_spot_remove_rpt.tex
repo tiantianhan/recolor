@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage[nottoc]{tocbibind}
+\usepackage[intoc]{nomencl}
 
 %for clickable table of contents
 \usepackage{hyperref}
@@ -34,6 +35,8 @@
 % Reset the rowcntr counter at each new tabular
 \AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
 
+\makenomenclature
+
 \begin{document}
 
 \tableofcontents
@@ -41,6 +44,10 @@
 
 \listoffigures
 \listoftables
+\pagebreak
+
+\renewcommand{\nomname}{List of Symbols}
+\printnomenclature
 \pagebreak
 
 \section{Background and Literature Review}

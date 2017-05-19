@@ -1,6 +1,6 @@
 %boost algo
 \subsubsection*{Algorithm}
-To begin, we performed a simple addition of a value to each of the $rgb$ channels of the hand, such that the average colour of the hand in the processed image is equal to the average col or of the hand in the target image. The algorithm is shown in Equation \ref{eq:boost_algo}.
+To begin, we performed a simple addition of a value to each of the $rgb$ channels of the hand, such that the average colour of the hand in the processed image is equal to the average colour of the hand in the target image. The algorithm is shown in Equation \ref{eq:boost_algo}.
 
 \begin{equation} \label{eq:boost_algo}
 r' = r + \delta_r
@@ -11,6 +11,13 @@ Where
 \begin{equation*}
 \delta_r = \mean{r_t} - \mean{r}
 \end{equation*}
+
+\nomenclature{$r$}{Value of the red channel of a pixel in the original hand image.}
+\nomenclature{$r'$}{Value of the red channel of the pixel after an algorithm is applied.}
+\nomenclature{$\mean{r}$}{Average value of the red channel of the original hand image.}
+\nomenclature{$\mean{r_t}$}{Average value of the red channel of the target hand image.}
+\nomenclature{$g$}{Value of the green channel of a pixel in the original hand image.}
+\nomenclature{$b$}{Value of the blue channel of a pixel in the original hand image.}
 
 With the same equation applying for the $g$ and $b$ channels.
 
