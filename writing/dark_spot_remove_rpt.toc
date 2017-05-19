@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.1}Simple brightness addition / subtraction}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Proportional adjustment relative to average color}{9}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Proportional brightening with dark spot correction}{11}{subsection.2.3}
-\contentsline {section}{References}{12}{section*.18}
+\contentsline {section}{References}{12}{section*.17}
 \contentsline {section}{\numberline {A}Photoshop techniques for changing skintone from select online video tutorials}{13}{appendix.A}
 \contentsline {subsection}{\numberline {A.1}Changing skin colour from dark to light \cite {photoshop:obama}}{13}{subsection.A.1}
 \contentsline {subsection}{\numberline {A.2}Matching the skintones of face and body \cite {photoshop:match_body}}{14}{subsection.A.2}
