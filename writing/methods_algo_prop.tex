@@ -12,10 +12,12 @@ To correct for the effect of the bright spots in the image being over bright and
   \right.
 \end{equation}
 
+
+
 With the same equation applying for the $g$ and $b$ channels.
 
 \subsubsection*{Results}
-The complete results are shown in Table \ref{tab:prop_test} in Appendix \ref{app:prop}, a portion is shown here for convenience.
+The complete results are shown in Table \ref{tab:prop_test} in Appendix \ref{app:prop}, and a portion is shown here for convenience.
 
 \begin{longtable}{|c||c|c|c|}
     \caption*{Portion of test results of adjusting proportionally based on distance of col or to the average from Table \ref{tab:prop_test} in the Appendix \ref{app:prop}}\\
@@ -70,14 +72,14 @@ This method improved the appearance of cases with over-bright spots or ``high-ke
     \centering
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg}
-        \caption{Simple brightening algorithm result}
+        \caption{Simple addition algorithm (Equation \ref{eq:boost_algo})result}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_light.jpg}
-        \caption{Proportional adjustment algorithm result}
+        \caption{Proportional adjustment algorithm (Equation \ref{eq:prop_algo}) result}
     \end{subfigure}
     \caption{Comparison of algorithm \ref{eq:boost_algo} and \ref{eq:prop_algo} results for transforming a dark hand (Figure \ref{img:input_hands_1_dark}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_bright_spot}}
 \end{figure}
 
-We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to algorithm \ref{eq:boost_algo}, the dark spots at the joints and creases of a hand of darker skin tone when it is transformed to a lighter skin tone (Row \ref{row:prop_test_hand_brown_to_hand_light}).
+We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to the simple addition algorithm the dark spots at the joints and creases of a hand of darker skin tone when it is transformed to a lighter skin tone (Row \ref{row:prop_test_hand_brown_to_hand_light}). Other results are similar to the results of the simple addition algorithm.
