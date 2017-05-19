@@ -1,6 +1,6 @@
 %prop algorithm methods
 \subsubsection*{Algorithm}
-To correct for the effect of the bright spots in the image image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the black and white points of the image to the same value, and adjusts the colors in between to match the target average colour. The algorithm is shown in Equation \ref{eq:prop_algo}.
+To correct for the effect of the bright spots in the image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the black and white points of the image to the same value, and adjusts the colours in between to match the target average colour. The algorithm is shown in Equation \ref{eq:prop_algo}.
 
 \begin{equation} \label{eq:prop_algo}
   r' = \left.
@@ -18,7 +18,7 @@ With the same equation applying for the $g$ and $b$ channels.
 The complete results are shown in Table \ref{tab:prop_test} in Appendix \ref{app:prop}, a portion is shown here for convenience.
 
 \begin{longtable}{|c||c|c|c|}
-    \caption*{Portion of test results of adjusting proportionally based on distance of color to the average from Table \ref{tab:prop_test} in the Appendix \ref{app:prop}}\\
+    \caption*{Portion of test results of adjusting proportionally based on distance of col or to the average from Table \ref{tab:prop_test} in the Appendix \ref{app:prop}}\\
     \hline
     No. & Original & Target & Results \\
     \hline  \ref{row:prop_test_hand_dark_to_hand_light} &
@@ -80,4 +80,4 @@ This method improved the appearance of cases with over-bright spots or ``high-ke
     \caption{Comparison of algorithm \ref{eq:boost_algo} and \ref{eq:prop_algo} results for transforming a dark hand (Figure \ref{img:input_hands_1_dark}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_bright_spot}}
 \end{figure}
 
-We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to algorithm \ref{eq:boost_algo}, the dark spots at the joints and creases of a hand of darker skintone when it is transformed to a lighter skintone (Row \ref{row:prop_test_hand_brown_to_hand_light}).
+We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to algorithm \ref{eq:boost_algo}, the dark spots at the joints and creases of a hand of darker skin tone when it is transformed to a lighter skin tone (Row \ref{row:prop_test_hand_brown_to_hand_light}).

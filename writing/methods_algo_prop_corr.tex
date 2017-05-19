@@ -1,0 +1,22 @@
+%proportional corrected algorithm methods
+\subsubsection*{Algorithm}
+We attempted to correct the dark spot issue by significantly reducing the absolute difference between dark pixels and the average colour, ensuring that the dark spots would instead have colours close to the average. We perform this correction on the output of the proportional adjustment algorithm.
+
+\begin{equation} \label{eq:prop_corr_algo}
+  r'' = \left.
+  \begin{dcases}
+    \displaystyle \mean{r'} - \frac{(\mean{r'} - r')}{\alpha}, & \text{for } r' < \mean{r'} \\
+    \displaystyle r', & \text{for } r' \geq \mean{r'} \\
+  \end{dcases}
+  \right.\\
+\end{equation}
+
+Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
+
+\subsubsection*{Results}
+See Table \ref{tab:prop_correct_test} in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{app:prop_corr_a3} for full results for a range of values for $\alpha$. %TODO
+
+\subsubsection*{Evaluation}
+> there are improvements for dark spots for brown to light hand as expected\\
+> particularly for large alpha, there is no true black in image, so same ``high-key" effect, possibly can get rid of with another curve or peicewise func instead of straight line?
+> algorithm not meant to be used on light hand to dark hand - in fact an opposite effect should be used

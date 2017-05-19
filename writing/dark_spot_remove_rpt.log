@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  19 MAY 2017 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  19 MAY 2017 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -643,7 +643,8 @@ k_to_hand_light.jpg used on input line 77.
 (pdftex.def)             Requested size: 155.99762pt x 111.53511pt.
 ) [10 <../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_dark.jp
 g> <../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg>
-]) [11] (./dark_spot_remove_rpt.bbl) [12] (./photoshop_tutorials.tex
+] (./methods_algo_prop_corr.tex)) [11] (./dark_spot_remove_rpt.bbl) [12]
+(./photoshop_tutorials.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 2.
@@ -1207,15 +1208,15 @@ test/outputs/20170516_proportional_test/hand_pale_to_hand_dark.jpg> <../rc_test
 est/outputs/20170516_proportional_test/hand_pale_to_hand_light.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 73.
+(hyperref)                removing `math shift' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 73.
+(hyperref)                removing `\alpha' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 73.
+(hyperref)                removing `math shift' on input line 72.
 
 (./latex_maker/prop_correct_test-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
@@ -1468,15 +1469,15 @@ n.jpg>]) [24 <../rc_test/outputs/20170516_proportional_corrected_test/hand_pale
 _to_hand_light.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 77.
+(hyperref)                removing `math shift' on input line 76.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 77.
+(hyperref)                removing `\alpha' on input line 76.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 77.
+(hyperref)                removing `math shift' on input line 76.
 
 (./latex_maker/prop_correct_test_a5-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
@@ -1734,15 +1735,15 @@ own.jpg>]) [27 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/
 hand_pale_to_hand_light.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 80.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 81.
+(hyperref)                removing `\alpha' on input line 80.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 80.
 
 (./latex_maker/prop_correct_test_a3-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
@@ -1997,24 +1998,24 @@ portional_corrected_test_alpha3/hand_light_to_hand_pale.jpg> <../rc_test/output
 s/20170517_proportional_corrected_test_alpha3/hand_pale_to_hand_dark.jpg> <../r
 c_test/outputs/20170517_proportional_corrected_test_alpha3/hand_pale_to_hand_br
 own.jpg>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
  [30 <../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_pale_
 to_hand_light.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (./dark_spot_remove_rpt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `dark_spot_remove_rpt.out' has not changed.
-(rerunfilecheck)             Checksum: 9334D4589AA12FCFE043BB5B9F0AA1E7;1620.
+(rerunfilecheck)             Checksum: EDD660E27230E61A2A5C96AA1DE1135F;1621.
  ) 
 Here is how much of TeX's memory you used:
- 8578 strings out of 494447
- 150441 string characters out of 6166766
+ 8581 strings out of 494447
+ 150517 string characters out of 6166766
  237399 words of memory out of 5000000
  11617 multiletter control sequences out of 15000+600000
  9707 words of font info for 35 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,13n,49p,961b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,49p,965b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mex10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -2025,7 +2026,7 @@ sfonts/cm/cmr10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public
 lic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb>
-Output written on dark_spot_remove_rpt.pdf (30 pages, 7247265 bytes).
+Output written on dark_spot_remove_rpt.pdf (30 pages, 7247283 bytes).
 PDF statistics:
  589 PDF objects out of 1000 (max. 8388607)
  445 compressed objects within 5 object streams
