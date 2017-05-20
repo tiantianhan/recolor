@@ -5,15 +5,16 @@
 \contentsline {subsection}{\numberline {1.1}Survey of methods for changing and matching skin colour in Photoshop}{5}{subsection.1.1}
 \contentsline {section}{\numberline {2}Methods}{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}Simple brightness addition / subtraction}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Proportional adjustment relative to average col or}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Proportional brightening with dark spot correction}{12}{subsection.2.3}
-\contentsline {section}{References}{13}{section*.18}
-\contentsline {section}{\numberline {A}Photoshop techniques for changing skintone from select online video tutorials}{14}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Changing skin colour from dark to light \cite {photoshop:obama}}{14}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Matching the skintones of face and body \cite {photoshop:match_body}}{15}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Matching the skintones of portraits of different people \cite {photoshop:match_other} }{16}{subsection.A.3}
-\contentsline {section}{\numberline {B}Complete results for simple brightening}{17}{appendix.B}
-\contentsline {section}{\numberline {C}Complete results for proportional brightness adjustment}{20}{appendix.C}
-\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 10$}{23}{appendix.D}
-\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 5$}{26}{appendix.E}
-\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}{29}{appendix.F}
+\contentsline {subsection}{\numberline {2.2}Proportional adjustment relative to average color}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Proportional adjustment with dark spot correction}{12}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Next iteration}{14}{subsection.2.4}
+\contentsline {section}{References}{15}{section*.19}
+\contentsline {section}{\numberline {A}Photoshop techniques for changing skintone from select online video tutorials}{16}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Changing skin colour from dark to light \cite {photoshop:obama}}{16}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Matching the skintones of face and body \cite {photoshop:match_body}}{17}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Matching the skintones of portraits of different people \cite {photoshop:match_other} }{18}{subsection.A.3}
+\contentsline {section}{\numberline {B}Complete results for simple brightening}{19}{appendix.B}
+\contentsline {section}{\numberline {C}Complete results for proportional brightness adjustment}{22}{appendix.C}
+\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 10$}{25}{appendix.D}
+\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 5$}{28}{appendix.E}
+\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}{31}{appendix.F}
