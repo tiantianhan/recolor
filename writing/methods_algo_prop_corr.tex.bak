@@ -12,7 +12,7 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 \end{equation}
 
 \nomenclature{$r''$}{Value of the red channel of the pixel after a second algorithm is applied.}
-\nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputted by the first algorithm.}
+\nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputed by the first algorithm.}
 
 Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
 

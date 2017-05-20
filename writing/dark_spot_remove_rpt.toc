@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {A.1}Changing skin colour from dark to light \cite {photoshop:obama}}{16}{subsection.A.1}
 \contentsline {subsection}{\numberline {A.2}Matching the skintones of face and body \cite {photoshop:match_body}}{17}{subsection.A.2}
 \contentsline {subsection}{\numberline {A.3}Matching the skintones of portraits of different people \cite {photoshop:match_other} }{18}{subsection.A.3}
-\contentsline {section}{\numberline {B}Complete results for simple brightening}{19}{appendix.B}
-\contentsline {section}{\numberline {C}Complete results for proportional brightness adjustment}{22}{appendix.C}
-\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 10$}{25}{appendix.D}
-\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 5$}{28}{appendix.E}
-\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}{31}{appendix.F}
+\contentsline {section}{\numberline {B}Complete results for simple brightening}{20}{appendix.B}
+\contentsline {section}{\numberline {C}Complete results for proportional brightness adjustment}{23}{appendix.C}
+\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 10$}{26}{appendix.D}
+\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 5$}{29}{appendix.E}
+\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 3$}{32}{appendix.F}
