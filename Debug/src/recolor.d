@@ -54,7 +54,7 @@ src/recolor.o: ../src/recolor.cpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/imgproc/imgproc.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp \
   ../src/algo_piecewise.hpp ../src/algo_linear.hpp \
-  ../src/algo_darkspot_correct.hpp ../src/algo_flags.hpp \
+  ../src/algo_darkspot_correct.hpp ../src/recolor_flags.hpp \
   ../src/utils.hpp
 
 /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp:
@@ -171,6 +171,6 @@ src/recolor.o: ../src/recolor.cpp \
 
 ../src/algo_darkspot_correct.hpp:
 
-../src/algo_flags.hpp:
+../src/recolor_flags.hpp:
 
 ../src/utils.hpp:
