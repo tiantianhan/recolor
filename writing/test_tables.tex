@@ -3,6 +3,37 @@
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{etoolbox}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[nottoc]{tocbibind}
+\usepackage[intoc]{nomencl}
+
+%for clickable table of contents
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%define command for symbol denoting "average of"
+\newcommand*\mean[1]{\bar{#1}}
+
+%paragraph spacing and indentation
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+%counter for numbering the rows of tables
+\newcounter{rowcntr}[table]
+\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
+% A new columntype to apply automatic stepping
+\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
+% Reset the rowcntr counter at each new tabular
+\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
 
 \begin{document}
 
@@ -10,9 +41,9 @@
 \listoftables
 
 \section{Test Labels}
-Testing... Expecting Row 2 of Tabel 1: Row \ref{row:results_xx_2} of Table \ref{tab:results_xx} 
+Testing brown to light label: \ref{row:prop_correct_test_a1p5_hand_brown_to_hand_light}
 
 \section{Test Appendix}
-\input{test_tables-content}
+\input{latex_maker/prop_correct_test_a1p5-summary.tex}
 
 \end{document}
