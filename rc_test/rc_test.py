@@ -41,10 +41,25 @@ debug = True
 # algorithm = "pw_dark_corr"
 # alpha = 3
 
-output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/";
-test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.5\n\n";
+# output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.5\n\n";
+# algorithm = "pw_dark_corr"
+# alpha = 1.5
+
+# output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170522_proportional_corrected_test_alpha1p3/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.3\n\n";
+# algorithm = "pw_dark_corr"
+# alpha = 1.3
+
+# output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170522_proportional_corrected_test_alpha1p2/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.2\n\n";
+# algorithm = "pw_dark_corr"
+# alpha = 1.2
+
+output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/";
+test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.1\n\n";
 algorithm = "pw_dark_corr"
-alpha = 1.5
+alpha = 1.1
 
 class HandImage:
 	name = ""
