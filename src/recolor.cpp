@@ -6,6 +6,7 @@
 #include "algo_piecewise.hpp"
 #include "algo_linear.hpp"
 #include "algo_darkspot_correct.hpp"
+#include "algo_average_col.hpp"
 #include "recolor_flags.hpp"
 
 #include "utils.hpp"
@@ -170,12 +171,18 @@ int main( int argc, char** argv )
 
     // average colours
     Scalar target;
+    Scalar test = Scalar(0, 0, 0);
     if(has_targ_mask){
     	target = mean(targ, targ_ave_col_mask);
+
+		//DEBUG, testing
+		printf("TESTING average_brightest\n"); cout.flush();
+		test = average_brightest(targ, targ_ave_col_mask, 0.5);
     } else {
 		Mat average_roi = src( Rect(targ.rows/2 - 5, targ.rows/2 + 5,10,10) );
 		target = mean(average_roi);
     }
+    printf("TESTING average_brightest %f %f %f\n", test(0), test(1), test(2)); cout.flush();
     printf("Target image average b = %.2f, g = %.2f, r =%.2f\n", target(0), target(1), target(2)); cout.flush();
 
     Scalar average;
