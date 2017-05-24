@@ -12,21 +12,17 @@ using namespace cv;
 using namespace std;
 
 //helpers
-double median(Mat channel, Mat mask);
+double percentile(Mat channel, Mat mask, double perc);
 
 Scalar average_brightest(Mat image, Mat mask, double fraction){
 	printf("Finding average of brightest %f fraction\n", fraction); cout.flush();
-	if(fraction != 0.5){ //TODO
-		perror("average_brightest: only percent = 0.5 implemented");
-		return NULL;
-	}
 
 	// find percentile color
 	Mat grey;
 	cvtColor(image, grey, CV_BGR2GRAY);
 	//DEBUG
 	imwrite("outputs/grey.jpg", grey);
-	double perc_col = median(grey, mask);
+	double perc_col = percentile(grey, mask, (1.0 - fraction));
 
 	printf("Got median = %f\n", perc_col); cout.flush();
 
@@ -36,7 +32,6 @@ Scalar average_brightest(Mat image, Mat mask, double fraction){
 	threshold(grey, brightest_mask, perc_col, 255, THRESH_BINARY);
 	//DEBUG
 	imwrite("outputs/brightest_mask.jpg", brightest_mask);
-
 
 	// merge the two masks
 	Mat result_mask;
@@ -49,11 +44,11 @@ Scalar average_brightest(Mat image, Mat mask, double fraction){
 }
 
 
-// calculates the median color of a 1 channel image
+// calculates the color at a given percentile (median = 0.5) of a 1 channel image
 // based on https://gist.github.com/heisters/9cd68181397fbd35031b
-double median(Mat channel, Mat mask)
+double percentile(Mat channel, Mat mask, double perc)
 {
-    double m = countNonZero(mask) / 2.0;
+    double m = countNonZero(mask) * perc;
     int bin = 0;
     double med = -1.0;
 

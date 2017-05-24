@@ -26,6 +26,7 @@ int main( int argc, char** argv )
 			"-ofile file_path_to_output "
 			"-algo algorithm "
 			"-alpha alpha\n"
+			"-aveperc average_percentile"
 			"    input_file_path: path from current location to input image\n"
 			"    target_file_path: path from current location to target image\n"
 			"    -d  use flag to indicate debug mode\n"
@@ -39,7 +40,9 @@ int main( int argc, char** argv )
 					"Otherwise saved in default outputs/ folder \n"
 			"    algorithm (optional): can be linear, pw or pw_dark_corr."
 					"If not give or name is invalid pw_dark_corr is used by default\n"
-			"    alpha (optional): only used for pw_dark_corr algorithm, the alpha value for the correction\n";
+			"    alpha (optional): only used for pw_dark_corr algorithm, the alpha value for the correction\n"
+			"    average_percentile (optional): the percentile of brightest pixels used for finding the "
+					"average color of the target hand. 100 percent uses all pixels for finding the average.\n";
 
 	if(argc < MIN_ARGS || argc > MAX_ARGS){
     	printf("%s", usage.c_str()); cout.flush();
@@ -89,6 +92,10 @@ int main( int argc, char** argv )
 
     // default alpha
     double alpha = ALPHA_DEFAULT;
+
+    // default ave_perc
+    double ave_perc = AVE_PERC_DEFAULT;
+    bool do_ave_perc = false;
 
     // get optional flags without arguments
     for(int i = MIN_ARGS; i < argc; i++){
@@ -161,28 +168,34 @@ int main( int argc, char** argv )
         }
 
         if(strcmp(argv[i], "-alpha") == 0){
-        	// Load input params
         	alpha = atof(argv[i+1]);
 
-			// show input params
 			printf("Set alpha = %f\n", alpha); cout.flush();
+        }
+
+        if(strcmp(argv[i], "-aveperc") == 0){
+        	ave_perc = atof(argv[i+1]);
+        	do_ave_perc = true;
+
+			// show input params
+			printf("Set percentile for getting average color = %f\n", ave_perc); cout.flush();
         }
     }
 
     // average colours
     Scalar target;
-    Scalar test = Scalar(0, 0, 0);
-    if(has_targ_mask){
-    	target = mean(targ, targ_ave_col_mask);
-
-		//DEBUG, testing
-		printf("TESTING average_brightest\n"); cout.flush();
-		test = average_brightest(targ, targ_ave_col_mask, 0.5);
-    } else {
-		Mat average_roi = src( Rect(targ.rows/2 - 5, targ.rows/2 + 5,10,10) );
-		target = mean(average_roi);
+    // if no mask for getting average, create one
+    if(!has_targ_mask){
+    	targ_ave_col_mask = Mat::zeros(targ.rows, targ.cols, CV_8UC1);
+    	rectangle(targ_ave_col_mask, Rect(targ.cols/2 + 5, targ.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
     }
-    printf("TESTING average_brightest %f %f %f\n", test(0), test(1), test(2)); cout.flush();
+
+    if(do_ave_perc){
+    	target = average_brightest(targ, targ_ave_col_mask, ave_perc / 100.0);
+    } else {
+    	target = mean(targ, targ_ave_col_mask);
+    }
+
     printf("Target image average b = %.2f, g = %.2f, r =%.2f\n", target(0), target(1), target(2)); cout.flush();
 
     Scalar average;

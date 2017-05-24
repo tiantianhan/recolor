@@ -14,9 +14,10 @@ const int PIECEWISE = 2;
 const int PIECEWISE_DARKSPOT = 3;
 
 const int MIN_ARGS = 3;
-const int MAX_ARGS = 14;
+const int MAX_ARGS = 16;
 
 const int ALGO_DEFAULT = 3;
-const int ALPHA_DEFAULT = 10;
+const int ALPHA_DEFAULT = 1;
+const int AVE_PERC_DEFAULT = 100;
 
 #endif /* RECOLOR_FLAGS_HPP_ */
