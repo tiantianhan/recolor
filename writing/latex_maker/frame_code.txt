@@ -1,7 +1,0 @@
-\begin{longtable}{|N||c|c|c|}
-	\caption{PY_DESC\label{tab:PY_NAME}}\\
-	\hline
-	\multicolumn{1}{|c||}{No.} & Original & Target & Results \\ 
-	\hline
-	  PY_INSERT_ROWS
- \end{longtable}

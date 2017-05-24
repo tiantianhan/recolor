@@ -1,0 +1,7 @@
+\begin{longtable}{|N||c|c|c|}
+	\caption{}\\
+	\hline
+	\multicolumn{1}{|c||}{No.} & Original & Target & Result \\ 
+	\hline
+PY_INSERT_ROWS
+ \end{longtable}
