@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 print "Initializing..."
 #config TODO - put this in a config file that the tester reads?
@@ -7,6 +8,7 @@ input_path = "/Users/tina/projects/recolor/inputs/";
 
 #defaults
 alpha = -1
+average_perc = 100
 debug = True
 
 # output_path = "/Users/tina/projects/recolor/rc_test/outputs/debug/";
@@ -56,8 +58,13 @@ debug = True
 # algorithm = "pw_dark_corr"
 # alpha = 1.2
 
-output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/";
-test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.1\n\n";
+# output_path = "/Users/tina/projects/recolor/rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/";
+# test_description = "Full test of all hands in dataset 1 with proportional brightening algorithm and correction for dark spots, alpha = 1.1\n\n";
+# algorithm = "pw_dark_corr"
+# alpha = 1.1
+
+output_path = "" #to be set
+test_description = "" #to be set
 algorithm = "pw_dark_corr"
 alpha = 1.1
 
@@ -97,7 +104,8 @@ def test_recol(orig_hand, target_hand):
 		"-inmask", input_path + orig_hand.maskpath, \
 		"-targmask", input_path + target_hand.maskpath, \
 		"-ofile", output_path + output_name, \
-		"-algo", algorithm];
+		"-algo", algorithm, \
+		"-aveperc", str(average_perc)];
 
 	if algorithm == "pw_dark_corr":
 		input_args.extend(["-alpha", str(alpha)])
@@ -113,20 +121,33 @@ def test_recol(orig_hand, target_hand):
 
 	log(output_path + output_name + "-log.txt", test_description + recol_out)
 
+def test_all():
+	"""Perform recolor test for all hands"""
+	test_recol(hands['hand_dark'], hands['hand_brown']);
+	test_recol(hands['hand_dark'], hands['hand_light']);
+	test_recol(hands['hand_dark'], hands['hand_pale']);
+
+	test_recol(hands['hand_brown'], hands['hand_dark']);
+	test_recol(hands['hand_brown'], hands['hand_light']);
+	test_recol(hands['hand_brown'], hands['hand_pale']);
+
+	test_recol(hands['hand_light'], hands['hand_dark']);
+	test_recol(hands['hand_light'], hands['hand_brown']);
+	test_recol(hands['hand_light'], hands['hand_pale']);
+
+	test_recol(hands['hand_pale'], hands['hand_dark']);
+	test_recol(hands['hand_pale'], hands['hand_brown']);
+	test_recol(hands['hand_pale'], hands['hand_light']);
+
 print "Testing recolor..."
+test_average_percs = [5, 10, 25, 100];
+for perc in test_average_percs:
+	output_path = """/Users/tina/projects/recolor/rc_test/outputs/20170524_prop_corr_1p1_ave_{}/""".format(str(perc).replace(".", "p"))
+	test_description = """Full test of all hands with proportional brightening and darkspot correction, 
+		taking average of target from a percentile, alpha = 1.1, percentile for averaging = {}""".format(str(perc))
+	
+	if not os.path.exists(output_path):
+		os.makedirs(output_path)
 
-test_recol(hands['hand_dark'], hands['hand_brown']);
-test_recol(hands['hand_dark'], hands['hand_light']);
-test_recol(hands['hand_dark'], hands['hand_pale']);
-
-test_recol(hands['hand_brown'], hands['hand_dark']);
-test_recol(hands['hand_brown'], hands['hand_light']);
-test_recol(hands['hand_brown'], hands['hand_pale']);
-
-test_recol(hands['hand_light'], hands['hand_dark']);
-test_recol(hands['hand_light'], hands['hand_brown']);
-test_recol(hands['hand_light'], hands['hand_pale']);
-
-test_recol(hands['hand_pale'], hands['hand_dark']);
-test_recol(hands['hand_pale'], hands['hand_brown']);
-test_recol(hands['hand_pale'], hands['hand_light']);
+	average_perc = perc
+	test_all();

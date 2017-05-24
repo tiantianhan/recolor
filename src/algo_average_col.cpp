@@ -15,29 +15,23 @@ using namespace std;
 double percentile(Mat channel, Mat mask, double perc);
 
 Scalar average_brightest(Mat image, Mat mask, double fraction){
-	printf("Finding average of brightest %f fraction\n", fraction); cout.flush();
+	printf("Finding average of brightest %f fraction...\n", fraction); cout.flush();
 
 	// find percentile color
 	Mat grey;
 	cvtColor(image, grey, CV_BGR2GRAY);
-	//DEBUG
-	imwrite("outputs/grey.jpg", grey);
 	double perc_col = percentile(grey, mask, (1.0 - fraction));
 
-	printf("Got median = %f\n", perc_col); cout.flush();
+	printf("Got percentile color = %f\n", perc_col); cout.flush();
 
 	// find mask of pixels above percentile
 	//threshold( src_gray, dst, threshold_value, max_BINARY_value,threshold_type );
 	Mat brightest_mask;
 	threshold(grey, brightest_mask, perc_col, 255, THRESH_BINARY);
-	//DEBUG
-	imwrite("outputs/brightest_mask.jpg", brightest_mask);
 
 	// merge the two masks
 	Mat result_mask;
 	bitwise_and(brightest_mask,mask,result_mask);
-	//DEBUG
-	imwrite("outputs/new_ave_mask.jpg", result_mask);
 
 	Scalar result = mean(image, result_mask);
 	return result;

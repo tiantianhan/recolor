@@ -195,16 +195,22 @@ int main( int argc, char** argv )
     } else {
     	target = mean(targ, targ_ave_col_mask);
     }
+    //DEBUG
+    imwrite("outputs/targ_ave_col_mask.jpg", targ_ave_col_mask);
 
     printf("Target image average b = %.2f, g = %.2f, r =%.2f\n", target(0), target(1), target(2)); cout.flush();
 
     Scalar average;
-    if(has_in_mask){
-    	average = mean(src, in_ave_col_mask);
-    } else {
-		Mat average_roi = src( Rect(src.rows/2 - 5,src.rows/2 + 5,10,10) );
-		average = mean(average_roi);
-	}
+    // if no mask for getting average, create one
+    if(!has_in_mask){
+    	in_ave_col_mask = Mat::zeros(src.rows, src.cols, CV_8UC1);
+    	rectangle(in_ave_col_mask, Rect(src.cols/2 + 5, src.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
+    }
+
+    //DEBUG
+    imwrite("outputs/in_ave_col_mask.jpg", in_ave_col_mask);
+
+    average = mean(src, in_ave_col_mask);
     printf("Input image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
 
     // process
@@ -224,18 +230,13 @@ int main( int argc, char** argv )
     	}
 
         // Get average colour again
-        if(has_in_mask){
-        	average = mean(dst, in_ave_col_mask);
-        } else {
-    		Mat average_roi = dst( Rect(dst.rows/2 - 5,dst.rows/2 + 5,10,10) );
-    		average = mean(average_roi);
-    	}
+    	Scalar average2 = mean(dst, in_ave_col_mask);
 
         if(is_debug){
-        	printf("DEBUG: new image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
+        	printf("DEBUG: new image average b = %.2f, g = %.2f, r =%.2f\n", average2(0), average2(1), average2(2)); cout.flush();
         }
 
-    	darkcorrect_process(dst, dst, average, alpha); //using target colour as new average colour
+    	darkcorrect_process(dst, dst, average2, alpha); //using target colour as new average colour
     }
 
     if(is_debug){
