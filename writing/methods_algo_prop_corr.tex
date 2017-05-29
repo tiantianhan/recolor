@@ -17,13 +17,13 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
 
 \subsubsection*{Results}
-See Tables in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{app:prop_corr_a3} for complete results for a range of values for $\alpha$. A portion of the results for $\alpha = 3$ is reproduced here for convenience.
+See Tables in Appendix \ref{app:prop_corr_a1p1}, for the complete results for $\alpha = 1.1$. A portion of the results is reproduced here for convenience.
 
 \begin{longtable}{|c||c|c|c|}
-    \caption*{Test results of proportional adjusting with correction for dark spots, alpha = 3 from Table \ref{tab:prop_correct_test_a3} in the Appendix \ref{app:prop_corr_a3}}\\
+    \caption*{Test results of proportional adjusting with correction for dark spots, $\alpha = 1.1$ from Table \ref{tab:prop_correct_test_a1p1} in the Appendix \ref{app:prop_corr_a1p1}}\\
     \hline
     No. & Original & Target & Results \\
-    \hline  \ref{row:prop_correct_test_a3_hand_dark_to_hand_brown} &
+    \hline  \ref{row:prop_correct_test_a1p1_hand_dark_to_hand_brown} &
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_dark.jpg}
   \end{minipage} & 
@@ -31,9 +31,9 @@ See Tables in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_light.jpg}
   \end{minipage} & 
   \begin{minipage}{.29\textwidth}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_dark_to_hand_light.jpg}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_dark_to_hand_light.jpg}
   \end{minipage} \\
-    \hline  \ref{row:prop_correct_test_a3_hand_brown_to_hand_dark} &
+    \hline  \ref{row:prop_correct_test_a1p1_hand_brown_to_hand_dark} &
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_brown.jpg}
   \end{minipage} & 
@@ -41,9 +41,9 @@ See Tables in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_dark.jpg}
   \end{minipage} & 
   \begin{minipage}{.29\textwidth}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_brown_to_hand_dark.jpg}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_dark.jpg}
   \end{minipage} \\
-\hline  \ref{row:prop_correct_test_a3_hand_brown_to_hand_light} &
+\hline  \ref{row:prop_correct_test_a1p1_hand_brown_to_hand_light} &
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_brown.jpg}
   \end{minipage} & 
@@ -51,9 +51,9 @@ See Tables in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_light.jpg}
   \end{minipage} & 
   \begin{minipage}{.29\textwidth}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_brown_to_hand_light.jpg}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_light.jpg}
   \end{minipage} \\
-  \hline  \ref{row:prop_correct_test_a3_hand_brown_to_hand_pale} &
+  \hline  \ref{row:prop_correct_test_a1p1_hand_brown_to_hand_pale} &
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_brown.jpg}
   \end{minipage} & 
@@ -61,7 +61,7 @@ See Tables in Appendix \ref{app:prop_corr_a10}, \ref{app:prop_corr_a5} and \ref{
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_pale.jpg}
   \end{minipage} & 
   \begin{minipage}{.29\textwidth}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_brown_to_hand_pale.jpg}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_pale.jpg}
   \end{minipage} \\
     \hline
 \end{longtable}
@@ -77,14 +77,12 @@ As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.40\textwidth}
-        \includegraphics[width=\textwidth]{../rc_test/outputs/20170517_proportional_corrected_test_alpha3/hand_brown_to_hand_light.jpg}
+        \includegraphics[width=\textwidth]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_light.jpg}
         \caption{Proportional adjustment algorithm with correction (Equation \ref{eq:prop_corr_algo}) result}
     \end{subfigure}
     \caption{Comparison of algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
 \end{figure}
 
-However, we have noted that even for the more lower strength effect where $\alpha = 3$, this process brings back the problem where true black is eliminated from the image, making the image appear to be without shadows (See Row \ref{row:prop_correct_test_a3_hand_dark_to_hand_brown} and \ref{row:prop_correct_test_a3_hand_brown_to_hand_light}). 
+We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
 
-Also, it should be noted that for completeness, we performed this algorithm on all possible combinations of hand images, even though it was intended for cases where the original image is of a skin tone darker than the target image. 
-
-Interestingly, in a couple of cases of transformation from lighter skin tone to darker skin tone, the hand takes on a darker colour around joints in a similar manner to how a hand of dark skin tone is naturally coloured, though the algorithm was not intended for this purpose (See Row \ref{row:prop_correct_test_a3_hand_brown_to_hand_dark} as well as \ref{row:prop_correct_test_a3_hand_light_to_hand_dark}, \ref{row:prop_correct_test_a3_hand_light_to_hand_brown}). This is not always the case, however. Row \ref{row:prop_correct_test_a3_hand_pale_to_hand_dark} does not seem to exhibit this effect, possibly due to the different lighting of the hand in the image.
+Up to the current iteration the more extreme changes of luminosity, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} may be causing the average colour of the entire hand to be of lower luminosity than it should be. 

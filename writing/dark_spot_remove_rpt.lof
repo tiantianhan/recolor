@@ -1,3 +1,0 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Different hand images used for testing\relax }}{7}{figure.caption.7}
-\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of algorithms \ref {eq:boost_algo} and \ref {eq:prop_algo} results for transforming a dark hand (Figure \ref {img:input_hands_1_dark}) to a light hand (Figure \ref {img:input_hands_1_light}).\relax }}{11}{figure.caption.14}
-\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of algorithms \ref {eq:prop_algo} and \ref {eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref {img:input_hands_1_brown}) to a light hand (Figure \ref {img:input_hands_1_light}).\relax }}{13}{figure.caption.18}
