@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  15 JUN 2017 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  15 JUN 2017 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -53,21 +53,30 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
 (./proposal.aux)
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -106,26 +115,23 @@ LaTeX Font Info:    ... okay on input line 8.
 [1
 
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./proposal.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 24.
-
-) [2] (./proposal.aux) ) 
+(./proposal.bbl) [2] (./proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 736 strings out of 494447
- 10238 string characters out of 6166766
- 68049 words of memory out of 5000000
- 4132 multiletter control sequences out of 15000+600000
- 4544 words of font info for 17 fonts, out of 8000000 for 9000
+ 935 strings out of 494447
+ 13053 string characters out of 6166766
+ 70917 words of memory out of 5000000
+ 4323 multiletter control sequences out of 15000+600000
+ 5198 words of font info for 19 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 24i,4n,32p,875b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb>
-Output written on proposal.pdf (2 pages, 31858 bytes).
+ 24i,4n,32p,722b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on proposal.pdf (2 pages, 48653 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
- 12 compressed objects within 1 object stream
+ 23 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

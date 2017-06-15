@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposal.aux
 The style file: IEEEtran.bst
-I found no \citation commands---while reading file proposal.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -13,47 +12,48 @@ Database file #2: my_references.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in pitie_2005_pdf
 
 Done.
-You've used 0 entries,
+You've used 4 entries,
             4024 wiz_defined-function locations,
-            1176 strings with 14315 characters,
-and the built_in function-call counts, 103 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 19
-:= -- 26
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 3
+            1209 strings with 15148 characters,
+and the built_in function-call counts, 4155 in all, are:
+= -- 335
+> -- 102
+< -- 45
++ -- 57
+- -- 16
+* -- 228
+:= -- 612
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 102
+cite$ -- 5
+duplicate$ -- 271
+empty$ -- 291
+format.name$ -- 20
+if$ -- 947
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 23
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 4
+missing$ -- 44
+newline$ -- 39
+num.names$ -- 4
+pop$ -- 90
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1
+skip$ -- 311
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 241
+swap$ -- 259
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 22
-(There was 1 error message)
+type$ -- 4
+warning$ -- 1
+while$ -- 17
+width$ -- 5
+write$ -- 70
+(There was 1 warning)
