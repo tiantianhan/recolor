@@ -21,10 +21,22 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{zhang_2017_try}
+T.~Zhang, L.~Cao, and W.~Y. Wang, ``The impact of virtual try-on image
+  interaction technology on online shoppers' purchase decision,'' in
+  \emph{Proceedings of the 8th International Conference on E-Education,
+  E-Business, E-Management and E-Learning}, ser. IC4E '17.\hskip 1em plus 0.5em
+  minus 0.4em\relax New York, NY, USA: ACM, 2017, pp. 6--10.
+
 \bibitem{shilkrot_2013_garment}
 R.~Shilkrot, D.~Cohen-Or, A.~Shamir, and L.~Liu, ``Garment personalization via
   identity transfer,'' \emph{IEEE Computer Graphics and Applications}, vol.~33,
   no.~4, pp. 62--72, July 2013.
+
+\bibitem{li_2015_replace}
+L.~Jun, Z.~Mingmin, and P.~Zhigeng, ``Virtual try-on by replacing the person in
+  image,'' \emph{J. Comput. Aided Des. Comput. Graph. (China)}, vol.~27, no.~9,
+  pp. 1694 -- 700, Sept. 2015.
 
 \bibitem{reinhard_2001_transfer}
 E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
@@ -32,19 +44,26 @@ E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
   34--41, Sep. 2011.
 
 \bibitem{pitie_2005_pdf}
-\BIBentryALTinterwordspacing
 F.~Pitie, A.~C. Kokaram, and R.~Dahyot, ``N-dimensional probability density
   function transfer and its application to colour transfer,'' vol.~II, 2005,
-  pp. 1434 -- 1439. [Online]. Available:
-  \url{http://dx.doi.org/10.1109/ICCV.2005.166}
-\BIBentrySTDinterwordspacing
+  pp. 1434 -- 1439.
 
 \bibitem{chang_2015_palette}
-\BIBentryALTinterwordspacing
 H.~Chang, O.~Fried, Y.~Liu, S.~DiVerdi, and A.~Finkelstein, ``Palette-based
   photo recoloring,'' \emph{ACM Trans. Graph.}, vol.~34, no.~4, pp.
-  139:1--139:11, Jul. 2015. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/2766978}
-\BIBentrySTDinterwordspacing
+  139:1--139:11, Jul. 2015.
+
+\bibitem{yin_2004_transfer}
+L.~Yin, J.~Jia, and J.~Morrissey, ``\BIBforeignlanguage{English}{Towards
+  race-related face identification: Research on skin color transfer},'' Seoul,
+  Korea, Republic of, 2004, pp. 362 -- 368.
+
+\bibitem{seo_2005_transfer}
+K.~C. Seo, G.~Shin, and S.~W. Lee, ``Interactive transfer of human facial
+  color,'' in \emph{Advances in Multimedia Information Processing - PCM 2005:
+  6th Pacific Rim Conference on Multimedia, Jeju Island, Korea, November 13-16,
+  2005, Proceedings, Part II}, Y.-S. Ho and H.-J. Kim, Eds.\hskip 1em plus
+  0.5em minus 0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2005,
+  pp. 993--1003.
 
 \end{thebibliography}
