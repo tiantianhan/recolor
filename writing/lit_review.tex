@@ -1,8 +1,34 @@
 %literature review
-\section{Related studies}
+\section{Related prior work}
 
-%intro: relevant prior work fall into four rough categories. There is a large body of work on the subject of general automatic colour transfer and colour grading by example, transfering the "style" or specific colours in an example image to another image. There have been several prior attempts at transfering specifically images wherein skin colour is prominent, and these we will discuss in detail. There are also several examples of practical application of skin transfer algorithms, where different application demonstrate practical uses of usually relatively simple skin transfer algorithm that is part of a larger project, we will discuss several of these projects. Finally, there is the field of skintone enhancement software, where algorithms are usually intended to adjust the user skin colour towards a more pleasing tone and not to a specific target colour. We include the latter because unlike the other categories of prior work there are several studies of adjusting skintone on a mobile device, which is part of the requirements for this project.
+Relevant prior work fall into four rough categories. There is a large body of work on the subject of general automatic colour transfer and colour grading by example, transfering the ``style" or specific colours in an example image to another image. There have been several prior attempts at transfering specifically images wherein skin colour is prominent, and these we will discuss in detail. There are also several examples of practical application of skin transfer algorithms, where different application demonstrate practical uses of usually relatively simple skin transfer algorithm that is part of a larger project; we will discuss several of these projects. Finally, there is the field of skintone enhancement software, where algorithms are usually intended to adjust the user skin colour towards a more pleasing tone and not to a specific target colour. We include the latter because unlike the other categories of prior work there are several studies of adjusting skintone on a mobile device, which is part of the requirements for this project.
 
-%related concepts. Color transfer.
+\section{Colour transfer by example image for general images}
+Colour transfer refers to modifying the colours of an image to give it the desired appearance and style demonstrated by an example image, which we will refer to as the target image. Figure \ref{fig:color_transfer} illustrates an example of this effect.
+
+There have been a wide range of work done in this area beginning with the seminal work of Reinhard et al. in 2001 \cite{reinhard_2001_transfer}. 
+
+While these techniques are interesting possibilities to try when transfering human skin colour, because the these prior studies are all concerned with different problems that can arise with general images but not specifically for human skin colour, studies that specifically relate to human skin colour demonstrate that the general colour transfer techniques can be improved upon.
+
+\section{Transfer of human skin colour}
+Several studies have been done specifically on the transfer of human skin colour.
+
+Seo et al. \cite{seo_2005_transfer} has a purpose closest to the purpose of this project, to transfer human skin colours. The authors show results that improve in realistic appearance compared to the Reinhard's algorithm.
+
+%models the skin as ellipsoid distribution around vector, with another vector for specular reflection
+%algorithm used - RGB space transform, division into bins and moving standard dev and mean while leaving details intact
+%Results don't show range but we can possibly replicate and check?
+
+It is not clear how fast the algorithm can run particularly on a mobile device, nor the range of colours that the algorithm can transform a single skin colour, and it is in these areas that our project will attempt to improve upon.
+
+Yang et al. Performed the most recent study 
+
+
+%explain theoretical concepts in context of thesis work; be clear and concise
+%summarize relevant research to give understanding of current field
+%analyze research in field to give deeper understanding of research question 
+%indicate a path going forward
+
+
 
 \input{lit_review_photoshop}
