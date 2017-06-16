@@ -1,0 +1,19 @@
+%photoshop
+\subsection{Survey of methods for changing and matching skin colour in Photoshop}
+
+The are a wide range of online video tutorials available for adjusting human skin tone in individual images using Photoshop. The purposes of these videos include giving the subject of an image the appearance of a tan, matching the skin tone of the subject to a desired skin tone on another individual, or matching the skin tone of a subject's face to the rest of the subject's body, which is often a slightly different colour \cite{photoshop:tan} \cite{photoshop:match_other} \cite{photoshop:match_body}. We surveyed a range of these videos and summarize the techniques of the most relevant videos with reasonably realistic results. See Appendix \ref{app:photoshop} for a more detailed description of three of these Photoshop processes. 
+
+\subsubsection*{Summary of Photoshop techniques}
+
+Levels and curves are frequently used for small brightness adjustments \cite{photoshop:obama} \cite{photoshop:match_body} \cite{photoshop:match_other}. For large brightness adjustments, one technique was found (see Appendix \ref{app:photoshop_obama}), where the skin area is brightened in a conversion to black and white, and then the luminosity blend mode is used to place the colour back into the image. Sometimes highlights and shadows are adjusted separately; curves or the ``blend if" function (which blends in an effect only if the original pixel is above a certain threshold of brightness) can be used to achieve this effect \cite{photoshop:tan}.
+
+There are many different methods to match colour, and the colour can be adjusted separately from the brightness or simultaneously - often one would affect the other \cite{photoshop:match_body} \cite{photoshop:match_other}. Methods for matching colour include matching the ratios of cyan, magenta and yellow by making adjustments with the selective colour tool, or using curves or levels on individual colour channels. Adjustments are made either by eye or to numerically match a target color \cite{photoshop:selective} \cite{photoshop:match_body} \cite{photoshop:match_other}. Often to reduce the vividness of the colour adjustments the saturation must be slightly decreased \cite{photoshop:obama} \cite{photoshop:match_body}.
+
+After all other effects are applied, the opacity of the overall effect is often reduced from 100\% for a more natural appearance \cite{photoshop:obama} \cite{photoshop:match_body}.
+
+\subsubsection*{Limitations of Photoshop techniques}
+These Photoshop techniques are generally meant to be tailored to each specific image that a human is adjusting. There are many junctures where the specific numerical amount of an adjustment often have to be judged by eye. While Photoshop has a method for automating processes using actions, the processes are meant for increasing ease of use by artists who can make additional adjustments and are familiar with the tool, rather than in commercial applications where the process is entirely automated \cite{photoshop:actions}.
+
+Another limitation is that Photoshop operates at a higher level of abstraction than image processing software making use of libraries such as OpenCV. Image processing code has much more control over processes that can be applied to images, and the regions on the image that processes are applied to. 
+
+Finally, some Photoshop effects may be proprietary and are of course limited to the platforms that Photoshop supports, while a program developed with a platform such as OpenCV can be made open source and adapted to uses on a variety of different platforms.
