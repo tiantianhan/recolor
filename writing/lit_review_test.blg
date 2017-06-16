@@ -9,49 +9,53 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: my_references.bib
+Warning--I didn't find a database entry for "yang_2015_semantic"
+Warning--I didn't find a database entry for "bitouk_2008_faceswap"
+Warning--I didn't find a database entry for "baba_2015_yearbook"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 7 entries,
+You've used 10 entries,
             4024 wiz_defined-function locations,
-            1208 strings with 15308 characters,
-and the built_in function-call counts, 3024 in all, are:
-= -- 239
-> -- 46
-< -- 8
-+ -- 24
-- -- 10
-* -- 117
-:= -- 559
-add.period$ -- 14
-call.type$ -- 7
-change.case$ -- 7
-chr.to.int$ -- 15
-cite$ -- 7
-duplicate$ -- 224
-empty$ -- 266
-format.name$ -- 11
-if$ -- 638
+            1236 strings with 16174 characters,
+and the built_in function-call counts, 5927 in all, are:
+= -- 465
+> -- 121
+< -- 36
++ -- 64
+- -- 22
+* -- 268
+:= -- 963
+add.period$ -- 21
+call.type$ -- 10
+change.case$ -- 12
+chr.to.int$ -- 84
+cite$ -- 10
+duplicate$ -- 425
+empty$ -- 505
+format.name$ -- 27
+if$ -- 1322
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 53
-newline$ -- 56
-num.names$ -- 7
-pop$ -- 152
+int.to.str$ -- 10
+missing$ -- 87
+newline$ -- 65
+num.names$ -- 12
+pop$ -- 231
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 233
+skip$ -- 447
 stack$ -- 0
-substring$ -- 36
-swap$ -- 159
-text.length$ -- 3
+substring$ -- 199
+swap$ -- 336
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 7
+type$ -- 10
 warning$ -- 0
-while$ -- 10
-width$ -- 8
-write$ -- 93
+while$ -- 24
+width$ -- 12
+write$ -- 123
+(There were 3 warnings)

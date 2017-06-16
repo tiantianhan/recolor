@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  16 JUN 2017 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  16 JUN 2017 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,41 +114,58 @@ LaTeX Warning: Reference `fig:color_transfer' on page 1 undefined on input line
  7.
 
 
-LaTeX Warning: Citation `seo_2005_transfer' on page 1 undefined on input line 1
-6.
-
-(./lit_review_photoshop.tex
-
-LaTeX Warning: Reference `app:photoshop' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `yang_2015_semantic' on page 1 undefined on input line 
+24.
 
 [1
 
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `app:photoshop_obama' on page 2 undefined on input lin
+LaTeX Warning: Citation `bitouk_2008_faceswap' on page 2 undefined on input lin
+e 46.
+
+
+LaTeX Warning: Citation `baba_2015_yearbook' on page 2 undefined on input line 
+49.
+
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+[2] (./lit_review_photoshop.tex
+
+LaTeX Warning: Reference `app:photoshop' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Reference `app:photoshop_obama' on page 3 undefined on input lin
 e 8.
 
-)) [2] (./lit_review_test.bbl) [3] (./lit_review_test.aux)
+[3])) [4] (./lit_review_test.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+) [5] (./lit_review_test.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 849 strings out of 494447
- 11908 string characters out of 6166766
- 69025 words of memory out of 5000000
- 4235 multiletter control sequences out of 15000+600000
+ 855 strings out of 494447
+ 12021 string characters out of 6166766
+ 70035 words of memory out of 5000000
+ 4241 multiletter control sequences out of 15000+600000
  5803 words of font info for 21 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 24i,4n,32p,1094b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,4n,32p,1104b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on lit_review_test.pdf (3 pages, 53043 bytes).
+Output written on lit_review_test.pdf (5 pages, 65451 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
