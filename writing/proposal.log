@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  15 JUN 2017 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  15 JUN 2017 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -86,15 +86,15 @@ LaTeX Font Info:    ... okay on input line 13.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* h-part:(L,W,R)=(54.2025pt, 489.10287pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 736.64185pt, 54.2025pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=489.10287pt
+* \textheight=736.64185pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -119,20 +119,47 @@ LaTeX Font Info:    ... okay on input line 13.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
 ) [2] (./proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 940 strings out of 494447
- 13133 string characters out of 6166766
- 70929 words of memory out of 5000000
- 4328 multiletter control sequences out of 15000+600000
+ 945 strings out of 494447
+ 13245 string characters out of 6166766
+ 72968 words of memory out of 5000000
+ 4333 multiletter control sequences out of 15000+600000
  5198 words of font info for 19 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 24i,4n,32p,736b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,4n,32p,1442b,151s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on proposal.pdf (2 pages, 54847 bytes).
+Output written on proposal.pdf (2 pages, 58855 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  15 compressed objects within 1 object stream

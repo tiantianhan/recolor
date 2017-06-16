@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage[a4paper, margin=1in]{geometry} %adjust margins
+\usepackage[a4paper, margin=0.75in]{geometry} %adjust margins
 \usepackage{cite} %citation formatting
 \usepackage{sectsty} %section header font size
 
@@ -8,42 +8,23 @@
 
 %paragraph spacing and indentation
 \setlength{\parindent}{0em}
-\setlength{\parskip}{1em}
+\setlength{\parskip}{0.5em}
 
 \begin{document}
 
-\section*{Design of mobile compatible image enhancement software for the believable transfer of hand skin color}
+\section*{Development of mobile compatible image enhancement software for transfer of hand skin colour}
 
-%general research gap, significance in society, current products and research
-We often cannot judge based on the appearance of a personal apparel product on a model how that product will in actuality look on ourselves. The model may have different skin colour and other bodily features than us. Ideally, to help us make a better informed purchasing decision, we would like the model demonstrating the product to be custom to us \cite{zhang_2017_try}. To address this issue there are already many applications developed for the virtual trying on of products in the beauty, cosmetics and garment industries which digitally modify the images of models wearing the product to take on the appearance of the user \cite{zhang_2017_try} \cite{shilkrot_2013_garment, li_2015_replace}.
+We often cannot judge based on the appearance of a product worn by a model how that product will actually look on ourselves. Compared to users, models may have different skin colour and other bodily features. Ideally, to help the user make a better informed purchasing decision, the model demonstrating the product should be customized to each user. To achieve this, there are already many applications developed for the virtual trying on of products in the beauty, cosmetics and garment industries which digitally modify the images of models to take on the appearance of the user \cite{zhang_2017_try} \cite{shilkrot_2013_garment, li_2015_replace}.
 
-For this project, we have a video in a mobile app demonstrating nail polish on a model hand to allow virtual try-on of different nail polish colours. We would like to edit this demo video so that the model appears to have the user's exact skin colour, to help the user better determine whether a nail polish colour looks pleasant on their own hand. While it is possible to manually prepare a series of demo videos on models of different skin colours, preparing even a single video for virtual try-on is an extremely time intensive task. Moreover, each person has a particular skin colour and it's preferable to be able to tailor the video exactly to the skin colour of the user as the user is using the app.
+For this project, we have a video in a mobile app demonstrating nail polish on a model hand to allow virtual try-on of different nail polish colours. We would like to edit this demo video so that the model appears to have the user's exact skin colour, to help the user better determine whether the nail polish colours look pleasant on the user's own hand. While it is possible to manually prepare a series of demo videos with models of different skin colours, preparing even a single video for virtual try-on is an extremely time intensive task. Moreover, each person has a particular skin colour and it's preferable to be able to tailor the video exactly to the skin colour of the user while the user is using the app.
 
-To address these challenges, we propose developing an algorithm to quickly and automatically perform the image editing task. The user should be able to provide an image of their own hand as input, and the resulting edited model images should be convincing and accurate to the skin colour of the provided image.The process should be quick to run on a mobile device, such that the user notices no significant time lag to see the resulting video frames upon inputing their own skin colour. 
+To address these challenges, we propose developing an algorithm to incorporate into the app that quickly and automatically performs the image editing task. The user should be able to provide an image of their own hand as input, and the resulting edited model hand should be convincing and accurate to the skin colour of the provided user image. A wide range of user skin colours should be supported by a single model of mid-toned skin. Finally, the process should be quick to run on a mobile device, such that the user notices no significant time lag to see the resulting video frames upon inputting their own skin colour.
 
-Currently, we aren't aware of an existing algorithm that satisfies all our specific needs. While there has been a large body of work done addressing transfer of color between images in general \cite{reinhard_2001_transfer, pitie_2005_pdf, chang_2015_palette}, only a subset of that specifically addresses transfer of skin colour specifically. In all cases, the prior work address face and body skin colour rather than specifically hand skin colour and tend not be meant for use with the limited resources on a mobile device \cite{yin_2004_transfer, seo_2005_transfer}.
+Currently, we aren't aware of an existing algorithm that satisfies all our specific requirements. While there has been a large body of work done addressing transfer of colour between images in general \cite{reinhard_2001_transfer, pitie_2005_pdf, chen_2014_propagation, chang_2015_palette, zhang_2017_decomposition}, only a smaller set of work specifically addresses transfer of skin colour \cite{yin_2004_transfer, seo_2005_transfer, yang_2017_semantic}. All such studies address face skin colour rather than hand skin colour, which often means that more of the study is devoted to handling colour transfer of different, more complex aspects of the face \cite{yang_2017_semantic}. Skin colour transfer of the whole body are sometimes performed in other, more general imaging processing applications, but in those cases, since the skin colour transfer is often only a small part of the whole process, the algorithm used is often relatively simple and not heavily designed for achieving accuracy to the user skin colour \cite{shilkrot_2013_garment, li_2015_replace}. In the related field of skin colour enhancement applications, the methods used often are not meant to make large changes to the user skin colour \cite{aradhye_2009_enhancement, lee_2010_mobile}. Finally, algorithms developed by most of the prior studies do not appear to be meant for use with the limited resources on a mobile device.
 
-Our goal is to develop a mobile compatible recoloring algorithm that would satisfy our requirements. As sub-objectives, we would like to first develop an effective algorithm and then optimize the algorithm's running time. We will focus solely on convincing colour transfer in the algorithm, assuming that the location of the skin in the images are already specified an another process.
+Our goal is to develop a mobile compatible recolouring algorithm that would satisfy our requirements. As sub-objectives, we would like to first develop an effective algorithm and then optimize the algorithm's running time. We will focus solely on achieving convincing colour transfer in the algorithm, and assume that the location of the skin in the images are already determined by an another process. 
 
-For developing and testing the algorithm, we will be using the OpenCV library in C++. OpenCV has a wide range of image processig tools and code in C++ should be easy to optimize and port to mobile apps. For this project we will develop the algorithm on a desktop computer, to allow for faster and easier testing, before we port the code to mobile. Our approach will be to test different algorithms on variety of hand images, starting with a naive approach and iteratively developing more complex algorithms after evaluating each result.
-
-% subgoals are to first develop an algorthm working for a set of hand images then optimize for mobile
-
-
-%nail polish app, "specific" gap
-% - mobile, realistic, requirement of beauty industry is subtlety
-% In particular, for an application for demonstrating nail polish, we have opted for the latter approach. We would like to adjust the 
-
-% specifically, list current research on skin colour transfer and note limitations - no mobile, no hand specific, not realistic
-
-%objectives for software, goals and scope - 
-% our research question or goal is wether we can develop a software will be suitable for smoothly performing transfer of hand on mobile
-% software may have other uses - would be an exploration into the problem of realistic skin color transfer
-
-% approach is to test different algorithms on variety of hand images and iterate after visually evaluating each result 
-% subgoals are to first develop an algorthm working for a set of hand images then optimize for mobile
-
-% methods will be to test the algorithm on desktop computer for faster, automated testing, but use programming language that would be easily ported to mobile
+For developing and testing the algorithm, we will be using the OpenCV library in C++. OpenCV has a wide range of image processing tools and code in C++ should be easy to optimize and port to mobile platforms. We will develop the algorithm on a desktop computer, to allow for faster and easier testing, before we port the code to mobile. Our approach will be to test different algorithms on variety of hand images, starting with a naive approach and developing improved versions of the algorithm based on the results after each each iteration.
 
 \pagebreak
 
