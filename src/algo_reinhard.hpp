@@ -14,7 +14,7 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "algo_piecewise.hpp"
 
-int piecewise_process(cv::Mat src, cv::Mat dst);
+int reinhard_process(cv::Mat src, cv::Mat dst);
 
 
 #endif /* ALGO_REINHARD_HPP_ */

@@ -10,7 +10,13 @@ using namespace std;
 using namespace cv;
 
 
-int piecewise_process(cv::Mat src, cv::Mat dst){
+int reinhard_process(cv::Mat src, cv::Mat dst){
+	printf("piecewise_process... ");
+
+	//Mat lab;
+	cvtColor(src, dst, CV_BGR2Lab);
+	//imwrite("outputs/lab.jpg", dst);
+
 
 	return 0;
 }

@@ -1,4 +1,4 @@
-src/recolor.o: ../src/recolor.cpp \
+src/algo_reinhard.o: ../src/algo_reinhard.cpp ../src/algo_reinhard.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.h \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/core/core_c.h \
@@ -53,9 +53,9 @@ src/recolor.o: ../src/recolor.cpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/objdetect/detection_based_tracker.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/imgproc/imgproc.hpp \
   /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp \
-  ../src/algo_piecewise.hpp ../src/algo_linear.hpp \
-  ../src/algo_darkspot_correct.hpp ../src/algo_average_col.hpp \
-  ../src/algo_reinhard.hpp ../src/recolor_flags.hpp ../src/utils.hpp
+  ../src/algo_piecewise.hpp
+
+../src/algo_reinhard.hpp:
 
 /usr/local/Cellar/opencv3/3.2.0/include/opencv/cv.hpp:
 
@@ -166,15 +166,3 @@ src/recolor.o: ../src/recolor.cpp \
 /usr/local/Cellar/opencv3/3.2.0/include/opencv2/highgui/highgui.hpp:
 
 ../src/algo_piecewise.hpp:
-
-../src/algo_linear.hpp:
-
-../src/algo_darkspot_correct.hpp:
-
-../src/algo_average_col.hpp:
-
-../src/algo_reinhard.hpp:
-
-../src/recolor_flags.hpp:
-
-../src/utils.hpp:

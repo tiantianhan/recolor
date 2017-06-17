@@ -8,10 +8,11 @@
 #ifndef RECOLOR_FLAGS_HPP_
 #define RECOLOR_FLAGS_HPP_
 
-
+//algo codes
 const int LINEAR = 1;
 const int PIECEWISE = 2;
 const int PIECEWISE_DARKSPOT = 3;
+const int REINHARD = 4;
 
 const int MIN_ARGS = 3;
 const int MAX_ARGS = 16;

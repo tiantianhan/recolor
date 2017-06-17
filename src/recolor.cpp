@@ -7,6 +7,7 @@
 #include "algo_linear.hpp"
 #include "algo_darkspot_correct.hpp"
 #include "algo_average_col.hpp"
+#include "algo_reinhard.hpp"
 #include "recolor_flags.hpp"
 
 #include "utils.hpp"
@@ -119,6 +120,10 @@ int main( int argc, char** argv )
     		} else if(strcmp(argv[i + 1], "pw_dark_corr") == 0){
     			algo = PIECEWISE_DARKSPOT;
     			printf("Using algorithm %s\n", "Piecewise + dark correction"); cout.flush();
+
+    		} else if(strcmp(argv[i + 1], "reinhard") == 0){
+    			algo = REINHARD;
+    			printf("Using algorithm %s\n", "Reinhard"); cout.flush();
 
     		} else {
     			perror("WARNING: invalid algorithm name, using default\n");
@@ -237,6 +242,9 @@ int main( int argc, char** argv )
         }
 
     	darkcorrect_process(dst, dst, average2, alpha); //using target colour as new average colour
+
+    } else if(algo == REINHARD){
+        reinhard_process(src, dst);
     }
 
     if(is_debug){
