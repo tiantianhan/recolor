@@ -244,7 +244,8 @@ int main( int argc, char** argv )
     	darkcorrect_process(dst, dst, average2, alpha); //using target colour as new average colour
 
     } else if(algo == REINHARD){
-        reinhard_process(src, dst);
+    	//reinhard_process(cv::Mat src, cv::Mat targ, cv::Mat src_mask, cv::Mat targ_mask, cv::Mat dst)
+        reinhard_process(src, targ, in_ave_col_mask, targ_ave_col_mask, dst);
     }
 
     if(is_debug){
