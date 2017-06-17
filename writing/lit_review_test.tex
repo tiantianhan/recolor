@@ -1,10 +1,23 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[a4paper, margin=0.75in]{geometry} %adjust margins
 \usepackage{cite} %citation formatting
+\usepackage{longtable} %for long table 
+\usepackage{graphicx} %for images
+\usepackage{array} %for long table counter
+\usepackage{etoolbox} %for long table counter
+
 
 %paragraph spacing and indentation
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.5em}
+
+%counter for numbering the rows of tables
+\newcounter{rowcntr}[table]
+\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
+% A new columntype to apply automatic stepping
+\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
+% Reset the rowcntr counter at each new tabular
+\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
 
 \begin{document}
 

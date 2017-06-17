@@ -17,6 +17,38 @@ Colour transfer refers to modifying the colours of an image to give it the desir
 There have been a wide range of studies done in this area beginning with the seminal work of Reinhard et al. in 2001 \cite{reinhard_2001_transfer}. The authors converts the image into $l\alpha\beta$ colour space, a colour space designed for natural scenes and based on research into human perception to reduce the correlation between each channel and remove the need to consider cross-channel effects when performing transformations on each channel. The authors then perform a simple operation to match the average and standard deviation of the values in each channel of the original image to that of the target image. The resultant image is then converted back into $rgb$ space.
 %in this paper we replicate this method for comparison purposes?
 
+In a later study, Pitié et al. developed a method for entirely transfering the exact statistical distribution of the colours of the target image to the original image \cite{pitie_2005_pdf}, and later improved on the technique with the motivation of automating film grading, or the process of enhancing frames in films to ensure consistency of colour and ``feel" \cite{pitie_2007_grading}. We show the effects they demonstrate in Table \ref{tab:pitie_demo}
+
+\begin{longtable}{|N||c|c|c|}
+    \caption{Screen captures from Photoshop tutorial for matching the skintones of portraits of different people. \label{tab:pitie_demo}}\\
+    \hline
+    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
+    \hline  \label{row:pitie_demo_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_original}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_target1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_result1}
+  \end{minipage} \\
+    \hline  \label{row:pitie_demo_2} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_original}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_target2}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_result2}
+  \end{minipage} \\
+    \hline
+\end{longtable}
+%in this paper we replicate this method based on code found online?
+
+More recently, Bonnel et al. conducted a further study on color transfer for film grading considering both spacial and temporal information \cite{bonneel_2013_video} and Chang et al. created a tool for user editing of image based on a automatically generated colour palatte \cite{chang_2015_palette}.
+
 While these techniques are interesting possibilities to try when transfering human skin colour, because the these prior studies are all concerned with different problems that can arise with general images but not specifically for human skin colour, studies that specifically relate to human skin colour demonstrate that the general colour transfer techniques can be improved upon.
 
 \section{Transfer of human skin colour}
@@ -67,7 +99,14 @@ For the most part the studies we have found are not meant to be run on a mobile 
 The difference between those studies and ours is that we have a target colour that could be very different from the colour that skin enhancement is aiming for, and our requirements for accuracy to the target colour is more stringent.
 
 \section{Summary of differences between prior studies and this project}
-Accuracy of colour transfer, use of a target image, nuances of colour transfer, speed of the colour transfer on a mobile device, range of colour transfer
+In summary, prior work typically cannot satisfy all of our requirements for this project, which include:
+
+\textbf{Realistic skin colour transfer}. In the case of general image color transfer algorithms, though there is a large number of very sophisticated prior work, most of the effort in that field has been to ensure that the process can cope with a wide range of images. Our project only focuses on a very specific type of image and is very sensitive to the realistic appearance of the skin colour of the processed image.
+
+\textbf{Accuracy of colour transfer}
+
+
+ use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer
 %explain theoretical concepts in context of thesis work; be clear and concise
 %summarize relevant research to give understanding of current field
 %analyze research in field to give deeper understanding of research question 

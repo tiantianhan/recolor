@@ -26,6 +26,22 @@ E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
   images,'' \emph{IEEE Computer Graphics Applications}, vol.~21, no.~5, pp.
   34--41, Sep. 2001.
 
+\bibitem{pitie_2005_pdf}
+F.~Pitie, A.~C. Kokaram, and R.~Dahyot, ``N-dimensional probability density
+  function transfer and its application to colour transfer,'' in
+  \emph{Proceedings of the IEEE International Conference on Computer Vision},
+  vol.~2, 2005, pp. 1434 -- 1439.
+
+\bibitem{bonneel_2013_video}
+N.~Bonneel, K.~Sunkavalli, S.~Paris, and H.~Pfister, ``Example-based video
+  color grading,'' \emph{ACM Trans. Graph.}, vol.~32, no.~4, pp. 39:1--39:12,
+  Jul. 2013.
+
+\bibitem{chang_2015_palette}
+H.~Chang, O.~Fried, Y.~Liu, S.~DiVerdi, and A.~Finkelstein, ``Palette-based
+  photo recoloring,'' \emph{ACM Trans. Graph.}, vol.~34, no.~4, pp.
+  139:1--139:11, Jul. 2015.
+
 \bibitem{seo_2005_transfer}
 K.~C. Seo, G.~Shin, and S.~W. Lee, ``Interactive transfer of human facial
   color,'' in \emph{Advances in Multimedia Information Processing - PCM 2005:
