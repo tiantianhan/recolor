@@ -26,7 +26,8 @@ int reinhard_process(cv::Mat src, cv::Mat targ, cv::Mat src_mask, cv::Mat targ_m
 	meanStdDev(targ_lab, targ_lab_mean, targ_lab_stdev, targ_mask);
 
 	subtract(src_lab, src_lab_mean, dst);
-
+	divide(dst, src_lab_stdev, dst);
+	multiply(dst, targ_lab_stdev, dst);
 	add(dst, targ_lab_mean, dst);
 
 	cvtColor(dst, dst, CV_Lab2BGR);
