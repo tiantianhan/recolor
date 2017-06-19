@@ -21,6 +21,23 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{zhang_2017_try}
+T.~Zhang, L.~Cao, and W.~Y. Wang, ``The impact of virtual try-on image
+  interaction technology on online shoppers' purchase decision,'' in
+  \emph{Proceedings of the 8th International Conference on E-Education,
+  E-Business, E-Management and E-Learning}, ser. IC4E '17.\hskip 1em plus 0.5em
+  minus 0.4em\relax New York, NY, USA: ACM, 2017, pp. 6--10.
+
+\bibitem{shilkrot_2013_garment}
+R.~Shilkrot, D.~Cohen-Or, A.~Shamir, and L.~Liu, ``Garment personalization via
+  identity transfer,'' \emph{IEEE Computer Graphics and Applications}, vol.~33,
+  no.~4, pp. 62--72, July 2013.
+
+\bibitem{li_2015_replace}
+L.~Jun, Z.~Mingmin, and P.~Zhigeng, ``Virtual try-on by replacing the person in
+  image,'' \emph{J. Comput. Aided Des. Comput. Graph. (China)}, vol.~27, no.~9,
+  pp. 1694 -- 700, Sept. 2015.
+
 \bibitem{reinhard_2001_transfer}
 E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
   images,'' \emph{IEEE Computer Graphics Applications}, vol.~21, no.~5, pp.
@@ -32,15 +49,31 @@ F.~Pitie, A.~C. Kokaram, and R.~Dahyot, ``N-dimensional probability density
   \emph{Proceedings of the IEEE International Conference on Computer Vision},
   vol.~2, 2005, pp. 1434 -- 1439.
 
-\bibitem{bonneel_2013_video}
-N.~Bonneel, K.~Sunkavalli, S.~Paris, and H.~Pfister, ``Example-based video
-  color grading,'' \emph{ACM Trans. Graph.}, vol.~32, no.~4, pp. 39:1--39:12,
-  Jul. 2013.
+\bibitem{chen_2014_propagation}
+X.~Chen, D.~Zou, J.~Li, X.~Cao, Q.~Zhao, and H.~Zhang,
+  ``\BIBforeignlanguage{English}{Sparse dictionary learning for edit
+  propagation of high-resolution images},'' in
+  \emph{\BIBforeignlanguage{English}{2014 IEEE Conference on Computer Vision
+  and Pattern Recognition (CVPR)}}, Los Alamitos, CA, USA, 2014, pp. 2854 --
+  61.
 
 \bibitem{chang_2015_palette}
 H.~Chang, O.~Fried, Y.~Liu, S.~DiVerdi, and A.~Finkelstein, ``Palette-based
   photo recoloring,'' \emph{ACM Trans. Graph.}, vol.~34, no.~4, pp.
   139:1--139:11, Jul. 2015.
+
+\bibitem{zhang_2017_decomposition}
+Q.~Zhang, C.~Xiao, H.~Sun, and F.~Tang,
+  ``\BIBforeignlanguage{English}{Palette-based image recoloring using color
+  decomposition optimization},'' \emph{\BIBforeignlanguage{English}{IEEE
+  Transactions on Image Processing}}, vol.~26, no.~4, pp. 1952 -- 1964, 2017.
+
+\bibitem{yin_2004_transfer}
+L.~Yin, J.~Jia, and J.~Morrissey, ``\BIBforeignlanguage{English}{Towards
+  race-related face identification: Research on skin color transfer},'' in
+  \emph{\BIBforeignlanguage{English}{Proceedings - Sixth IEEE International
+  Conference on Automatic Face and Gesture Recognition}}, Seoul, Korea,
+  Republic of, 2004, pp. 362 -- 368.
 
 \bibitem{seo_2005_transfer}
 K.~C. Seo, G.~Shin, and S.~W. Lee, ``Interactive transfer of human facial
@@ -56,17 +89,17 @@ Y.~Yang, H.~Zhao, L.~You, R.~Tu, X.~Wu, and X.~Jin,
   images},'' \emph{\BIBforeignlanguage{English}{Multimed. Tools Appl.
   (Germany)}}, vol.~76, no.~1, pp. 523 -- 41, 2017.
 
-\bibitem{yin_2004_transfer}
-L.~Yin, J.~Jia, and J.~Morrissey, ``\BIBforeignlanguage{English}{Towards
-  race-related face identification: Research on skin color transfer},'' in
-  \emph{\BIBforeignlanguage{English}{Proceedings - Sixth IEEE International
-  Conference on Automatic Face and Gesture Recognition}}, Seoul, Korea,
-  Republic of, 2004, pp. 362 -- 368.
+\bibitem{aradhye_2009_enhancement}
+H.~Aradhye, G.~D. Toderici, and J.~Yagnik, ``Adaptive, selective, automatic
+  tonal enhancement of faces,'' in \emph{Proceedings of the 17th ACM
+  International Conference on Multimedia}, ser. 2009.\hskip 1em plus 0.5em
+  minus 0.4em\relax New York, NY, USA: ACM, 2009, pp. 677--680.
 
-\bibitem{shilkrot_2013_garment}
-R.~Shilkrot, D.~Cohen-Or, A.~Shamir, and L.~Liu, ``Garment personalization via
-  identity transfer,'' \emph{IEEE Computer Graphics and Applications}, vol.~33,
-  no.~4, pp. 62--72, July 2013.
+\bibitem{lee_2010_mobile}
+J.-H. Lee, J.~Heo, and Y.-S. Ho, ``\BIBforeignlanguage{English}{Skin tone
+  enhancement and background change for mobile phones},''
+  \emph{\BIBforeignlanguage{English}{IEEE Transactions on Consumer
+  Electronics}}, vol.~56, no.~4, pp. 2719 -- 2726, 2010.
 
 \bibitem{photoshop:tan}
 \BIBentryALTinterwordspacing
@@ -106,5 +139,30 @@ M.~Woloszynowicz. (2014) How to accurately match skin tones using selective
   [Online]. Available:
   \url{http://www.vibrantshot.com/how-to-easily-correct-colors-and-match-tones-in-photoshop/}
 \BIBentrySTDinterwordspacing
+
+\bibitem{pitie_2007_grading}
+F.~Pitie, A.~Kokaram, and R.~Dahyot, ``\BIBforeignlanguage{English}{Automated
+  colour grading using colour distribution transfer},''
+  \emph{\BIBforeignlanguage{English}{Computer Vision and Image Understanding}},
+  vol. 107, no. 1-2, pp. 123 -- 37, 2007/07/.
+
+\bibitem{bonneel_2013_video}
+N.~Bonneel, K.~Sunkavalli, S.~Paris, and H.~Pfister, ``Example-based video
+  color grading,'' \emph{ACM Trans. Graph.}, vol.~32, no.~4, pp. 39:1--39:12,
+  Jul. 2013.
+
+\bibitem{bitouk_2008_faceswap}
+D.~Bitouk, N.~Kumar, S.~Dhillon, P.~Belhumeur, and S.~Nayar,
+  ``\BIBforeignlanguage{English}{Face swapping: Automatically replacing faces
+  in photographs},'' \emph{\BIBforeignlanguage{English}{ACM Transactions on
+  Graphics}}, vol.~27, no.~3, pp. 39 (8 pp.) --, 2008/08/.
+
+\bibitem{baba_2015_yearbook}
+T.~Baba, M.~Okuda, P.~Perrotin, T.~Yusuke, and K.~Shirai,
+  ``\BIBforeignlanguage{English}{An automatic yearbook style photo generation
+  method using color grading and guide image filtering based facial skin color
+  correction},'' in \emph{\BIBforeignlanguage{English}{2015 3rd IAPR Asian
+  Conference on Pattern Recognition (ACPR). Proceedings}}, Piscataway, NJ, USA,
+  2015//, pp. 504 -- 8.
 
 \end{thebibliography}
