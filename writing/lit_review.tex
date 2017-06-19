@@ -1,26 +1,58 @@
 %literature review
-\section{Related prior work}
+\subsection{The input and desired outputs for our project}
+Our project is intended to manipulate image frames in a video of a model hand demonstrating nail polish product so that 
+
+
+
+\textbf{Realistic skin colour transfer}. 
+Since the goal of our project is to perform skin colour transfer for model images that are meant to demonstrate beauty products to users, and the results are meant to invoke for the user the impression that the user's own hand is wearing the product, our final images must look as realistic as possible to avoid a displeasing, uncanny valley effect. Further more, the images we process 
+% Our project only focuses on a very specific type of image and is very sensitive to the realistic appearance of the skin colour of the processed image. In the case of general image color transfer algorithms, though there is a large number of very sophisticated prior work, most of the effort in that field has been to ensure that the process can cope with a wide range of images. 
+
+\textbf{Accuracy of colour transfer} 
+
+
+ use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer
+
+\input{lit_review_photoshop}
+
+\subsection{Academic work related to color transfer and skin color enhancement}
 
 Relevant prior work fall into four rough categories. 
 
-There is a large body of work on the subject of automatically transfering the ``style" or specific colours in an example image to another image.
+\textbf{Colour transfer for general images.} There is a large body of work on the subject of automatically transfering the ``style" or specific colours in an example image to another image. Though the work is focused on 
 
-There have also been several prior studies transfering color specifically for images wherein skin colour is prominent. These are most similar in purpose to our project we will discuss each study in detail.
+\textbf{Colour transfer for human skin color.} There have also been several prior studies transfering color specifically for images wherein skin colour is prominent. These are most similar in purpose to our project we will discuss each study in detail.
 
-We have also found several examples of practical application of skin transfer algorithms, where different application demonstrate practical uses of usually relatively simple skin transfer algorithm that is part of a larger project; we will discuss several of these projects. 
+\textbf{Skin colour transfer as part of other applications} We have also found several examples of practical application of skin transfer algorithms, where different application demonstrate practical uses of usually relatively simple skin transfer algorithm that is part of a larger project; we will discuss several of these projects. 
 
-Finally, there is the related field of skintone enhancement software, where algorithms are usually intended to adjust the user skin colour towards a more pleasing tone and not to a specific target colour. We include the latter because unlike the other categories of prior work there are several studies of adjusting skintone on a mobile device, which is part of the requirements for this project.
+\textbf{Skin colour enhancement mobile applications.} Finally, there is the related field of skintone enhancement software, where algorithms are usually intended to adjust the user skin colour towards a more pleasing tone and not to a specific target colour. We include the latter because unlike the other categories of prior work there are several studies of adjusting skintone on a mobile device, which is part of the requirements for this project.
 
-\section{Colour transfer by example image for general images}
-Colour transfer refers to modifying the colours of an image to give it the desired appearance and style demonstrated by an example image, which we will refer to as the \textit{target image}. Figure \ref{fig:color_transfer} illustrates an example of this effect.
+\subsubsection{Colour transfer by example image for general images}
+Colour transfer refers to modifying the colours of an image to give it the desired appearance and style demonstrated by an example image, which we will refer to as the \textit{target image}. Table \ref{table:color_transfer} illustrates an example of this effect.
 
-There have been a wide range of studies done in this area beginning with the seminal work of Reinhard et al. in 2001 \cite{reinhard_2001_transfer}. The authors converts the image into $l\alpha\beta$ colour space, a colour space designed for natural scenes and based on research into human perception to reduce the correlation between each channel and remove the need to consider cross-channel effects when performing transformations on each channel. The authors then perform a simple operation to match the average and standard deviation of the values in each channel of the original image to that of the target image. The resultant image is then converted back into $rgb$ space.
+There have been a wide range of studies done in this area beginning with the seminal work of Reinhard et al. in 2001 \cite{reinhard_2001_transfer}. The authors convert the image into $l\alpha\beta$ colour space, a colour space designed for natural scenes and based on research into human perception to reduce the correlation between each channel and remove the need to consider cross-channel effects when performing transformations on each channel. The authors then perform a simple operation to match the average and standard deviation of each channel of the original image to that of the target image. The resultant image is then converted back into $rgb$ space.
 %in this paper we replicate this method for comparison purposes?
 
-In a later study, Pitié et al. developed a method for entirely transfering the exact statistical distribution of the colours of the target image to the original image \cite{pitie_2005_pdf}, and later improved on the technique with the motivation of automating film grading, or the process of enhancing frames in films to ensure consistency of colour and ``feel" \cite{pitie_2007_grading}. We show the effects they demonstrate in Table \ref{tab:pitie_demo}
+\begin{longtable}{|N||c|c|c|}
+    \caption{Example of image colour transfer using the algorithm from Reinhard et al. All images from \cite{reinhard_2001_transfer} \label{tab:reinhard_demo}}\\
+    \hline
+    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
+    \hline  \label{row:reinhard_demo_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reinhard_orig1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reinhard_target1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reinhard_result1}
+  \end{minipage} \\
+\end{longtable}
+
+In a later study, Piti\'{e} et al. developed a method for entirely transfering the exact statistical distribution of the colours of the target image to the original image \cite{pitie_2005_pdf}, and later improved on the technique with the motivation of automating film grading, or the process of enhancing frames in films to ensure consistency of colour and ``feel" \cite{pitie_2007_grading}. We show an example the effects they acheive in Table \ref{tab:pitie_demo}
 
 \begin{longtable}{|N||c|c|c|}
-    \caption{Screen captures from Photoshop tutorial for matching the skintones of portraits of different people. \label{tab:pitie_demo}}\\
+    \caption{Example of film grading based on an example image using the algorithm from Piti\'{e} et al. All images from \cite{pitie_2007_grading} \label{tab:pitie_demo}}\\
     \hline
     \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
     \hline  \label{row:pitie_demo_1} &
@@ -51,18 +83,16 @@ More recently, Bonnel et al. conducted a further study on color transfer for fil
 
 While these techniques are interesting possibilities to try when transfering human skin colour, because the these prior studies are all concerned with different problems that can arise with general images but not specifically for human skin colour, studies that specifically relate to human skin colour demonstrate that the general colour transfer techniques can be improved upon.
 
-\section{Transfer of human skin colour}
+\subsubsection{Transfer of human skin colour}
 Several studies have been done specifically on the transfer of human skin colour.
 
-Seo et al. \cite{seo_2005_transfer} has a purpose closest to the purpose of this project, to transfer human skin colours. The authors show results that improve in realistic appearance compared to the Reinhard's algorithm.
-
-% Models the skin as ellipsoid distribution around vector, with another vector for specular reflection
+Seo et al. \cite{seo_2005_transfer} has a purpose closest to the purpose of this project, to transfer human skin colours. The authors show results that improve in realistic appearance compared to the Reinhard's algorithm. The authors model the skin colour as an elogated distribution around a line refered to as the principle line in $rgb$space. To perform the colour transfer, the authors transform the distribution of the original image such that the line 
 % Algorithm used - RGB space transform, division into bins and moving standard dev and mean while leaving details intact
 % Results don't show range but we can possibly replicate and check?
 
 It is not clear how fast the algorithm can run particularly on a mobile device, nor the range of colours that the algorithm can transform a single skin colour, and it is in these areas that our project will attempt to improve upon.
 
-Yang et al. performed the most recent study of colour transfer for human portraits \cite{yang_2015_semantic}. However, this study focuses on the effect on the whole image, and places emphasis on transfering colour for different features of the human face. The actual algorithm used to transfer skin colour remains Reinhard's algorithm. This method also ranks the preferred target image for similarity to the original image before performing the colour transfer, which differs from our project where a key issue is that we have no control over the target image that the user will provide us. 
+Yang et al. performed the most recent study of colour transfer for human portraits \cite{yang_2017_semantic}. However, this study focuses on the effect on the whole image, and places emphasis on transfering colour for different features of the human face. The actual algorithm used to transfer skin colour remains Reinhard's algorithm. This method also ranks the preferred target image for similarity to the original image before performing the colour transfer, which differs from our project where a key issue is that we have no control over the target image that the user will provide us. 
 
 Yin et al. performed a study on the transfer of skin colour between races in order to aid a psychological study \cite{yin_2004_transfer}. 
 
@@ -70,7 +100,7 @@ Yin et al. performed a study on the transfer of skin colour between races in ord
 
 We include this study because it is one of the few that explicitly tries to transfer colour between a large difference of skin colour.
 
-\section{Skin colour transfer as part of other applications}
+\subsubsection{Skin colour transfer as part of other applications}
 Several applications performing different functions make use of skin colour transfer.
 
 Shilkrot et al. published a study on transfering identity of the user on to a model image wearing garments the user may desire to purchase to create the virtual experience of the user trying on the garment \cite{shilkrot_2013_garment}. The purpose of this article is fundamentally related to the purpose of the application that is this project's goal to support, and so this article is of great interest to us. 
@@ -90,7 +120,7 @@ Another interesting case of skin colour matching is the work Bitouk et al to cre
 Another application we've found is the work Baba et al. to develop a software that edits portraits in yearbook photos to all have a uniform skin colour given an example skin colour image \cite{baba_2015_yearbook}. The algorithm that the authors use to acheive this uses Pitié's colour grading algorithm and guided image filtering. However, the goal of the project in terms of skin colour appears to be to have skin colours close to the target image but not necessarily exactly the same; the authors are focusing on the overall appearance of the set of portraits rather than the accuracy of the skin colour transfer for each individual image. On the other hand, the goal of our project is to ensure that the transformed skin colour of the model is as accurate as possible to the user's skin colour.
 %explain guided image filtering
 
-\section{Skin colour enhancement mobile applications}
+\subsubsection{Skin colour enhancement mobile applications}
 For the most part the studies we have found are not meant to be run on a mobile platform and there are few specifically devoted to human skin colour. There are however many skin colour enhancement applications that modify human skin colour and several studies that perform this on mobile devices. 
 %This makes sense as mobile devices all have cameras and these days skin tone enhancement is part of the functionality of the camera
 %exceptions though - which algorithms are fast? garment,
@@ -98,18 +128,9 @@ For the most part the studies we have found are not meant to be run on a mobile 
 %Mention the 2 studies at least
 The difference between those studies and ours is that we have a target colour that could be very different from the colour that skin enhancement is aiming for, and our requirements for accuracy to the target colour is more stringent.
 
-\section{Summary of differences between prior studies and this project}
-In summary, prior work typically cannot satisfy all of our requirements for this project, which include:
-
-\textbf{Realistic skin colour transfer}. In the case of general image color transfer algorithms, though there is a large number of very sophisticated prior work, most of the effort in that field has been to ensure that the process can cope with a wide range of images. Our project only focuses on a very specific type of image and is very sensitive to the realistic appearance of the skin colour of the processed image.
-
-\textbf{Accuracy of colour transfer}
-
-
- use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer
+\subsection{Summary of differences between prior studies and this project}
+In summary, we find that the prior work can some but all of our requirements for this project.
 %explain theoretical concepts in context of thesis work; be clear and concise
 %summarize relevant research to give understanding of current field
 %analyze research in field to give deeper understanding of research question 
 %indicate a path going forward
-
-\input{lit_review_photoshop}

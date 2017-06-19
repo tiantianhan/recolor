@@ -187,36 +187,57 @@ int main( int argc, char** argv )
         }
     }
 
-    // average colours
-    Scalar target;
-    // if no mask for getting average, create one
-    if(!has_targ_mask){
-    	targ_ave_col_mask = Mat::zeros(targ.rows, targ.cols, CV_8UC1);
-    	rectangle(targ_ave_col_mask, Rect(targ.cols/2 + 5, targ.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
-    }
+    // masks and average colours
+    Scalar target, average;
 
-    if(do_ave_perc){
-    	target = average_brightest(targ, targ_ave_col_mask, ave_perc / 100.0);
+    // default masks for reinhard - use full image
+    if(algo == REINHARD){
+    	if(!has_in_mask){
+    		in_ave_col_mask = Mat::zeros(src.rows, src.cols, CV_8UC1);
+    		in_ave_col_mask.setTo(Scalar(255));
+    	}
+
+    	if(!has_targ_mask){
+    		targ_ave_col_mask = Mat::zeros(targ.rows, targ.cols, CV_8UC1);
+    		targ_ave_col_mask.setTo(Scalar(255));
+    	}
+
+    	//DEBUG
+    	imwrite("outputs/in_ave_col_mask.jpg", in_ave_col_mask);
+    	imwrite("outputs/targ_ave_col_mask.jpg", targ_ave_col_mask);
+
+    // default masks for ours - some patch on the hand
     } else {
-    	target = mean(targ, targ_ave_col_mask);
+        // if no mask for getting average, create one
+        if(!has_targ_mask){
+        	targ_ave_col_mask = Mat::zeros(targ.rows, targ.cols, CV_8UC1);
+        	rectangle(targ_ave_col_mask, Rect(targ.cols/2 + 5, targ.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
+        }
+
+        // get average from only brightest pixels if specified
+        if(do_ave_perc){
+        	target = average_brightest(targ, targ_ave_col_mask, ave_perc / 100.0);
+        } else {
+        	target = mean(targ, targ_ave_col_mask);
+        }
+        //DEBUG
+        imwrite("outputs/targ_ave_col_mask.jpg", targ_ave_col_mask);
+
+        printf("Target image average b = %.2f, g = %.2f, r =%.2f\n", target(0), target(1), target(2)); cout.flush();
+
+        // if no mask for getting average, create one
+		if(!has_in_mask){
+			in_ave_col_mask = Mat::zeros(src.rows, src.cols, CV_8UC1);
+			rectangle(in_ave_col_mask, Rect(src.cols/2 + 5, src.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
+		}
+
+	    //DEBUG
+	    imwrite("outputs/in_ave_col_mask.jpg", in_ave_col_mask);
+
+	    // get average
+	    average = mean(src, in_ave_col_mask);
+	    printf("Input image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
     }
-    //DEBUG
-    imwrite("outputs/targ_ave_col_mask.jpg", targ_ave_col_mask);
-
-    printf("Target image average b = %.2f, g = %.2f, r =%.2f\n", target(0), target(1), target(2)); cout.flush();
-
-    Scalar average;
-    // if no mask for getting average, create one
-    if(!has_in_mask){
-    	in_ave_col_mask = Mat::zeros(src.rows, src.cols, CV_8UC1);
-    	rectangle(in_ave_col_mask, Rect(src.cols/2 + 5, src.rows/2 - 5, 10,10), Scalar(255), CV_FILLED);
-    }
-
-    //DEBUG
-    imwrite("outputs/in_ave_col_mask.jpg", in_ave_col_mask);
-
-    average = mean(src, in_ave_col_mask);
-    printf("Input image average b = %.2f, g = %.2f, r =%.2f\n", average(0), average(1), average(2)); cout.flush();
 
     // process
     Mat dst = Mat::zeros( src.size(), src.type());
@@ -244,6 +265,7 @@ int main( int argc, char** argv )
     	darkcorrect_process(dst, dst, average2, alpha); //using target colour as new average colour
 
     } else if(algo == REINHARD){
+
     	//reinhard_process(cv::Mat src, cv::Mat targ, cv::Mat src_mask, cv::Mat targ_mask, cv::Mat dst)
         reinhard_process(src, targ, in_ave_col_mask, targ_ave_col_mask, dst);
     }
