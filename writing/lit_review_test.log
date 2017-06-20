@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  19 JUN 2017 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  20 JUN 2017 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,7 +256,7 @@ Package pdftex.def Info: ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand
 _brown_to_hand_light.jpg used on input line 9.
 (pdftex.def)             Requested size: 141.83128pt x 101.17041pt.
 )
-Overfull \hbox (6.75377pt too wide) in alignment at lines 17--23
+Overfull \hbox (6.75377pt too wide) in alignment at lines 18--24
  [] [] [] [] 
  []
 
@@ -266,33 +266,110 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 17--23
 2 <../inputs/hand_brown.jpg> <../inputs/hand_light.jpg> <../rc_test/outputs/201
 70524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg>] (./lit_review.tex
 (./lit_review_photoshop.tex
+<images/obama_orig.png, id=14, 142.131pt x 142.131pt>
+File: images/obama_orig.png Graphic file (type png)
 
-LaTeX Warning: Reference `app:photoshop' on page 3 undefined on input line 4.
+<use images/obama_orig.png>
+Package pdftex.def Info: images/obama_orig.png used on input line 16.
+(pdftex.def)             Requested size: 141.84001pt x 141.84001pt.
 
+<images/obama_res.png, id=16, 160.9212pt x 138.7584pt>
+File: images/obama_res.png Graphic file (type png)
 
-LaTeX Warning: Reference `app:photoshop_obama' on page 3 undefined on input lin
-e 8.
+<use images/obama_res.png>
+Package pdftex.def Info: images/obama_res.png used on input line 19.
+(pdftex.def)             Requested size: 141.84927pt x 122.31314pt.
 
-) [3]
+<images/match_body_orig.png, id=17, 162.3666pt x 204.765pt>
+File: images/match_body_orig.png Graphic file (type png)
 
-LaTeX Warning: Reference `table:color_transfer' on page 4 undefined on input li
+<use images/match_body_orig.png>
+Package pdftex.def Info: images/match_body_orig.png used on input line 34.
+(pdftex.def)             Requested size: 141.84248pt x 178.88147pt.
+
+<images/match_body_targ.png, id=18, 151.2852pt x 199.947pt>
+File: images/match_body_targ.png Graphic file (type png)
+
+<use images/match_body_targ.png>
+Package pdftex.def Info: images/match_body_targ.png used on input line 37.
+(pdftex.def)             Requested size: 141.83875pt x 187.46204pt.
+
+<images/match_body_res.png, id=19, 151.767pt x 204.765pt>
+File: images/match_body_res.png Graphic file (type png)
+
+<use images/match_body_res.png>
+Package pdftex.def Info: images/match_body_res.png used on input line 40.
+(pdftex.def)             Requested size: 141.83656pt x 191.36679pt.
+ [3 <./images/obama_orig.png> <./images/obama_res.png>] <images/match_other_1_o
+rig.png, id=26, 151.767pt x 158.994pt>
+File: images/match_other_1_orig.png Graphic file (type png)
+
+<use images/match_other_1_orig.png>
+Package pdftex.def Info: images/match_other_1_orig.png used on input line 53.
+(pdftex.def)             Requested size: 141.83656pt x 148.5907pt.
+
+<images/match_other_1_targ.png, id=27, 154.6578pt x 159.4758pt>
+File: images/match_other_1_targ.png Graphic file (type png)
+
+<use images/match_other_1_targ.png>
+Package pdftex.def Info: images/match_other_1_targ.png used on input line 56.
+(pdftex.def)             Requested size: 141.83615pt x 146.25473pt.
+
+<images/match_other_1_res.png, id=28, 148.8762pt x 158.994pt>
+File: images/match_other_1_res.png Graphic file (type png)
+
+<use images/match_other_1_res.png>
+Package pdftex.def Info: images/match_other_1_res.png used on input line 59.
+(pdftex.def)             Requested size: 141.83594pt x 151.47527pt.
+
+<images/match_other_2_orig.png, id=29, 144.54pt x 159.9576pt>
+File: images/match_other_2_orig.png Graphic file (type png)
+
+<use images/match_other_2_orig.png>
+Package pdftex.def Info: images/match_other_2_orig.png used on input line 63.
+(pdftex.def)             Requested size: 141.8445pt x 156.9746pt.
+
+<images/match_other_2_targ.png, id=30, 138.7584pt x 159.9576pt>
+File: images/match_other_2_targ.png Graphic file (type png)
+
+<use images/match_other_2_targ.png>
+Package pdftex.def Info: images/match_other_2_targ.png used on input line 66.
+(pdftex.def)             Requested size: 141.84293pt x 163.51337pt.
+
+<images/match_other_2_res.png, id=31, 139.2402pt x 159.9576pt>
+File: images/match_other_2_res.png Graphic file (type png)
+
+<use images/match_other_2_res.png>
+Package pdftex.def Info: images/match_other_2_res.png used on input line 69.
+(pdftex.def)             Requested size: 141.8404pt x 162.94467pt.
+
+Overfull \hbox (6.75377pt too wide) in alignment at lines 47--72
+ [] [] [] [] 
+ []
+
+[4 <./images/match_body_orig.png> <./images/match_body_targ.png> <./images/matc
+h_body_res.png> <./images/match_other_1_orig.png> <./images/match_other_1_targ.
+png> <./images/match_other_1_res.png>]) [5 <./images/match_other_2_orig.png> <.
+/images/match_other_2_targ.png> <./images/match_other_2_res.png>]
+
+LaTeX Warning: Reference `table:color_transfer' on page 6 undefined on input li
 ne 17.
 
-<images/reinhard_orig1.jpg, id=17, 207.2258pt x 155.41936pt>
+<images/reinhard_orig1.jpg, id=47, 207.2258pt x 155.41936pt>
 File: images/reinhard_orig1.jpg Graphic file (type jpg)
 
 <use images/reinhard_orig1.jpg>
 Package pdftex.def Info: images/reinhard_orig1.jpg used on input line 28.
 (pdftex.def)             Requested size: 141.83813pt x 106.3786pt.
 
-<images/reinhard_target1.jpg, id=18, 207.2258pt x 134.43774pt>
+<images/reinhard_target1.jpg, id=48, 207.2258pt x 134.43774pt>
 File: images/reinhard_target1.jpg Graphic file (type jpg)
 
 <use images/reinhard_target1.jpg>
 Package pdftex.def Info: images/reinhard_target1.jpg used on input line 31.
 (pdftex.def)             Requested size: 141.83813pt x 92.01749pt.
 
-<images/reinhard_result1.jpg, id=19, 207.2258pt x 155.16032pt>
+<images/reinhard_result1.jpg, id=49, 207.2258pt x 155.16032pt>
 File: images/reinhard_result1.jpg Graphic file (type jpg)
 
 <use images/reinhard_result1.jpg>
@@ -303,22 +380,21 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 22--36
  [] [] [] [] 
  []
 
-[4 <./images/reinhard_orig1.jpg> <./images/reinhard_target1.jpg> <./images/rein
-hard_result1.jpg>] <images/pitie_original.png, id=25, 194.7275pt x 156.585pt>
+<images/pitie_original.png, id=50, 194.7275pt x 156.585pt>
 File: images/pitie_original.png Graphic file (type png)
 
 <use images/pitie_original.png>
 Package pdftex.def Info: images/pitie_original.png used on input line 46.
 (pdftex.def)             Requested size: 141.84087pt x 114.0576pt.
 
-<images/pitie_target1.png, id=27, 195.73125pt x 154.5775pt>
+<images/pitie_target1.png, id=51, 195.73125pt x 154.5775pt>
 File: images/pitie_target1.png Graphic file (type png)
 
 <use images/pitie_target1.png>
 Package pdftex.def Info: images/pitie_target1.png used on input line 49.
 (pdftex.def)             Requested size: 141.84326pt x 112.0198pt.
 
-<images/pitie_result1.png, id=28, 194.7275pt x 155.58125pt>
+<images/pitie_result1.png, id=52, 194.7275pt x 155.58125pt>
 File: images/pitie_result1.png Graphic file (type png)
 
 <use images/pitie_result1.png>
@@ -329,14 +405,14 @@ File: images/pitie_original.png Graphic file (type png)
 Package pdftex.def Info: images/pitie_original.png used on input line 56.
 (pdftex.def)             Requested size: 141.84087pt x 114.0576pt.
 
-<images/pitie_target2.png, id=29, 194.7275pt x 153.57375pt>
+<images/pitie_target2.png, id=53, 194.7275pt x 153.57375pt>
 File: images/pitie_target2.png Graphic file (type png)
 
 <use images/pitie_target2.png>
 Package pdftex.def Info: images/pitie_target2.png used on input line 59.
 (pdftex.def)             Requested size: 141.84087pt x 111.86418pt.
 
-<images/pitie_result2.png, id=30, 192.72pt x 154.5775pt>
+<images/pitie_result2.png, id=54, 192.72pt x 154.5775pt>
 File: images/pitie_result2.png Graphic file (type png)
 
 <use images/pitie_result2.png>
@@ -347,21 +423,22 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 40--65
  [] [] [] [] 
  []
 
-<images/seo_orig1.jpg, id=31, 86.821pt x 109.13255pt>
+[6 <./images/reinhard_orig1.jpg> <./images/reinhard_target1.jpg> <./images/rein
+hard_result1.jpg>] <images/seo_orig1.jpg, id=59, 86.821pt x 109.13255pt>
 File: images/seo_orig1.jpg Graphic file (type jpg)
 
 <use images/seo_orig1.jpg>
 Package pdftex.def Info: images/seo_orig1.jpg used on input line 83.
 (pdftex.def)             Requested size: 141.84947pt x 178.30244pt.
 
-<images/seo_target1.jpg, id=32, 80.9424pt x 113.223pt>
+<images/seo_target1.jpg, id=60, 80.9424pt x 113.223pt>
 File: images/seo_target1.jpg Graphic file (type jpg)
 
 <use images/seo_target1.jpg>
 Package pdftex.def Info: images/seo_target1.jpg used on input line 86.
 (pdftex.def)             Requested size: 141.84398pt x 198.41272pt.
 
-<images/seo_result1.jpg, id=33, 86.821pt x 109.13255pt>
+<images/seo_result1.jpg, id=61, 86.821pt x 109.13255pt>
 File: images/seo_result1.jpg Graphic file (type jpg)
 
 <use images/seo_result1.jpg>
@@ -372,23 +449,23 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 77--91
  [] [] [] [] 
  []
 
-[5 <./images/pitie_original.png> <./images/pitie_target1.png> <./images/pitie_r
+[7 <./images/pitie_original.png> <./images/pitie_target1.png> <./images/pitie_r
 esult1.png> <./images/pitie_target2.png> <./images/pitie_result2.png>]
-<images/yang_orig1.jpg, id=42, 84.5559pt x 47.9391pt>
+<images/yang_orig1.jpg, id=71, 84.5559pt x 47.9391pt>
 File: images/yang_orig1.jpg Graphic file (type jpg)
 
 <use images/yang_orig1.jpg>
 Package pdftex.def Info: images/yang_orig1.jpg used on input line 104.
 (pdftex.def)             Requested size: 141.85033pt x 80.42226pt.
 
-<images/yang_target1.jpg, id=43, 353.32pt x 199.74625pt>
+<images/yang_target1.jpg, id=72, 353.32pt x 199.74625pt>
 File: images/yang_target1.jpg Graphic file (type jpg)
 
 <use images/yang_target1.jpg>
 Package pdftex.def Info: images/yang_target1.jpg used on input line 107.
 (pdftex.def)             Requested size: 141.83766pt x 80.18663pt.
 
-<images/yang_result1.jpg, id=44, 84.5559pt x 47.9391pt>
+<images/yang_result1.jpg, id=73, 84.5559pt x 47.9391pt>
 File: images/yang_result1.jpg Graphic file (type jpg)
 
 <use images/yang_result1.jpg>
@@ -399,21 +476,21 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 98--112
  [] [] [] [] 
  []
 
-<images/yin_orig1.jpg, id=45, 70.30347pt x 84.56082pt>
+<images/yin_orig1.jpg, id=74, 70.30347pt x 84.56082pt>
 File: images/yin_orig1.jpg Graphic file (type jpg)
 
 <use images/yin_orig1.jpg>
 Package pdftex.def Info: images/yin_orig1.jpg used on input line 122.
 (pdftex.def)             Requested size: 141.8488pt x 170.61534pt.
 
-<images/yin_target1.jpg, id=46, 56.74722pt x 82.1944pt>
+<images/yin_target1.jpg, id=75, 56.74722pt x 82.1944pt>
 File: images/yin_target1.jpg Graphic file (type jpg)
 
 <use images/yin_target1.jpg>
 Package pdftex.def Info: images/yin_target1.jpg used on input line 125.
 (pdftex.def)             Requested size: 141.86768pt x 205.48546pt.
 
-<images/yin_result1.jpg, id=47, 70.3428pt x 85.0377pt>
+<images/yin_result1.jpg, id=76, 70.3428pt x 85.0377pt>
 File: images/yin_result1.jpg Graphic file (type jpg)
 
 <use images/yin_result1.jpg>
@@ -424,18 +501,18 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 116--130
  [] [] [] [] 
  []
 
-[6 <./images/seo_orig1.jpg> <./images/seo_target1.jpg> <./images/seo_result1.jp
+[8 <./images/seo_orig1.jpg> <./images/seo_target1.jpg> <./images/seo_result1.jp
 g> <./images/yang_orig1.jpg> <./images/yang_target1.jpg> <./images/yang_result1
 .jpg>]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [7 <./images/yin_orig1.jpg> <./images/yin_target1.jpg> <./images/yin_result1.j
+ [9 <./images/yin_orig1.jpg> <./images/yin_target1.jpg> <./images/yin_result1.j
 pg>]
 
-LaTeX Warning: Reference `lee_2010_mobile' on page 8 undefined on input line 16
-4.
+LaTeX Warning: Reference `lee_2010_mobile' on page 10 undefined on input line 1
+64.
 
-) [8] (./lit_review_test.bbl
+) [10] (./lit_review_test.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -466,7 +543,7 @@ LaTeX Warning: Reference `lee_2010_mobile' on page 8 undefined on input line 16
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[9]
+[11]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -485,29 +562,29 @@ LaTeX Warning: Reference `lee_2010_mobile' on page 8 undefined on input line 16
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-) [10] (./lit_review_test.aux)
+) [12] (./lit_review_test.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2668 strings out of 494447
- 39435 string characters out of 6166766
- 105187 words of memory out of 5000000
- 5950 multiletter control sequences out of 15000+600000
+ 2730 strings out of 494447
+ 41135 string characters out of 6166766
+ 107399 words of memory out of 5000000
+ 6001 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 37i,9n,32p,1495b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,1554b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on lit_review_test.pdf (10 pages, 4019507 bytes).
+Output written on lit_review_test.pdf (12 pages, 6171884 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
