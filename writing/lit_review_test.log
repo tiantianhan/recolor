@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  19 JUN 2017 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  19 JUN 2017 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,13 +224,48 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )) (./intro.tex
+(./latex_maker/prop_correct_ave_test_a1p1_perc100_label/hand_brown_to_hand_ligh
+t.tex <../inputs/hand_brown.jpg, id=1, 738.76pt x 526.96875pt>
+File: ../inputs/hand_brown.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `tab:our_demo' on page 1 undefined on input line 15.
+<use ../inputs/hand_brown.jpg>
+Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 3.
+(pdftex.def)             Requested size: 141.83128pt x 101.17041pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+
+<../inputs/hand_light.jpg, id=2, 1003.75pt x 857.2025pt>
+File: ../inputs/hand_light.jpg Graphic file (type jpg)
+
+<use ../inputs/hand_light.jpg>
+Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
+(pdftex.def)             Requested size: 141.8259pt x 121.11931pt.
+
+<../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg
+, id=3, 738.76pt x 526.96875pt>
+File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_ligh
+t.jpg Graphic file (type jpg)
+
+<use ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light
+.jpg>
+Package pdftex.def Info: ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand
+_brown_to_hand_light.jpg used on input line 9.
+(pdftex.def)             Requested size: 141.83128pt x 101.17041pt.
+)
+Overfull \hbox (6.75377pt too wide) in alignment at lines 17--23
+ [] [] [] [] 
+ []
 
 [1
 
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [
-2] (./lit_review.tex (./lit_review_photoshop.tex
+2 <../inputs/hand_brown.jpg> <../inputs/hand_light.jpg> <../rc_test/outputs/201
+70524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg>] (./lit_review.tex
+(./lit_review_photoshop.tex
 
 LaTeX Warning: Reference `app:photoshop' on page 3 undefined on input line 4.
 
@@ -243,27 +278,21 @@ e 8.
 LaTeX Warning: Reference `table:color_transfer' on page 4 undefined on input li
 ne 17.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-<images/reinhard_orig1.jpg, id=14, 207.2258pt x 155.41936pt>
+<images/reinhard_orig1.jpg, id=17, 207.2258pt x 155.41936pt>
 File: images/reinhard_orig1.jpg Graphic file (type jpg)
 
 <use images/reinhard_orig1.jpg>
 Package pdftex.def Info: images/reinhard_orig1.jpg used on input line 28.
 (pdftex.def)             Requested size: 141.83813pt x 106.3786pt.
 
-<images/reinhard_target1.jpg, id=15, 207.2258pt x 134.43774pt>
+<images/reinhard_target1.jpg, id=18, 207.2258pt x 134.43774pt>
 File: images/reinhard_target1.jpg Graphic file (type jpg)
 
 <use images/reinhard_target1.jpg>
 Package pdftex.def Info: images/reinhard_target1.jpg used on input line 31.
 (pdftex.def)             Requested size: 141.83813pt x 92.01749pt.
 
-<images/reinhard_result1.jpg, id=16, 207.2258pt x 155.16032pt>
+<images/reinhard_result1.jpg, id=19, 207.2258pt x 155.16032pt>
 File: images/reinhard_result1.jpg Graphic file (type jpg)
 
 <use images/reinhard_result1.jpg>
@@ -275,21 +304,21 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 22--36
  []
 
 [4 <./images/reinhard_orig1.jpg> <./images/reinhard_target1.jpg> <./images/rein
-hard_result1.jpg>] <images/pitie_original.png, id=22, 194.7275pt x 156.585pt>
+hard_result1.jpg>] <images/pitie_original.png, id=25, 194.7275pt x 156.585pt>
 File: images/pitie_original.png Graphic file (type png)
 
 <use images/pitie_original.png>
 Package pdftex.def Info: images/pitie_original.png used on input line 46.
 (pdftex.def)             Requested size: 141.84087pt x 114.0576pt.
 
-<images/pitie_target1.png, id=24, 195.73125pt x 154.5775pt>
+<images/pitie_target1.png, id=27, 195.73125pt x 154.5775pt>
 File: images/pitie_target1.png Graphic file (type png)
 
 <use images/pitie_target1.png>
 Package pdftex.def Info: images/pitie_target1.png used on input line 49.
 (pdftex.def)             Requested size: 141.84326pt x 112.0198pt.
 
-<images/pitie_result1.png, id=25, 194.7275pt x 155.58125pt>
+<images/pitie_result1.png, id=28, 194.7275pt x 155.58125pt>
 File: images/pitie_result1.png Graphic file (type png)
 
 <use images/pitie_result1.png>
@@ -300,14 +329,14 @@ File: images/pitie_original.png Graphic file (type png)
 Package pdftex.def Info: images/pitie_original.png used on input line 56.
 (pdftex.def)             Requested size: 141.84087pt x 114.0576pt.
 
-<images/pitie_target2.png, id=26, 194.7275pt x 153.57375pt>
+<images/pitie_target2.png, id=29, 194.7275pt x 153.57375pt>
 File: images/pitie_target2.png Graphic file (type png)
 
 <use images/pitie_target2.png>
 Package pdftex.def Info: images/pitie_target2.png used on input line 59.
 (pdftex.def)             Requested size: 141.84087pt x 111.86418pt.
 
-<images/pitie_result2.png, id=27, 192.72pt x 154.5775pt>
+<images/pitie_result2.png, id=30, 192.72pt x 154.5775pt>
 File: images/pitie_result2.png Graphic file (type png)
 
 <use images/pitie_result2.png>
@@ -318,12 +347,95 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 40--65
  [] [] [] [] 
  []
 
+<images/seo_orig1.jpg, id=31, 86.821pt x 109.13255pt>
+File: images/seo_orig1.jpg Graphic file (type jpg)
+
+<use images/seo_orig1.jpg>
+Package pdftex.def Info: images/seo_orig1.jpg used on input line 83.
+(pdftex.def)             Requested size: 141.84947pt x 178.30244pt.
+
+<images/seo_target1.jpg, id=32, 80.9424pt x 113.223pt>
+File: images/seo_target1.jpg Graphic file (type jpg)
+
+<use images/seo_target1.jpg>
+Package pdftex.def Info: images/seo_target1.jpg used on input line 86.
+(pdftex.def)             Requested size: 141.84398pt x 198.41272pt.
+
+<images/seo_result1.jpg, id=33, 86.821pt x 109.13255pt>
+File: images/seo_result1.jpg Graphic file (type jpg)
+
+<use images/seo_result1.jpg>
+Package pdftex.def Info: images/seo_result1.jpg used on input line 89.
+(pdftex.def)             Requested size: 141.84947pt x 178.30244pt.
+
+Overfull \hbox (6.75377pt too wide) in alignment at lines 77--91
+ [] [] [] [] 
+ []
+
 [5 <./images/pitie_original.png> <./images/pitie_target1.png> <./images/pitie_r
 esult1.png> <./images/pitie_target2.png> <./images/pitie_result2.png>]
+<images/yang_orig1.jpg, id=42, 84.5559pt x 47.9391pt>
+File: images/yang_orig1.jpg Graphic file (type jpg)
+
+<use images/yang_orig1.jpg>
+Package pdftex.def Info: images/yang_orig1.jpg used on input line 104.
+(pdftex.def)             Requested size: 141.85033pt x 80.42226pt.
+
+<images/yang_target1.jpg, id=43, 353.32pt x 199.74625pt>
+File: images/yang_target1.jpg Graphic file (type jpg)
+
+<use images/yang_target1.jpg>
+Package pdftex.def Info: images/yang_target1.jpg used on input line 107.
+(pdftex.def)             Requested size: 141.83766pt x 80.18663pt.
+
+<images/yang_result1.jpg, id=44, 84.5559pt x 47.9391pt>
+File: images/yang_result1.jpg Graphic file (type jpg)
+
+<use images/yang_result1.jpg>
+Package pdftex.def Info: images/yang_result1.jpg used on input line 110.
+(pdftex.def)             Requested size: 141.85033pt x 80.42226pt.
+
+Overfull \hbox (6.75377pt too wide) in alignment at lines 98--112
+ [] [] [] [] 
+ []
+
+<images/yin_orig1.jpg, id=45, 70.30347pt x 84.56082pt>
+File: images/yin_orig1.jpg Graphic file (type jpg)
+
+<use images/yin_orig1.jpg>
+Package pdftex.def Info: images/yin_orig1.jpg used on input line 122.
+(pdftex.def)             Requested size: 141.8488pt x 170.61534pt.
+
+<images/yin_target1.jpg, id=46, 56.74722pt x 82.1944pt>
+File: images/yin_target1.jpg Graphic file (type jpg)
+
+<use images/yin_target1.jpg>
+Package pdftex.def Info: images/yin_target1.jpg used on input line 125.
+(pdftex.def)             Requested size: 141.86768pt x 205.48546pt.
+
+<images/yin_result1.jpg, id=47, 70.3428pt x 85.0377pt>
+File: images/yin_result1.jpg Graphic file (type jpg)
+
+<use images/yin_result1.jpg>
+Package pdftex.def Info: images/yin_result1.jpg used on input line 128.
+(pdftex.def)             Requested size: 141.86484pt x 171.50098pt.
+
+Overfull \hbox (6.75377pt too wide) in alignment at lines 116--130
+ [] [] [] [] 
+ []
+
+[6 <./images/seo_orig1.jpg> <./images/seo_target1.jpg> <./images/seo_result1.jp
+g> <./images/yang_orig1.jpg> <./images/yang_target1.jpg> <./images/yang_result1
+.jpg>]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [6])
-[7] (./lit_review_test.bbl
+ [7 <./images/yin_orig1.jpg> <./images/yin_target1.jpg> <./images/yin_result1.j
+pg>]
+
+LaTeX Warning: Reference `lee_2010_mobile' on page 8 undefined on input line 16
+4.
+
+) [8] (./lit_review_test.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -354,7 +466,7 @@ Missing character: There is no © in font cmr12!
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-[8]
+[9]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -373,16 +485,16 @@ Missing character: There is no © in font cmr12!
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-) [9] (./lit_review_test.aux)
+) [10] (./lit_review_test.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2591 strings out of 494447
- 37291 string characters out of 6166766
- 103839 words of memory out of 5000000
- 5890 multiletter control sequences out of 15000+600000
+ 2668 strings out of 494447
+ 39435 string characters out of 6166766
+ 105187 words of memory out of 5000000
+ 5950 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  37i,9n,32p,1495b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -390,11 +502,12 @@ Here is how much of TeX's memory you used:
 2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb>
-Output written on lit_review_test.pdf (9 pages, 3624156 bytes).
+ts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti12.pfb>
+Output written on lit_review_test.pdf (10 pages, 4019507 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

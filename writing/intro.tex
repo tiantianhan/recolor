@@ -14,20 +14,34 @@ Currently, we aren't aware of an existing algorithm that satisfies all our speci
 \subsection{The goals, constraints and requirements for an effective skin colour transfer algorithm}
 Our project is intended to manipulate image frames in a video of a model hand demonstrating nail polish product so that the model hand takes on the user's skin colour. The images we must process will mostly consist of the back of a single hand shown prominently in the image. We expect image sizes the algorithm should be able to handle to be approximately 800 x 800 px and larger. We show in the Table \ref{tab:our_demo} an example of the desired output of our algorithm. 
 
+\begin{longtable}{|N||c|c|c|}
+	\caption{Example of our desired result \label{tab:our_demo}}\\
+	\hline
+	\multicolumn{1}{|c||}{No.} & Original & Target & Result \\ 
+	\hline
+		\input{latex_maker/prop_correct_ave_test_a1p1_perc100_label/hand_brown_to_hand_light}
+ \end{longtable}
+
 We list below several important aspects of the scope and constraints of our project:
 
 \textbf{No skin detection:} To narrow the scope of our project, we will not include skin detection as part of this project and assume that our algorithm is already given a mask of the skin areas of all the images. We will focus solely on the transfer of the hand skin colour. 
 
-\textbf{Compatibility with mobile device:} Our algorithm is ultimately intended to support and application on a mobile device, so we must ensure that the algorithm we develop can operate quickly with the limited resources of a mobile device so that the user will be able to see instant results.
+\textbf{Compatibile with mobile device:} Our algorithm is ultimately intended to support and application on a mobile device, so we must ensure that the algorithm we develop can operate quickly with the limited resources of a mobile device so that the user will be able to see near-instant results.
 
-\textbf{Fully automatic:} Since the goal of our project is for the user to be able to change their 
+\textbf{Accepts user image as target:} The algorithm should be able to accept only an image containing the user's own hand as the target image to transfer the colour of the model hand to.
+
+\textbf{Fully automatic:} Since the goal of our project is for a commercial user to be able to change the model to his or her own skin colour, our algorithm cannot rely on any user input to perform the image editing.
 
 Based on the needs of our project, we list several design paradigms against which we will evaluate our algorithm:
 
-\textbf{Realistic skin colour transfer}. 
-Since the goal of our project is to perform skin colour transfer for model images that are meant to demonstrate beauty products to users, and the results are meant to invoke for the user the impression that the user's own hand is wearing the product, our final images must look as realistic as possible to avoid a displeasing, uncanny valley effect. Furthermore, the images we process will be large and feature a the skin on the back of a hand very prominently, so we can expect the realistic appearance we can expect that our result will be very heavily scrutinized by the user.
+\textbf{Realistic skin colour transfer.}
+Since the goal of our project is to perform skin colour transfer for model images that are meant to demonstrate cosmetic products to users, and the results are meant to invoke for the user the impression that the user's own hand is wearing the product, our final images must look as realistic as possible to avoid a displeasing, uncanny valley effect. Furthermore, the images we process will be large and feature a the skin on the back of a hand very prominently, so we can expect the realistic appearance we can expect that our result will be very heavily scrutinized by the user.
 
-\textbf{Accuracy of colour transfer} 
-Since the project is meant to demonstrate
+\textbf{Accurate skin colour transfer.} 
+Since the entire goal of nail polish try-on application is to demonstrate to the user how a particular shade of nail polish will appear on his or her own hand, we must ensure that the results of the algorithm, more than looking pleasing to the user, actually matches the skin colour sample provided by the user exactly.
 
- use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer
+\textbf{Fast skin colour transfer.} As we've discussed, the skin colour transfer should occur quickly given our large image size and the limited resources on a mobile device to provide a satisfactory user experience.
+
+\textbf{Wide range of colour transfer.} Since the goal of the project is to reduce the number of nail polish try-on videos of different skin colours needed and since users may have a wide range of skin colour and should all be supported, our algorithm needs to be able to transfer the skin colour of a mid-toned hand to as wide a range of skin colour as possible.
+
+ % use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer

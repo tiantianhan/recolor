@@ -69,22 +69,70 @@ More recently, Bonnel et al. conducted a further study on colour transfer for fi
 
 While these techniques are interesting possibilities to try when transferring human skin colour, because the these prior studies are all concerned with different problems that can arise with general images but not specifically for human skin colour, studies that specifically relate to human skin colour demonstrate that the general colour transfer techniques can be improved upon.
 
-\subsubsection{Transfer of human skin colour}
-Several studies have been done specifically on the transfer of human skin colour.
+\subsubsection{Colour transfer by example for images with human skin}
+There are fewer studies done specifically on the transfer of human skin colour, but there are several of great interest to us.
 
-Seo et al. \cite{seo_2005_transfer} has a purpose closest to the purpose of this project, to transfer human skin colours. The authors show results that improve in realistic appearance compared to the Reinhard's algorithm. The authors model the skin colour as an elongated distribution around a line referred to as the principle line in $rgb$space. To perform the colour transfer, the authors transform the distribution of the original image such that the line 
-% Algorithm used - RGB space transform, division into bins and moving standard dev and mean while leaving details intact
-% Results don't show range but we can possibly replicate and check?
+Seo et al. has a purpose most similar to the purpose of this project, which is to find a method of transferring human skin colours as realistically and accurately as possible \cite{seo_2005_transfer}. In their study, authors demonstrate results that improve in realistic appearance compared to the Reinhard's algorithm. To acheive this, authors model the skin colour as an elongated distribution around a line referred to as the \textit{principle line} in $rgb$ space. To perform the colour transfer, the authors transform the distribution of the original image such that the principle line aligns with that of the target image. The authors then break the colour values into bins along the principle lines and also match the distribution of each bin.Table \ref{tab:seo_demo} demonstrates the output of this method.
 
-It is not clear how fast the algorithm can run particularly on a mobile device, nor the range of colours that the algorithm can transform a single skin colour, and it is in these areas that our project will attempt to improve upon.
+\begin{longtable}{|N||c|c|c|}
+    \caption{Example of image colour transfer using the algorithm from Seo et al. All images from \cite{seo_2005_transfer} \label{tab:seo_demo}}\\
+    \hline
+    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
+    \hline  \label{row:seo_demo_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/seo_orig1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/seo_target1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/seo_result1}
+  \end{minipage} \\
+\end{longtable}
 
-Yang et al. performed the most recent study of colour transfer for human portraits \cite{yang_2017_semantic}. However, this study focuses on the effect on the whole image, and places emphasis on transferring colour for different features of the human face. The actual algorithm used to transfer skin colour remains Reinhard's algorithm. This method also ranks the preferred target image for similarity to the original image before performing the colour transfer, which differs from our project where a key issue is that we have no control over the target image that the user will provide us. 
+However, as far as the other requirements of this project is concerned, it is not clear how fast this algorithm can run, particularly on a mobile device, nor the range of colours that the algorithm can transform a single skin colour, and it is in these areas that our project will attempt to improve upon.
+% should we possibly replicate and check?
 
-Yin et al. performed a study on the transfer of skin colour between races in order to aid a psychological study \cite{yin_2004_transfer}. 
+Yang et al. performed a more recent study of colour transfer for human portraits \cite{yang_2017_semantic} - Table \ref{tab:yang_demo} demonstrates their results. However, as Table \ref{tab:yang_demo} shows, this study focuses on the effect on the whole portrait, and places emphasis on transferring colour for different features of the human face. The actual algorithm the authors use to transfer skin colour is actually Reinhard's algorithm. This method also ranks the preferred target image for similarity to the original image before performing the colour transfer, which differs from our project where a key issue is that we have no control over the target image that the user will provide us and must be able to transfer to a wide range of colours. 
 
-% Study has flaws: quality of transfer - bright spots, realism for transfer from a lighter or midtoned skin colour to darker skin colour, and time taken to perform the transfer
+\begin{longtable}{|N||c|c|c|}
+    \caption{Example of image colour transfer using the algorithm from Yang et al. All images from \cite{yang_2017_semantic} \label{tab:yang_demo}}\\
+    \hline
+    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
+    \hline  \label{row:yang_demo_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yang_orig1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yang_target1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yang_result1}
+  \end{minipage} \\
+\end{longtable}
 
-We include this study because it is one of the few that explicitly tries to transfer colour between a large difference of skin colour.
+Yin et al. performed a study on the transfer of skin colour between races in order to aid a psychological study \cite{yin_2004_transfer}. The authors use a process of first global adjustment of the two images to match the average colours, and then using the pixels from the target image with a colour most resembling the colour in the original image to entirely replace that pixel in the original image. Table \ref{tab:yin_demo} shows an example of the results using this technique.
+
+\begin{longtable}{|N||c|c|c|}
+    \caption{Example of image colour transfer using the algorithm from Yin et al. All images from \cite{yin_2004_transfer} \label{tab:yin_demo}}\\
+    \hline
+    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
+    \hline  \label{row:yin_demo_1} &
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yin_orig1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yin_target1}
+  \end{minipage} & 
+  \begin{minipage}{.29\textwidth}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yin_result1}
+  \end{minipage} \\
+\end{longtable}
+
+We include this study because it is one of the few that explicitly tries to transfer colour between large difference of skin colour, however, we feel it has many flaws with respect to our other requirements. Although the authors describe a study done evaluating the verisimilitude of the results with good results, we feel that particularly in the case of large skin colour changes shown above, the results are not realistic and show bright spots of saturation. Furthermore, the authors describe their algorithm as having $O(n^2)$ time, which likely means that this algorithm will perform too slowly for our purposes.
+
+% quality of transfer - bright spots, realism for transfer from a lighter or midtoned skin colour to darker skin colour, and time taken to perform the transfer
+
 
 \subsubsection{Skin colour transfer as part of other applications}
 Several applications performing different functions make use of skin colour transfer.
@@ -107,11 +155,14 @@ Another application we've found is the work Baba et al. to develop a software th
 %explain guided image filtering
 
 \subsubsection{Skin colour enhancement mobile applications}
-For the most part the studies we have found are not meant to be run on a mobile platform and there are few specifically devoted to human skin colour. There are however many skin colour enhancement applications that modify human skin colour and several studies that perform this on mobile devices. 
+For the most part the studies we have found are not meant to be run on a mobile platform and there are few specifically devoted to human skin colour. There are however many skin colour enhancement applications that modify human skin colour and several studies that perform this on mobile devices.
+
 %This makes sense as mobile devices all have cameras and these days skin tone enhancement is part of the functionality of the camera
 %exceptions though - which algorithms are fast? garment,
 %are you sure there are no other skin color change stuff on mobile platform? look more into this
 %Mention the 2 studies at least
+For example, Lee et al. enhances skin colour of users to a \textit{preferred skin color}, or a skin colour close to the user's original skin colour that the user's race would find the most pleasing, in addition to changing the background of the user's video on a mobile phone \ref{lee_2010_mobile}. 
+
 The difference between those studies and ours is that we have a target colour that could be very different from the colour that skin enhancement is aiming for, and our requirements for accuracy to the target colour is more stringent.
 
 \subsection{Summary of differences between prior studies and this project}
