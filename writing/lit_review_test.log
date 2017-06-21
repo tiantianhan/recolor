@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  20 JUN 2017 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  20 JUN 2017 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,10 +351,6 @@ Overfull \hbox (6.75377pt too wide) in alignment at lines 47--72
 h_body_res.png> <./images/match_other_1_orig.png> <./images/match_other_1_targ.
 png> <./images/match_other_1_res.png>]) [5 <./images/match_other_2_orig.png> <.
 /images/match_other_2_targ.png> <./images/match_other_2_res.png>]
-
-LaTeX Warning: Reference `table:color_transfer' on page 6 undefined on input li
-ne 17.
-
 <images/reinhard_orig1.jpg, id=47, 207.2258pt x 155.41936pt>
 File: images/reinhard_orig1.jpg Graphic file (type jpg)
 
@@ -507,12 +503,7 @@ g> <./images/yang_orig1.jpg> <./images/yang_target1.jpg> <./images/yang_result1
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
  [9 <./images/yin_orig1.jpg> <./images/yin_target1.jpg> <./images/yin_result1.j
-pg>]
-
-LaTeX Warning: Reference `lee_2010_mobile' on page 10 undefined on input line 1
-64.
-
-) [10] (./lit_review_test.bbl
+pg>]) [10] (./lit_review_test.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -562,26 +553,22 @@ LaTeX Warning: Reference `lee_2010_mobile' on page 10 undefined on input line 1
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-) [12] (./lit_review_test.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [12] (./lit_review_test.aux) ) 
 Here is how much of TeX's memory you used:
- 2730 strings out of 494447
- 41135 string characters out of 6166766
+ 2728 strings out of 494447
+ 41096 string characters out of 6166766
  107399 words of memory out of 5000000
- 6001 multiletter control sequences out of 15000+600000
+ 5999 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  37i,9n,32p,1554b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on lit_review_test.pdf (12 pages, 6171884 bytes).
+</usr/local/texlive/2016basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on lit_review_test.pdf (12 pages, 6173333 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
