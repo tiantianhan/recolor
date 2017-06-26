@@ -1,8 +1,8 @@
-\nomenclatureentry{a$r$@[{$r$}]\begingroup Value of the red channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$r'$@[{$r'$}]\begingroup Value of the red channel of the pixel after an algorithm is applied.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$\mean{r}$@[{$\mean{r}$}]\begingroup Average value of the red channel of the original hand image.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$\mean{r_t}$@[{$\mean{r_t}$}]\begingroup Average value of the red channel of the target hand image.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$g$@[{$g$}]\begingroup Value of the green channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$b$@[{$b$}]\begingroup Value of the blue channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{9}
-\nomenclatureentry{a$r''$@[{$r''$}]\begingroup Value of the red channel of the pixel after a second algorithm is applied.\nomeqref {3}|nompageref}{12}
-\nomenclatureentry{a$\mean{r'}$@[{$\mean{r'}$}]\begingroup Average value of the red channel of the hand image outputted by the first algorithm.\nomeqref {3}|nompageref}{12}
+\nomenclatureentry{a$r$@[{$r$}]\begingroup Value of the red channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$r'$@[{$r'$}]\begingroup Value of the red channel of the pixel after an algorithm is applied.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$\mean{r}$@[{$\mean{r}$}]\begingroup Average value of the red channel of the original hand image.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$\mean{r_t}$@[{$\mean{r_t}$}]\begingroup Average value of the red channel of the target hand image.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$g$@[{$g$}]\begingroup Value of the green channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$b$@[{$b$}]\begingroup Value of the blue channel of a pixel in the original hand image.\nomeqref {1}|nompageref}{18}
+\nomenclatureentry{a$r''$@[{$r''$}]\begingroup Value of the red channel of the pixel after a second algorithm is applied.\nomeqref {3}|nompageref}{22}
+\nomenclatureentry{a$\mean{r'}$@[{$\mean{r'}$}]\begingroup Average value of the red channel of the hand image outputted by the first algorithm.\nomeqref {3}|nompageref}{22}

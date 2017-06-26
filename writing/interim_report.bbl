@@ -40,6 +40,38 @@ PiXimperfect. (2017) How to match skin tone in photoshop cc 2017. [Online].
   Available: \url{https://www.youtube.com/watch?v=zEeknlHydfE}
 \BIBentrySTDinterwordspacing
 
+\bibitem{reinhard_2001_transfer}
+E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
+  images,'' \emph{IEEE Computer Graphics Applications}, vol.~21, no.~5, pp.
+  34--41, Sep. 2001.
+
+\bibitem{pitie_2007_grading}
+F.~Pitie, A.~Kokaram, and R.~Dahyot, ``\BIBforeignlanguage{English}{Automated
+  colour grading using colour distribution transfer},''
+  \emph{\BIBforeignlanguage{English}{Computer Vision and Image Understanding}},
+  vol. 107, no. 1-2, pp. 123 -- 37, 2007/07/.
+
+\bibitem{seo_2005_transfer}
+K.~C. Seo, G.~Shin, and S.~W. Lee, ``Interactive transfer of human facial
+  color,'' in \emph{Advances in Multimedia Information Processing - PCM 2005:
+  6th Pacific Rim Conference on Multimedia, Jeju Island, Korea, November 13-16,
+  2005, Proceedings, Part II}, Y.-S. Ho and H.-J. Kim, Eds.\hskip 1em plus
+  0.5em minus 0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2005,
+  pp. 993--1003.
+
+\bibitem{yang_2017_semantic}
+Y.~Yang, H.~Zhao, L.~You, R.~Tu, X.~Wu, and X.~Jin,
+  ``\BIBforeignlanguage{English}{Semantic portrait color transfer with internet
+  images},'' \emph{\BIBforeignlanguage{English}{Multimed. Tools Appl.
+  (Germany)}}, vol.~76, no.~1, pp. 523 -- 41, 2017.
+
+\bibitem{yin_2004_transfer}
+L.~Yin, J.~Jia, and J.~Morrissey, ``\BIBforeignlanguage{English}{Towards
+  race-related face identification: Research on skin color transfer},'' in
+  \emph{\BIBforeignlanguage{English}{Proceedings - Sixth IEEE International
+  Conference on Automatic Face and Gesture Recognition}}, Seoul, Korea,
+  Republic of, 2004, pp. 362 -- 368.
+
 \bibitem{zhang_2017_try}
 T.~Zhang, L.~Cao, and W.~Y. Wang, ``The impact of virtual try-on image
   interaction technology on online shoppers' purchase decision,'' in
@@ -56,11 +88,6 @@ R.~Shilkrot, D.~Cohen-Or, A.~Shamir, and L.~Liu, ``Garment personalization via
 L.~Jun, Z.~Mingmin, and P.~Zhigeng, ``Virtual try-on by replacing the person in
   image,'' \emph{J. Comput. Aided Des. Comput. Graph. (China)}, vol.~27, no.~9,
   pp. 1694 -- 700, Sept. 2015.
-
-\bibitem{reinhard_2001_transfer}
-E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
-  images,'' \emph{IEEE Computer Graphics Applications}, vol.~21, no.~5, pp.
-  34--41, Sep. 2001.
 
 \bibitem{pitie_2005_pdf}
 F.~Pitie, A.~C. Kokaram, and R.~Dahyot, ``N-dimensional probability density
@@ -87,27 +114,6 @@ Q.~Zhang, C.~Xiao, H.~Sun, and F.~Tang,
   decomposition optimization},'' \emph{\BIBforeignlanguage{English}{IEEE
   Transactions on Image Processing}}, vol.~26, no.~4, pp. 1952 -- 1964, 2017.
 
-\bibitem{yin_2004_transfer}
-L.~Yin, J.~Jia, and J.~Morrissey, ``\BIBforeignlanguage{English}{Towards
-  race-related face identification: Research on skin color transfer},'' in
-  \emph{\BIBforeignlanguage{English}{Proceedings - Sixth IEEE International
-  Conference on Automatic Face and Gesture Recognition}}, Seoul, Korea,
-  Republic of, 2004, pp. 362 -- 368.
-
-\bibitem{seo_2005_transfer}
-K.~C. Seo, G.~Shin, and S.~W. Lee, ``Interactive transfer of human facial
-  color,'' in \emph{Advances in Multimedia Information Processing - PCM 2005:
-  6th Pacific Rim Conference on Multimedia, Jeju Island, Korea, November 13-16,
-  2005, Proceedings, Part II}, Y.-S. Ho and H.-J. Kim, Eds.\hskip 1em plus
-  0.5em minus 0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2005,
-  pp. 993--1003.
-
-\bibitem{yang_2017_semantic}
-Y.~Yang, H.~Zhao, L.~You, R.~Tu, X.~Wu, and X.~Jin,
-  ``\BIBforeignlanguage{English}{Semantic portrait color transfer with internet
-  images},'' \emph{\BIBforeignlanguage{English}{Multimed. Tools Appl.
-  (Germany)}}, vol.~76, no.~1, pp. 523 -- 41, 2017.
-
 \bibitem{aradhye_2009_enhancement}
 H.~Aradhye, G.~D. Toderici, and J.~Yagnik, ``Adaptive, selective, automatic
   tonal enhancement of faces,'' in \emph{Proceedings of the 17th ACM
@@ -126,18 +132,30 @@ Phlearn. (2016) How to get a tan in photoshop. [Online]. Available:
   \url{https://www.youtube.com/watch?v=Har8CSjei2k}
 \BIBentrySTDinterwordspacing
 
-\bibitem{photoshop:selective}
-\BIBentryALTinterwordspacing
-M.~Woloszynowicz. (2014) How to accurately match skin tones using selective
-  color in photoshop. [Online]. Available:
-  \url{https://www.youtube.com/watch?v=IOYFhumpmv8}
-\BIBentrySTDinterwordspacing
-
 \bibitem{photoshop:actions}
 \BIBentryALTinterwordspacing
-------. (2014) How to easily correct colors and match tones in photoshop.
-  [Online]. Available:
+M.~Woloszynowicz. (2014) How to easily correct colors and match tones in
+  photoshop. [Online]. Available:
   \url{http://www.vibrantshot.com/how-to-easily-correct-colors-and-match-tones-in-photoshop/}
 \BIBentrySTDinterwordspacing
+
+\bibitem{bonneel_2013_video}
+N.~Bonneel, K.~Sunkavalli, S.~Paris, and H.~Pfister, ``Example-based video
+  color grading,'' \emph{ACM Trans. Graph.}, vol.~32, no.~4, pp. 39:1--39:12,
+  Jul. 2013.
+
+\bibitem{bitouk_2008_faceswap}
+D.~Bitouk, N.~Kumar, S.~Dhillon, P.~Belhumeur, and S.~Nayar,
+  ``\BIBforeignlanguage{English}{Face swapping: Automatically replacing faces
+  in photographs},'' \emph{\BIBforeignlanguage{English}{ACM Transactions on
+  Graphics}}, vol.~27, no.~3, pp. 39 (8 pp.) --, 2008/08/.
+
+\bibitem{baba_2015_yearbook}
+T.~Baba, M.~Okuda, P.~Perrotin, T.~Yusuke, and K.~Shirai,
+  ``\BIBforeignlanguage{English}{An automatic yearbook style photo generation
+  method using color grading and guide image filtering based facial skin color
+  correction},'' in \emph{\BIBforeignlanguage{English}{2015 3rd IAPR Asian
+  Conference on Pattern Recognition (ACPR). Proceedings}}, Piscataway, NJ, USA,
+  2015//, pp. 504 -- 8.
 
 \end{thebibliography}

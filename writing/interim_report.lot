@@ -1,10 +1,17 @@
-\contentsline {table}{\numberline {4}{\ignorespaces Screen captures from Photoshop tutorial for changing skin colour from dark to light.\relax }}{18}{table.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Screen captures from Photoshop tutorial for matching the skintones of face and body.\relax }}{19}{table.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Screen captures from Photoshop tutorial for matching the skintones of portraits of different people.\relax }}{20}{table.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Test results of simple addition / subtraction brightening function.\relax }}{21}{table.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Test results of brightening proportionally based on distance of color to the average.\relax }}{23}{table.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Test results of proportional brightening with correction for dark spots, alpha = 1.1\relax }}{26}{table.9}
-\contentsline {table}{\numberline {10}{\ignorespaces \relax }}{29}{table.10}
-\contentsline {table}{\numberline {11}{\ignorespaces \relax }}{31}{table.11}
-\contentsline {table}{\numberline {12}{\ignorespaces \relax }}{33}{table.12}
-\contentsline {table}{\numberline {13}{\ignorespaces \relax }}{35}{table.13}
+\contentsline {table}{\numberline {1}{\ignorespaces Example of our desired result given an original (the model) and a target image (from the user) \relax }}{6}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Screen captures from Photoshop tutorial for changing skin colour from dark to light. \relax }}{8}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Screen captures from Photoshop tutorial for matching the skintones of face and body. \relax }}{9}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Screen captures from Photoshop tutorial for matching the skintones of portraits of different people. \relax }}{9}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Example of image colour transfer using the algorithm from Reinhard et al. All images from \cite {reinhard_2001_transfer} \relax }}{11}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Example of film grading based on an example image using the algorithm from Piti\'{e} et al. All images from \cite {pitie_2007_grading} \relax }}{12}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Example of image colour transfer using the algorithm from Seo et al. All images from \cite {seo_2005_transfer} \relax }}{13}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Example of image colour transfer using the algorithm from Yang et al. All images from \cite {yang_2017_semantic} \relax }}{13}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Example of image colour transfer using the algorithm from Yin et al. All images from \cite {yin_2004_transfer} \relax }}{14}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Test results of simple addition / subtraction brightening function.\relax }}{18}{table.10}
+\contentsline {table}{\numberline {13}{\ignorespaces Test results of simple addition / subtraction brightening function.\relax }}{28}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Test results of brightening proportionally based on distance of color to the average.\relax }}{30}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Test results of proportional brightening with correction for dark spots, alpha = 1.1\relax }}{33}{table.15}
+\contentsline {table}{\numberline {16}{\ignorespaces \relax }}{36}{table.16}
+\contentsline {table}{\numberline {17}{\ignorespaces \relax }}{38}{table.17}
+\contentsline {table}{\numberline {18}{\ignorespaces \relax }}{40}{table.18}
+\contentsline {table}{\numberline {19}{\ignorespaces \relax }}{42}{table.19}

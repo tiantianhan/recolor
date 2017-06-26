@@ -1,22 +1,25 @@
 \contentsline {section}{List of Figures}{3}{section*.2}
 \contentsline {section}{List of Tables}{3}{section*.3}
-\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
-\contentsline {section}{\numberline {2}Background and Literature Review}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}Survey of methods for changing and matching skin colour in Photoshop}{6}{subsection.2.1}
-\contentsline {section}{\numberline {3}Progress to Date}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{12}{subsection.3.3}
-\contentsline {section}{\numberline {4}Future Work}{15}{section.4}
-\contentsline {section}{References}{16}{section*.18}
-\contentsline {section}{\numberline {A}Photoshop techniques for changing skintone from select online video tutorials}{18}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Changing skin colour from dark to light \cite {photoshop:obama}}{18}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Matching the skintones of face and body \cite {photoshop:match_body}}{19}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Matching the skintones of portraits of different people \cite {photoshop:match_other} }{20}{subsection.A.3}
-\contentsline {section}{\numberline {B}Complete results for simple brightening}{21}{appendix.B}
-\contentsline {section}{\numberline {C}Complete results for proportional brightness adjustment}{23}{appendix.C}
-\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$}{26}{appendix.D}
-\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}{29}{appendix.E}
-\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 10th percentile bright pixels}{31}{appendix.F}
-\contentsline {section}{\numberline {G}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}{33}{appendix.G}
-\contentsline {section}{\numberline {H}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 100th percentile bright pixels}{35}{appendix.H}
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{6}{subsection.1.1}
+\contentsline {section}{\numberline {2}Background and Literature Review}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{10}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{11}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{12}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{14}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{15}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{15}{subsection.2.3}
+\contentsline {section}{\numberline {3}Progress to Date}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{18}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{20}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{22}{subsection.3.3}
+\contentsline {section}{\numberline {4}Future Work}{25}{section.4}
+\contentsline {section}{References}{26}{section*.18}
+\contentsline {section}{\numberline {A}Complete results for simple brightening}{28}{appendix.A}
+\contentsline {section}{\numberline {B}Complete results for proportional brightness adjustment}{30}{appendix.B}
+\contentsline {section}{\numberline {C}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$}{33}{appendix.C}
+\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}{36}{appendix.D}
+\contentsline {section}{\numberline {E}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 10th percentile bright pixels}{38}{appendix.E}
+\contentsline {section}{\numberline {F}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}{40}{appendix.F}
+\contentsline {section}{\numberline {G}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 100th percentile bright pixels}{42}{appendix.G}
