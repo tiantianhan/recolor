@@ -1,0 +1,42 @@
+%adding correction for percentage of skin
+\subsubsection*{Algorithm}
+We noticed that in the case where the target image has relatively dark shadows such as in Figure \ref{img:input_hands_1_light}, the average colour calculated for the target hand is too dark, causing the skin colour of the results to appear darker than the skin colour of the target. We correct this by changing the way will calculate the average skin colour of the target hand with only 10\% of the brightest pixel in the skin patch used to calculate the average. As Figure \ref{img:10_perc_mask} shows, the areas with shadows are no longer used for calculating the average colour of the target hand.
+
+% \begin{equation} \label{eq:prop_corr_algo}
+%   r'' = \left.
+%   \begin{dcases}
+%     \displaystyle \mean{r'} - \frac{(\mean{r'} - r')}{\alpha}, & \text{for } r' < \mean{r'} \\
+%     \displaystyle r', & \text{for } r' \geq \mean{r'} \\
+%   \end{dcases}
+%   \right.\\
+% \end{equation}
+
+% \nomenclature{$r''$}{Value of the red channel of the pixel after a second algorithm is applied.}
+% \nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputted by the first algorithm.}
+
+% Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
+
+% \subsubsection*{Results}
+% See Tables in Appendix \ref{app:prop_corr_a1p1}, for the complete results for $\alpha = 1.1$. A portion of the results is reproduced here for convenience.
+% \input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
+
+% \subsubsection*{Evaluation}
+% As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted in Section \ref{sec:algo_prop_eval} are reduced.
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{subfigure}[b]{0.40\textwidth}
+%         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg}
+%         \caption{Proportional adjustment algorithm (Equation \ref{eq:prop_algo})result}
+%     \end{subfigure}
+%     ~
+%     \begin{subfigure}[b]{0.40\textwidth}
+%         \includegraphics[width=\textwidth]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_light.jpg}
+%         \caption{Proportional adjustment algorithm with correction (Equation \ref{eq:prop_corr_algo}) result}
+%     \end{subfigure}
+%     \caption{Comparison of algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
+% \end{figure}
+
+% We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
+
+% Up to the current iteration the more extreme changes of luminosity, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} may be causing the average colour of the entire hand to be of lower luminosity than it should be. 
