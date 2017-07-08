@@ -27,16 +27,14 @@ To narrow the scope of our project, we will not include skin detection as part o
 
 Based on our goals and the nature of our project, we list below several constraints and design paradigms against which we will evaluate our algorithm:
 
-\textbf{Compatibile with mobile device:} Our algorithm is ultimately intended to support and application on a mobile device, so we must ensure that our code is portable to mobile devices and that the algorithm we develop can operate quickly with the limited resources of a mobile device so that the user will be able to see near-instant results.
+\textbf{Compatible with mobile device:} Our algorithm is ultimately intended to support an application on a mobile device, so we must ensure that our code is portable to mobile devices and that the algorithm we develop can operate quickly with the limited resources of a mobile device so that the user will be able to see near-instant results.
 
 \textbf{Fully automatic:} Since the goal of our project is for a commercial user to be able to change the model to his or her own skin colour, our algorithm cannot rely on any user input to perform the image editing and should able to accept only an image containing the user's own hand as the target image to transfer the colour of the model hand to.
 
 \textbf{Realistic skin colour transfer:}
-Since the goal of our project is to perform skin colour transfer for model images that are meant to demonstrate cosmetic products to users, and the results are meant to invoke for the user the impression that the user's own hand is wearing the product, our final images must look as realistic as possible to avoid a displeasing, uncanny valley effect. Furthermore, the images we process will be large and feature a the skin on the back of a hand very prominently, so we can expect the realistic appearance we can expect that our result will be very heavily scrutinized by the user.
+Since the goal of our project is to perform skin colour transfer for model images that are meant to demonstrate cosmetic products to users, and the results are meant to invoke for the user the impression that the user's own hand is wearing the product, our final images must look as realistic as possible to avoid a displeasing, uncanny valley effect. Furthermore, the images we process will be large and feature the skin on the back of a hand very prominently, so we can expect that unrealistic flaws in our result will be very noticeable the user.
 
 \textbf{Accurate skin colour transfer:} 
 Since the entire goal of nail polish try-on application is to demonstrate to the user how a particular shade of nail polish will appear on his or her own hand, we must ensure that the results of the algorithm, more than looking pleasing to the user, actually matches the skin colour sample provided by the user exactly.
 
 \textbf{Wide range of colour transfer:} Since the goal of the project is to reduce the number of nail polish try-on videos of different skin colours needed and since users may have a wide range of skin colour and should all be supported, our algorithm needs to be able to transfer the skin colour of a mid-toned hand to as wide a range of skin colour as possible.
-
- % use of a target image, , speed of the colour transfer on a mobile device, range of colour transfer

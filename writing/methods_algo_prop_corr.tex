@@ -14,11 +14,12 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 \nomenclature{$r''$}{Value of the red channel of the pixel after a second algorithm is applied.}
 \nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputted by the first algorithm.}
 
-Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
+Where $\alpha$ is a constant, $\alpha  > 1$. We expect that the larger the value of alpha, the stronger the effect of the reduced dark spot. The same equation applies for the $g$ and $b$ channels.
 
 \subsubsection*{Results}
 
-In Table \ref{tab:prop_correct_test_a1p1} we show the results for colour transfers between all possible combinations of our test images.
+In Table \ref{tab:prop_correct_test_a1p1} we show the results for colour transfers between all possible combinations of our test images for $\alpha = 1.1$. The results for some of the other $\alpha$ values we tried are shown in Appendices \ref{app:prop_corr_ave_a1p5} and \ref{app:prop_corr_ave_a5}.
+
 \input{latex_maker/prop_correct_test_a1p1-summary}
 
 \subsubsection*{Evaluation}
@@ -38,6 +39,6 @@ As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted
     \caption{Comparison of algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
 \end{figure}
 
-We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
+We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ (such as the case for $\alpha = 5$ shown in \ref{app:prop_corr_ave_a5}) would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
 
 Up to the current iteration the more extreme changes of luminosity, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} may be causing the average colour of the entire hand to be of lower luminosity than it should be. 

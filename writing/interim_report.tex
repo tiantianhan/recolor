@@ -10,7 +10,9 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage[nottoc]{tocbibind}
-\usepackage[intoc]{nomencl}
+\usepackage[intoc]{nomencl} %nomenclature in table of contents
+
+\usepackage{pdfpages} %including front page
 
 \usepackage{setspace} %1.5 spacing
 \setstretch{1.5}
@@ -44,6 +46,9 @@
 
 \begin{document}
 
+\includepdf{frontcover}
+
+\renewcommand{\thepage}{\roman{page}}% Roman numerals for page counter
 \tableofcontents
 \pagebreak
 
@@ -54,6 +59,8 @@
 \renewcommand{\nomname}{List of Symbols}
 \printnomenclature
 \pagebreak
+
+\renewcommand{\thepage}{\arabic{page}}% Roman numerals for page counter
 
 \section{Introduction}
 \input{intro}
@@ -68,14 +75,19 @@
 \pagebreak
 
 \section{Future Work}
-As a next step, we would like to improve our algorithm so that the results for transforming between large color differences are more convincing. A possible approach for the case of transforming to the very pale hand in Figure \ref{img:input_hands_1_pale} in particular is to obtain a better average colour from the target hand by ignoring the shadows in the image. We would also like to compare our results with some of the other algorithms for colour transfer that we have found through the background research.
+As a next step, we would like to improve our algorithm so that the results for transforming between large colour differences are more convincing. A possible approach for the case of transforming to the very pale hand in Figure \ref{img:input_hands_1_pale} in particular is to obtain a better average colour from the target hand by ignoring the shadows in the image. We would also like to compare our results with some of the other algorithms for colour transfer that we have found through the background research.
 \pagebreak
 
 \bibliographystyle{IEEEtran}
 \bibliography{IEEEabrv,my_references}
 \pagebreak
 
-% \appendix
+\appendix
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}\label{app:prop_corr_ave_a1p5}
+\input{latex_maker/prop_correct_test_a1p5-summary}
+
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
+\input{latex_maker/prop_correct_test_a5-summary}
 
 % \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
 % \input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}

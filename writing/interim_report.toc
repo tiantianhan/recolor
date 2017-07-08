@@ -1,18 +1,21 @@
-\contentsline {section}{List of Figures}{3}{section*.2}
-\contentsline {section}{List of Tables}{3}{section*.3}
-\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{6}{subsection.1.1}
-\contentsline {section}{\numberline {2}Background and Literature Review}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{11}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{12}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{13}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{16}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{17}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{17}{subsection.2.3}
-\contentsline {section}{\numberline {3}Hand recolouration algorithms}{19}{section.3}
-\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{20}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{23}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{27}{subsection.3.3}
-\contentsline {section}{\numberline {4}Future Work}{31}{section.4}
-\contentsline {section}{References}{32}{section*.18}
+\contentsline {section}{List of Figures}{iv}{section*.2}
+\contentsline {section}{List of Tables}{iv}{section*.3}
+\contentsline {section}{List of Symbols}{vi}{section*.4}
+\contentsline {section}{\numberline {1}Introduction}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{8}{subsection.1.1}
+\contentsline {section}{\numberline {2}Background and Literature Review}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{13}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{14}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{15}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{18}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{19}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{19}{subsection.2.3}
+\contentsline {section}{\numberline {3}Hand recolouration algorithms}{21}{section.3}
+\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{22}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{25}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{28}{subsection.3.3}
+\contentsline {section}{\numberline {4}Future Work}{33}{section.4}
+\contentsline {section}{References}{34}{section*.19}
+\contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{37}{appendix.A}
+\contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{39}{appendix.B}
