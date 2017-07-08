@@ -1,4 +1,6 @@
 \documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, margin=1in]{geometry} %adjust margins
+\usepackage{cite} %citation formatting
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{longtable}
@@ -8,7 +10,12 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage[nottoc]{tocbibind}
-\usepackage[intoc]{nomencl}
+\usepackage[intoc]{nomencl} %nomenclature in table of contents
+
+\usepackage{pdfpages} %including front page
+
+\usepackage{setspace} %1.5 spacing
+\setstretch{1.5}
 
 %for clickable table of contents
 \usepackage{hyperref}
@@ -39,6 +46,9 @@
 
 \begin{document}
 
+\includepdf{frontcover}
+
+\renewcommand{\thepage}{\roman{page}}% Roman numerals for page counter
 \tableofcontents
 \pagebreak
 
@@ -50,12 +60,22 @@
 \printnomenclature
 \pagebreak
 
+\renewcommand{\thepage}{\arabic{page}}% Roman numerals for page counter
+
+\section{Introduction}
+\input{intro}
+\pagebreak
+
 \section{Background and Literature Review}
 \input{lit_review}
 \pagebreak
 
-\section{Methods}
+\section{Hand recolouration algorithms}
 \input{methods}
+\pagebreak
+
+\section{Future Work}
+As a next step, we would like to improve our algorithm so that the results for transforming between large colour differences are more convincing. A possible approach for the case of transforming to the very pale hand in Figure \ref{img:input_hands_1_pale} in particular is to obtain a better average colour from the target hand by ignoring the shadows in the image. We would also like to compare our results with some of the other algorithms for colour transfer that we have found through the background research.
 \pagebreak
 
 \bibliographystyle{IEEEtran}
@@ -63,33 +83,19 @@
 \pagebreak
 
 \appendix
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}\label{app:prop_corr_ave_a1p5}
+\input{latex_maker/prop_correct_test_a1p5-summary}
 
-\section{Photoshop techniques for changing skintone from select online video tutorials}\label{app:photoshop}
-\input{photoshop_tutorials}
-\pagebreak
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
+\input{latex_maker/prop_correct_test_a5-summary}
 
-\section{Complete results for simple brightening}\label{app:boost}
-\input{latex_maker/boost_test-summary}
-\pagebreak
+% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
+% \input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
 
-\section{Complete results for proportional brightness adjustment}\label{app:prop}
-\input{latex_maker/prop_test-summary}
-\pagebreak
+% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
+% \input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
 
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$}\label{app:prop_corr_a1p1}
-\input{latex_maker/prop_correct_test_a1p1-summary}
-\pagebreak
-
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
-\input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
-
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 10th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc10}
-\input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
-
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
-\input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
-
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 100th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc100}
-\input{latex_maker/prop_correct_ave_test_a1p1_perc100-label}
+% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 100th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc100}
+% \input{latex_maker/prop_correct_ave_test_a1p1_perc100-label}
 
 \end{document}
