@@ -1,6 +1,6 @@
-\BOOKMARK [1][-]{section*.2}{List of Figures}{}% 1
-\BOOKMARK [1][-]{section*.3}{List of Tables}{}% 2
-\BOOKMARK [1][-]{section*.4}{List of Symbols}{}% 3
+\BOOKMARK [1][-]{section*.4}{List of Figures}{}% 1
+\BOOKMARK [1][-]{section*.5}{List of Tables}{}% 2
+\BOOKMARK [1][-]{section*.6}{List of Symbols}{}% 3
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 4
 \BOOKMARK [2][-]{subsection.1.1}{The goals, constraints and requirements for an effective skin colour transfer algorithm}{section.1}% 5
 \BOOKMARK [1][-]{section.2}{Background and Literature Review}{}% 6
@@ -16,6 +16,6 @@
 \BOOKMARK [2][-]{subsection.3.2}{Proportional adjustment relative to average color}{section.3}% 16
 \BOOKMARK [2][-]{subsection.3.3}{Proportional adjustment with dark spot correction}{section.3}% 17
 \BOOKMARK [1][-]{section.4}{Future Work}{}% 18
-\BOOKMARK [1][-]{section*.19}{References}{}% 19
+\BOOKMARK [1][-]{section*.21}{References}{}% 19
 \BOOKMARK [1][-]{appendix.A}{Results for proportional adjustment with darkspot correction, = 1.5}{}% 20
 \BOOKMARK [1][-]{appendix.B}{Results for proportional adjustment with darkspot correction, = 5}{}% 21

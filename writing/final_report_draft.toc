@@ -1,21 +1,21 @@
-\contentsline {section}{List of Figures}{iv}{section*.2}
-\contentsline {section}{List of Tables}{iv}{section*.3}
-\contentsline {section}{List of Symbols}{vi}{section*.4}
-\contentsline {section}{\numberline {1}Introduction}{7}{section.1}
-\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{8}{subsection.1.1}
-\contentsline {section}{\numberline {2}Background and Literature Review}{10}{section.2}
-\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{10}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{13}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{14}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{15}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{18}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{19}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{19}{subsection.2.3}
-\contentsline {section}{\numberline {3}Hand recolouration algorithms}{21}{section.3}
-\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{22}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{25}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{28}{subsection.3.3}
-\contentsline {section}{\numberline {4}Future Work}{33}{section.4}
-\contentsline {section}{References}{34}{section*.19}
-\contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{37}{appendix.A}
-\contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{39}{appendix.B}
+\contentsline {section}{List of Figures}{v}{section*.4}
+\contentsline {section}{List of Tables}{v}{section*.5}
+\contentsline {section}{List of Symbols}{vii}{section*.6}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{2}{subsection.1.1}
+\contentsline {section}{\numberline {2}Background and Literature Review}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{7}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{8}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{9}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{12}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{13}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{13}{subsection.2.3}
+\contentsline {section}{\numberline {3}Hand recolouration algorithms}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{19}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{22}{subsection.3.3}
+\contentsline {section}{\numberline {4}Future Work}{27}{section.4}
+\contentsline {section}{References}{28}{section*.21}
+\contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{31}{appendix.A}
+\contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{33}{appendix.B}
