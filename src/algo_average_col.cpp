@@ -33,6 +33,11 @@ Scalar average_brightest(Mat image, Mat mask, double fraction){
 	Mat result_mask;
 	bitwise_and(brightest_mask,mask,result_mask);
 
+	//DEBUG
+	printf("DEBUG: printing new masks...\n"); cout.flush();
+	imwrite("outputs/adjusted_mask.jpg", result_mask);
+
+
 	Scalar result = mean(image, result_mask);
 	return result;
 }

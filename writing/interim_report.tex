@@ -12,6 +12,9 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[intoc]{nomencl}
 
+\usepackage{setspace} %1.5 spacing
+\setstretch{1.5}
+
 %for clickable table of contents
 \usepackage{hyperref}
 \hypersetup{
@@ -65,6 +68,7 @@
 \pagebreak
 
 \section{Future Work}
+As a next step, we would like to improve our algorithm so that the results for transforming between large color differences are more convincing. A possible approach for the case of transforming to the very pale hand in Figure \ref{img:input_hands_1_pale} in particular is to obtain a better average colour from the target hand by ignoring the shadows in the image. We would also like to compare our results with some of the other algorithms for colour transfer that we have found through the background research.
 \pagebreak
 
 \bibliographystyle{IEEEtran}
