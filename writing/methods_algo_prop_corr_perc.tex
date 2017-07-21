@@ -1,48 +1,43 @@
 %adding correction for percentage of skin
 \subsubsection*{Algorithm}
-We noticed that in the case where the target image has relatively dark shadows such as in Figure \ref{img:input_hands_1_light}, the average colour calculated for the target hand is too dark, causing the skin colour of the results to appear darker than the skin colour of the target. We correct this by changing the way will calculate the average skin colour of the target hand with only 10\% of the brightest pixel in the original regions used to calculate the average. 
+We noticed that in the case where the target image has a pale hand and relatively dark shadows such as in Figure \ref{img:input_hands_1_light}, the average colour calculated for the target hand is too dark, causing the skin colour of the results to appear darker than the skin colour of the target. We correct this by calculating the average skin colour of the target hand with only a percentage of the brightest pixels in the original region of interest used to calculate the average. 
 
-Figure \ref{img:10_perc_mask} is an example of the new regions used to calculated the average. We can see that the areas with shadows are effectively discarded.
+\begin{equation} \label{eq:prop_corr_ave_algo}
+  %TODO add equation
+\end{equation}
 
 \subsubsection*{Results}
+We generated the resultant images using several different values for the percentile of brightest pixels, and determined that the 10th percentile gave the best results, as shown in Table \ref{tab:prop_correct_test_a1p1_ave10}. In Appendices \ref{app:prop_corr_ave_a1p1_perc5} and \ref{app:prop_corr_ave_a1p1_perc25} we show the results for some other percentiles.
+
 \input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
 
 \subsubsection*{Evaluation}
+Figure \ref{img:10_perc_mask} demonstrates the new regions used to calculate the average skin colour. We can see that the areas with shadows are effectively discarded, and the average colour calculated is significantly lighter and visually closer to the skin colour of the target hand. 
 
-
-
-% \begin{equation} \label{eq:perc_ave_algo}
-%   \mean{r_{t,p}} = \frac{p}{100} 
-% \end{equation}
-
-
-
-% \nomenclature{$r''$}{Value of the red channel of the pixel after a second algorithm is applied.}
-% \nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputted by the first algorithm.}
-
-% Where $\alpha$ is a constant, $\alpha  > 1$. The same equation applies for the $g$ and $b$ channels.
-
-% \subsubsection*{Results}
-% See Tables in Appendix \ref{app:prop_corr_a1p1}, for the complete results for $\alpha = 1.1$. A portion of the results is reproduced here for convenience.
-% \input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
-
-% \subsubsection*{Evaluation}
-% As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted in Section \ref{sec:algo_prop_eval} are reduced.
-
-% \begin{figure}[H]
-%     \centering
-%     \begin{subfigure}[b]{0.40\textwidth}
-%         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg}
-%         \caption{Proportional adjustment algorithm (Equation \ref{eq:prop_algo})result}
-%     \end{subfigure}
-%     ~
-%     \begin{subfigure}[b]{0.40\textwidth}
-%         \includegraphics[width=\textwidth]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_light.jpg}
-%         \caption{Proportional adjustment algorithm with correction (Equation \ref{eq:prop_corr_algo}) result}
-%     \end{subfigure}
-%     \caption{Comparison of algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
-% \end{figure}
-
-% We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
-
-% Up to the current iteration the more extreme changes of luminosity, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} may be causing the average colour of the entire hand to be of lower luminosity than it should be. 
+\begin{figure}[H]
+\centering
+\begin{tabular}{ccc}
+    \multirow{2}{*}[5em]{\begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{images/hand_pale}
+        \caption{Input hand image with significant shadows}\label{img:alg_3_eval_hand_pale}
+    \end{subfigure}}&
+    \begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{images/pale_ave_10_original_mask}
+        \caption{Mask used to calculate color in Algorithm \ref{eq:prop_corr_algo}}\label{img:original_mask}
+    \end{subfigure} &
+    \begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{images/ave_col_100}
+        \caption{Average color calculated with Algorithm \ref{eq:prop_corr_algo}}\label{img:ave_col_100}
+    \end{subfigure}\\
+    &
+    \begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{images/pale_ave_10_adjusted_mask}
+        \caption{Mask used to calculate color in Algorithm \ref{eq:prop_corr_ave_algo}}\label{img:adjusted_mask}
+    \end{subfigure} &
+    \begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{images/ave_col_10}
+        \caption{Average color calculated with Algorithm \ref{eq:prop_corr_ave_algo}}\label{img:ave_col_10}
+    \end{subfigure}
+\end{tabular}
+\caption{The average color calculation process in Algorithm \ref{eq:prop_corr_ave_algo} compared the previous version, Algorithm \ref{eq:prop_corr_algo}}\label{img:10_perc_mask}
+\end{figure}

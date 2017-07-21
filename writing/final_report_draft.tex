@@ -11,6 +11,10 @@
 \usepackage{mathtools}
 \usepackage[nottoc]{tocbibind}
 \usepackage[intoc]{nomencl} %nomenclature in table of contents
+% \usepackage{subfig} %for subfigures organized as grids
+
+% \usepackage{subfig} 
+\usepackage{multirow} %for having cell spanning multiple rows in tabular
 
 \usepackage{pdfpages} %including front page
 
@@ -52,7 +56,7 @@
 \setcounter{page}{1}
 
 \section*{Abstract}
-In the make up, beauty, and garment industries, there has been a growing trend to personalize images of models to take on the user’s own features, such as body proportions and skin colour, in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and we would like to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within the video to the user’s skin colour. 
+In the make up, beauty, and garment industries, there has been a growing trend to personalize images of models to take on the user's own bodily features in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and our goal was to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within each frame of the video to the user's skin colour. We developed an algorithm in C++ using OpenCV libraries and tested the effect on several hand images of various skin colours. We iterated through several different versions of the algorithm and determined that the best results are yielded by using an adjustment of the $rgb$ colours to match the average skin colour exactly to the target image, while proportionally fading off the adjustment based on distance to the average. Our results appear realistic on smaller skin colour changes but not on large skin colour changes. Future work would better address this and also test on a wider range of images and video frames, as well as optimize the algorithm for a mobile application.
 
 \pagebreak
 
@@ -101,13 +105,10 @@ As a next step, we would like to improve our algorithm so that the results for t
 \section{Results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
 \input{latex_maker/prop_correct_test_a5-summary}
 
-% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
-% \input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
+\input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
 
-% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
-% \input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
-
-% \section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 100th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc100}
-% \input{latex_maker/prop_correct_ave_test_a1p1_perc100-label}
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
+\input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
 
 \end{document}
