@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  21 JUL 2017 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  21 JUL 2017 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2145,15 +2145,15 @@ nal_report_draft.bbl
 ) [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `math shift' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 102.
+(hyperref)                removing `\alpha' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `math shift' on input line 104.
 
 (./latex_maker/prop_correct_test_a1p5-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
@@ -2167,7 +2167,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 11.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dark_to_
-hand_brown.jpg, id=743, 1003.75pt x 717.68124pt>
+hand_brown.jpg, id=742, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dar
 k_to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2187,7 +2187,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 21.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dark_to_
-hand_light.jpg, id=744, 1003.75pt x 717.68124pt>
+hand_light.jpg, id=743, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dar
 k_to_hand_light.jpg Graphic file (type jpg)
 
@@ -2207,7 +2207,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 31.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dark_to_
-hand_pale.jpg, id=745, 1003.75pt x 717.68124pt>
+hand_pale.jpg, id=744, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_dar
 k_to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2227,7 +2227,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 41.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_brown_to
-_hand_dark.jpg, id=746, 738.76pt x 526.96875pt>
+_hand_dark.jpg, id=745, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_bro
 wn_to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2247,7 +2247,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 51.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_brown_to
-_hand_light.jpg, id=747, 738.76pt x 526.96875pt>
+_hand_light.jpg, id=746, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_bro
 wn_to_hand_light.jpg Graphic file (type jpg)
 
@@ -2267,7 +2267,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 61.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_brown_to
-_hand_pale.jpg, id=748, 738.76pt x 526.96875pt>
+_hand_pale.jpg, id=747, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_bro
 wn_to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2287,7 +2287,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 71.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_light_to
-_hand_dark.jpg, id=749, 1003.75pt x 857.2025pt>
+_hand_dark.jpg, id=748, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_lig
 ht_to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2307,7 +2307,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 81.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_light_to
-_hand_brown.jpg, id=750, 1003.75pt x 857.2025pt>
+_hand_brown.jpg, id=749, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_lig
 ht_to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2327,7 +2327,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 91.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_light_to
-_hand_pale.jpg, id=751, 1003.75pt x 857.2025pt>
+_hand_pale.jpg, id=750, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_lig
 ht_to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2347,7 +2347,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 101.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pale_to_
-hand_dark.jpg, id=752, 803.0pt x 604.2575pt>
+hand_dark.jpg, id=751, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pal
 e_to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2367,7 +2367,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 111.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pale_to_
-hand_brown.jpg, id=753, 803.0pt x 604.2575pt>
+hand_brown.jpg, id=752, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pal
 e_to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2387,7 +2387,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 121.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pale_to_
-hand_light.jpg, id=754, 803.0pt x 604.2575pt>
+hand_light.jpg, id=753, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/hand_pal
 e_to_hand_light.jpg Graphic file (type jpg)
 
@@ -2417,15 +2417,15 @@ _dark.jpg> <../rc_test/outputs/20170521_proportional_corrected_test_alpha1p5/ha
 nd_pale_to_hand_brown.jpg>])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
+(hyperref)                removing `math shift' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 105.
+(hyperref)                removing `\alpha' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
+(hyperref)                removing `math shift' on input line 107.
 
 (./latex_maker/prop_correct_test_a5-summary.tex
 File: ../inputs/hand_dark.jpg Graphic file (type jpg)
@@ -2439,7 +2439,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 11.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_to_ha
-nd_brown.jpg, id=776, 1003.75pt x 717.68124pt>
+nd_brown.jpg, id=775, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_
 to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2458,7 +2458,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 21.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_to_ha
-nd_light.jpg, id=777, 1003.75pt x 717.68124pt>
+nd_light.jpg, id=776, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_
 to_hand_light.jpg Graphic file (type jpg)
 
@@ -2477,7 +2477,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 31.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_to_ha
-nd_pale.jpg, id=778, 1003.75pt x 717.68124pt>
+nd_pale.jpg, id=777, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_dark_
 to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2496,7 +2496,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 41.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown_to_h
-and_dark.jpg, id=779, 738.76pt x 526.96875pt>
+and_dark.jpg, id=778, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown
 _to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2516,7 +2516,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 51.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown_to_h
-and_light.jpg, id=780, 738.76pt x 526.96875pt>
+and_light.jpg, id=779, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown
 _to_hand_light.jpg Graphic file (type jpg)
 
@@ -2536,7 +2536,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 61.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown_to_h
-and_pale.jpg, id=781, 738.76pt x 526.96875pt>
+and_pale.jpg, id=780, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_brown
 _to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2555,7 +2555,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 71.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light_to_h
-and_dark.jpg, id=782, 1003.75pt x 857.2025pt>
+and_dark.jpg, id=781, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light
 _to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2575,7 +2575,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 81.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light_to_h
-and_brown.jpg, id=783, 1003.75pt x 857.2025pt>
+and_brown.jpg, id=782, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light
 _to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2595,7 +2595,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 91.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light_to_h
-and_pale.jpg, id=784, 1003.75pt x 857.2025pt>
+and_pale.jpg, id=783, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_light
 _to_hand_pale.jpg Graphic file (type jpg)
 
@@ -2614,7 +2614,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 101.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_to_ha
-nd_dark.jpg, id=785, 803.0pt x 604.2575pt>
+nd_dark.jpg, id=784, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_
 to_hand_dark.jpg Graphic file (type jpg)
 
@@ -2633,7 +2633,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 111.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_to_ha
-nd_brown.jpg, id=786, 803.0pt x 604.2575pt>
+nd_brown.jpg, id=785, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_
 to_hand_brown.jpg Graphic file (type jpg)
 
@@ -2652,7 +2652,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 121.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_to_ha
-nd_light.jpg, id=787, 803.0pt x 604.2575pt>
+nd_light.jpg, id=786, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_
 to_hand_light.jpg Graphic file (type jpg)
 
@@ -2680,21 +2680,21 @@ portional_corrected_test_alpha5/hand_light_to_hand_brown.jpg> <../rc_test/outpu
 ts/20170517_proportional_corrected_test_alpha5/hand_light_to_hand_pale.jpg> <..
 /rc_test/outputs/20170517_proportional_corrected_test_alpha5/hand_pale_to_hand_
 dark.jpg>])
-Overfull \hbox (1.77586pt too wide) in paragraph at lines 108--108
+Overfull \hbox (1.77586pt too wide) in paragraph at lines 110--110
 []\OT1/cmr/bx/n/17.28 Complete re-sults for pro-por-tional ad-just-ment with
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 110.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 108.
+(hyperref)                removing `\alpha' on input line 110.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 110.
 
 (./latex_maker/prop_correct_ave_test_a1p1_perc5-label.tex
 (./latex_maker/prop_correct_ave_test_a1p1_perc5_label/hand_dark_to_hand_brown.t
@@ -2709,7 +2709,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_brown.jpg, i
-d=807, 1003.75pt x 717.68124pt>
+d=806, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_brown.j
 pg Graphic file (type jpg)
 
@@ -2731,7 +2731,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_light.jpg, i
-d=808, 1003.75pt x 717.68124pt>
+d=807, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_light.j
 pg Graphic file (type jpg)
 
@@ -2753,7 +2753,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_pale.jpg, id
-=809, 1003.75pt x 717.68124pt>
+=808, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_dark_to_hand_pale.jp
 g Graphic file (type jpg)
 
@@ -2775,7 +2775,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_dark.jpg, i
-d=810, 738.76pt x 526.96875pt>
+d=809, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_dark.j
 pg Graphic file (type jpg)
 
@@ -2797,7 +2797,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_light.jpg, 
-id=811, 738.76pt x 526.96875pt>
+id=810, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_light.
 jpg Graphic file (type jpg)
 
@@ -2819,7 +2819,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_pale.jpg, i
-d=812, 738.76pt x 526.96875pt>
+d=811, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_brown_to_hand_pale.j
 pg Graphic file (type jpg)
 
@@ -2841,7 +2841,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_dark.jpg, i
-d=813, 1003.75pt x 857.2025pt>
+d=812, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_dark.j
 pg Graphic file (type jpg)
 
@@ -2863,7 +2863,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_brown.jpg, 
-id=814, 1003.75pt x 857.2025pt>
+id=813, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_brown.
 jpg Graphic file (type jpg)
 
@@ -2885,7 +2885,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_pale.jpg, i
-d=815, 1003.75pt x 857.2025pt>
+d=814, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_light_to_hand_pale.j
 pg Graphic file (type jpg)
 
@@ -2907,7 +2907,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_dark.jpg, id
-=816, 803.0pt x 604.2575pt>
+=815, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_dark.jp
 g Graphic file (type jpg)
 
@@ -2929,7 +2929,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_brown.jpg, i
-d=817, 803.0pt x 604.2575pt>
+d=816, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_brown.j
 pg Graphic file (type jpg)
 
@@ -2951,7 +2951,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_light.jpg, i
-d=818, 803.0pt x 604.2575pt>
+d=817, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_5/hand_pale_to_hand_light.j
 pg Graphic file (type jpg)
 
@@ -2976,21 +2976,21 @@ _5/hand_brown_to_hand_dark.jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_
 5/hand_brown_to_hand_pale.jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_5
 /hand_light_to_hand_dark.jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_5/
 hand_light_to_hand_brown.jpg>])
-Overfull \hbox (2.63588pt too wide) in paragraph at lines 111--111
+Overfull \hbox (2.63588pt too wide) in paragraph at lines 113--113
 []\OT1/cmr/bx/n/17.28 Complete re-sults for pro-por-tional ad-just-ment with
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 111.
+(hyperref)                removing `math shift' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 111.
+(hyperref)                removing `\alpha' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 111.
+(hyperref)                removing `math shift' on input line 113.
 
 (./latex_maker/prop_correct_ave_test_a1p1_perc25-label.tex
 (./latex_maker/prop_correct_ave_test_a1p1_perc25_label/hand_dark_to_hand_brown.
@@ -3005,7 +3005,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_brown.jpg, 
-id=837, 1003.75pt x 717.68124pt>
+id=836, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_brown.
 jpg Graphic file (type jpg)
 
@@ -3027,7 +3027,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_light.jpg, 
-id=838, 1003.75pt x 717.68124pt>
+id=837, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_light.
 jpg Graphic file (type jpg)
 
@@ -3049,7 +3049,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_pale.jpg, i
-d=839, 1003.75pt x 717.68124pt>
+d=838, 1003.75pt x 717.68124pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_dark_to_hand_pale.j
 pg Graphic file (type jpg)
 
@@ -3071,7 +3071,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_dark.jpg, 
-id=840, 738.76pt x 526.96875pt>
+id=839, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_dark.
 jpg Graphic file (type jpg)
 
@@ -3093,7 +3093,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_light.jpg,
- id=841, 738.76pt x 526.96875pt>
+ id=840, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_light
 .jpg Graphic file (type jpg)
 
@@ -3115,7 +3115,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_pale.jpg, 
-id=842, 738.76pt x 526.96875pt>
+id=841, 738.76pt x 526.96875pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_pale.
 jpg Graphic file (type jpg)
 
@@ -3137,7 +3137,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_dark.jpg, 
-id=843, 1003.75pt x 857.2025pt>
+id=842, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_dark.
 jpg Graphic file (type jpg)
 
@@ -3159,7 +3159,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_brown.jpg,
- id=844, 1003.75pt x 857.2025pt>
+ id=843, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_brown
 .jpg Graphic file (type jpg)
 
@@ -3181,7 +3181,7 @@ Package pdftex.def Info: ../inputs/hand_pale.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 98.8407pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_pale.jpg, 
-id=845, 1003.75pt x 857.2025pt>
+id=844, 1003.75pt x 857.2025pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_pale.
 jpg Graphic file (type jpg)
 
@@ -3203,7 +3203,7 @@ Package pdftex.def Info: ../inputs/hand_dark.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 93.91508pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_dark.jpg, i
-d=846, 803.0pt x 604.2575pt>
+d=845, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_dark.j
 pg Graphic file (type jpg)
 
@@ -3225,7 +3225,7 @@ Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_brown.jpg, 
-id=847, 803.0pt x 604.2575pt>
+id=846, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_brown.
 jpg Graphic file (type jpg)
 
@@ -3247,7 +3247,7 @@ Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 6.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_light.jpg, 
-id=848, 803.0pt x 604.2575pt>
+id=847, 803.0pt x 604.2575pt>
 File: ../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_light.
 jpg Graphic file (type jpg)
 
@@ -3272,7 +3272,7 @@ g> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_dark.jp
 g> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_light.j
 pg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_brown_to_hand_pale.j
 pg>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
  [42 <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_dark.
 jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_brown
 .jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_pale
@@ -3280,13 +3280,19 @@ jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_light_to_hand_brown
 jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_brown.
 jpg> <../rc_test/outputs/20170524_prop_corr_1p1_ave_25/hand_pale_to_hand_light.
 jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./final_report_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
-Package rerunfilecheck Info: File `final_report_draft.out' has not changed.
-(rerunfilecheck)             Checksum: 7A0542F3FEFB5004FA3DD2E474961136;2285.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 
+
+Package rerunfilecheck Warning: File `final_report_draft.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `final_report_draft.out':
+(rerunfilecheck)             Before: BE9AEA32F0FDED2474D2C8BD3B349FF7;2300
+(rerunfilecheck)             After:  D591D6A249EB9F8BE71E941C136E6A9D;2300.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -3294,7 +3300,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  10855 strings out of 494447
  201521 string characters out of 6166766
- 282618 words of memory out of 5000000
+ 282626 words of memory out of 5000000
  13617 multiletter control sequences out of 15000+600000
  10054 words of font info for 36 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -3311,10 +3317,10 @@ public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on final_report_draft.pdf (50 pages, 14258820 bytes).
+Output written on final_report_draft.pdf (50 pages, 14258874 bytes).
 PDF statistics:
- 969 PDF objects out of 1000 (max. 8388607)
- 718 compressed objects within 8 object streams
+ 968 PDF objects out of 1000 (max. 8388607)
+ 717 compressed objects within 8 object streams
  243 named destinations out of 1000 (max. 500000)
  898 words of extra memory for PDF output out of 10000 (max. 10000000)
 

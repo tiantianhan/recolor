@@ -86,12 +86,14 @@ Acknowledge persons and/or supporting agencies in a single-spaced paragraph in b
 \input{lit_review}
 \pagebreak
 
-\section{Hand recolouration algorithms}
+\section{Hand Recolouration Algorithms}
 \input{methods}
 \pagebreak
 
-\section{Future Work}
-As a next step, we would like to improve our algorithm so that the results for transforming between large colour differences are more convincing. A possible approach for the case of transforming to the very pale hand in Figure \ref{img:input_hands_1_pale} in particular is to obtain a better average colour from the target hand by ignoring the shadows in the image. We would also like to compare our results with some of the other algorithms for colour transfer that we have found through the background research.
+\section{Conclusion and Future Work}
+We have determined that it is feasible to produce a software that satisfies our requirements for fully automatic skin transfer for a range of skin colours starting from a hand of mid-toned skin colour. However, for a realistic appearance and for the final result to be accurate to the skin colour of the target hand, the original hand cannot have very significant skin colour differences with the target.
+
+As a next step, we would like to improve our algorithm so that the results for transforming between large colour differences are more convincing. We would also like to optimize our results to have sufficient speed to operate on a mobile platform.
 \pagebreak
 
 \bibliographystyle{IEEEtran}
