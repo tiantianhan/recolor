@@ -15,9 +15,9 @@
 \BOOKMARK [2][-]{subsection.3.1}{Naive approach: simple addition}{section.3}% 15
 \BOOKMARK [2][-]{subsection.3.2}{Proportional adjustment relative to average color}{section.3}% 16
 \BOOKMARK [2][-]{subsection.3.3}{Proportional adjustment with dark spot correction}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{Calculation of average skin colour with brightest pixels}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Ignoring shadows in calculating average colour}{section.3}% 18
 \BOOKMARK [1][-]{section.4}{Conclusion and Future Work}{}% 19
-\BOOKMARK [1][-]{section*.16}{References}{}% 20
+\BOOKMARK [1][-]{section*.22}{References}{}% 20
 \BOOKMARK [1][-]{appendix.A}{Results for proportional adjustment with darkspot correction, = 1.5}{}% 21
 \BOOKMARK [1][-]{appendix.B}{Results for proportional adjustment with darkspot correction, = 5}{}% 22
 \BOOKMARK [1][-]{appendix.C}{Complete results for proportional adjustment with darkspot correction, = 1.1, calculating target average color with 5th percentile bright pixels}{}% 23

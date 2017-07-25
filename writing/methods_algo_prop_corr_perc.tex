@@ -1,10 +1,6 @@
 %adding correction for percentage of skin
 We noticed that in the case where the target image has a pale hand and relatively dark shadows such as in Figure \ref{img:input_hands_1_light}, the average colour calculated for the target hand is too dark, causing the skin colour of the results to appear darker than the skin colour of the target. We correct this by calculating the average skin colour of the target hand with only a percentage of the brightest pixels in the original region of interest used to calculate the average. 
 
-% \begin{equation} \label{eq:prop_corr_ave_algo}
-%   %TODO add equation
-% \end{equation}
-
 \begin{algorithm}[H]
 \caption{Calculation of average skin colour with brightest pixels}
 \label{eq:prop_corr_ave_algo}

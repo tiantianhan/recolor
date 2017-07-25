@@ -19,11 +19,13 @@ Colour transfer refers to modifying the colours of an image to give it the desir
 There have been a wide range of studies done in this area beginning with the seminal work of Reinhard et al. in 2001 \cite{reinhard_2001_transfer}. The authors convert the image into $l\alpha\beta$ colour space, a colour space designed for natural scenes and based on research into human perception to reduce the correlation between each channel and remove the need to consider cross-channel effects when performing transformations on each channel. The authors then perform a simple operation to match the average and standard deviation of each channel of the original image to that of the target image. The resultant image is then converted back into $rgb$ space.
 %in this paper we replicate this method for comparison purposes?
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Example of image colour transfer using the algorithm from Reinhard et al. All images from \cite{reinhard_2001_transfer} \label{tab:reinhard_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Example of image colour transfer using the algorithm from Reinhard et al. All images from \cite{reinhard_2001_transfer} \label{tab:reinhard_demo}}
+\begin{tabular}{|c|c|c|}
     \hline
-    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
-    \hline  \label{row:reinhard_demo_1} &
+    Source & Target & Output \\
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reinhard_orig1}
   \end{minipage} & 
@@ -33,15 +35,19 @@ There have been a wide range of studies done in this area beginning with the sem
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reinhard_result1}
   \end{minipage} \\
-\end{longtable}
+    \hline
+\end{tabular}
+\end{table}
 
 In a later study, Piti\'{e} et al. developed a method for entirely transferring the exact statistical distribution of the colours of the target image to the original image \cite{pitie_2005_pdf}, and later improved on the technique with the motivation of automating film grading, or the process of enhancing frames in films to ensure consistency of colour and ``feel" \cite{pitie_2007_grading}. We show an example the effects they achieve in Table \ref{tab:pitie_demo}
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Example of film grading based on an example image using the algorithm from Piti\'{e} et al. All images from \cite{pitie_2007_grading} \label{tab:pitie_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Example of film grading based on an example image using the algorithm from Piti\'{e} et al. All images from \cite{pitie_2007_grading} \label{tab:pitie_demo}}
+\begin{tabular}{|c|c|c|}
     \hline
-    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
-    \hline  \label{row:pitie_demo_1} &
+    Source & Target & Output \\
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_original}
   \end{minipage} & 
@@ -51,7 +57,7 @@ In a later study, Piti\'{e} et al. developed a method for entirely transferring 
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_result1}
   \end{minipage} \\
-    \hline  \label{row:pitie_demo_2} &
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_original}
   \end{minipage} & 
@@ -62,7 +68,8 @@ In a later study, Piti\'{e} et al. developed a method for entirely transferring 
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/pitie_result2}
   \end{minipage} \\
     \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 %in this paper we replicate this method based on code found online?
 
 More recently, Bonnel et al. conducted a further study on colour transfer for film grading considering both spacial and temporal information \cite{bonneel_2013_video} and Chang et al. created a tool for user editing of an image based on a automatically generated colour palette \cite{chang_2015_palette}.
@@ -74,11 +81,13 @@ There are fewer studies done specifically on the transfer of human skin colour, 
 
 Seo et al. has a purpose most similar to the purpose of this project, which is to find a method of transferring human skin colours as realistically and accurately as possible \cite{seo_2005_transfer}. In their study, authors demonstrate results that improve in realistic appearance compared to the Reinhard's algorithm. To achieve this, authors model the skin colour as an elongated distribution around a line referred to as the \textit{principle line} in $rgb$ space. To perform the colour transfer, the authors transform the distribution of the original image such that the principle line aligns with that of the target image. The authors then break the colour values into bins along the principle lines and also match the distribution of each bin. Table \ref{tab:seo_demo} demonstrates the output of this method.
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Example of image colour transfer using the algorithm from Seo et al. All images from \cite{seo_2005_transfer} \label{tab:seo_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Example of image colour transfer using the algorithm from Seo et al. All images from \cite{seo_2005_transfer} \label{tab:seo_demo}}
+\begin{tabular}{|c|c|c|}
     \hline
-    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
-    \hline  \label{row:seo_demo_1} &
+    Source & Target & Output \\
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/seo_orig1}
   \end{minipage} & 
@@ -88,18 +97,22 @@ Seo et al. has a purpose most similar to the purpose of this project, which is t
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/seo_result1}
   \end{minipage} \\
-\end{longtable}
+    \hline
+\end{tabular}
+\end{table}
 
 However, as far as the other requirements of this project is concerned, it is not clear how fast this algorithm can run, particularly on a mobile device, nor the range of colours that the algorithm can realistically transform between, and it is in these areas that our project will attempt to improve upon.
 % should we possibly replicate and check?
 
 Yang et al. performed a more recent study of colour transfer for human portraits \cite{yang_2017_semantic} - Table \ref{tab:yang_demo} demonstrates their results. However, as Table \ref{tab:yang_demo} shows, this study focuses on the effect on the whole portrait, and places emphasis on transferring colour for different features of the human face. The actual algorithm the authors use to transfer skin colour is actually Reinhard's algorithm. This method also ranks the preferred target image for similarity to the original image before performing the colour transfer, which differs from our project where a key issue is that we have no control over the target image that the user will provide us and must be able to transfer to a wide range of colours. 
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Example of image colour transfer using the algorithm from Yang et al. All images from \cite{yang_2017_semantic} \label{tab:yang_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Example of image colour transfer using the algorithm from Yang et al. All images from \cite{yang_2017_semantic} \label{tab:yang_demo}}
+\begin{tabular}{|c|c|c|}
     \hline
-    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
-    \hline  \label{row:yang_demo_1} &
+    Source & Target & Output \\
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yang_orig1}
   \end{minipage} & 
@@ -109,15 +122,19 @@ Yang et al. performed a more recent study of colour transfer for human portraits
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yang_result1}
   \end{minipage} \\
-\end{longtable}
+    \hline
+\end{tabular}
+\end{table}
 
 Yin et al. performed a study on the transfer of skin colour between races in order to aid a psychological study \cite{yin_2004_transfer}. The authors use a process of first global adjustment of the two images to match the average colours, and then using the pixels from the target image with a colour most resembling the colour in the original image to entirely replace that pixel in the original image. Table \ref{tab:yin_demo} shows an example of the results using this technique.
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Example of image colour transfer using the algorithm from Yin et al. All images from \cite{yin_2004_transfer} \label{tab:yin_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Example of image colour transfer using the algorithm from Yin et al. All images from \cite{yin_2004_transfer} \label{tab:yin_demo}}    
+\begin{tabular}{|c|c|c|}
     \hline
-    \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
-    \hline  \label{row:yin_demo_1} &
+    Source & Target & Output \\
+    \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yin_orig1}
   \end{minipage} & 
@@ -127,7 +144,9 @@ Yin et al. performed a study on the transfer of skin colour between races in ord
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/yin_result1}
   \end{minipage} \\
-\end{longtable}
+    \hline
+\end{tabular}
+\end{table}
 
 We include this study because it is one of the few that explicitly tries to transfer colour between large difference of skin colour, however, we feel it has many flaws with respect to our other requirements. Particularly in the case of large skin colour changes shown above, the results are not realistic and show bright spots of saturation. Furthermore, the authors describe their algorithm as having $O(n^2)$ time, which likely means that this algorithm will perform too slowly for our purposes.
 

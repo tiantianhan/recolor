@@ -15,13 +15,25 @@ Currently, we aren't aware of an existing algorithm that satisfies all our speci
 \subsection{The goals, constraints and requirements for an effective skin colour transfer algorithm}
 Our project is intended to manipulate image frames in a video of a model hand demonstrating nail polish product so that the model hand takes on the user's skin colour. The images we must process will mostly consist of the back of a single hand shown prominently in the image. We expect image sizes the algorithm should be able to handle to be approximately 800 x 800 px and larger. We show an example of the desired output of our algorithm in Table \ref{tab:our_demo}.
 
-\begin{longtable}{|N||c|c|c|}
-	\caption{Example of our desired result given an original (the model) and a target image (from the user) \label{tab:our_demo}}\\
+\begin{table}[H]
+	\centering
+	\caption{Example of our desired output given a source (the model) and a target image (from the user) \label{tab:our_demo}}	
+\begin{tabular}{|c|c|c|}
 	\hline
-	\multicolumn{1}{|c||}{No.} & Original & Target & Result \\ 
+	Source & Target & Output \\ 
 	\hline
-		\input{latex_maker/prop_correct_ave_test_a1p1_perc100_label/hand_brown_to_hand_light}
- \end{longtable}
+	  \begin{minipage}{.29\textwidth}
+	    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_brown.jpg}
+	  \end{minipage} & 
+	  \begin{minipage}{.29\textwidth}
+	    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../inputs/hand_light.jpg}
+	  \end{minipage} & 
+	  \begin{minipage}{.29\textwidth}
+	    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg}
+	  \end{minipage} \\
+	\hline
+ \end{tabular}
+ \end{table}
 
 To narrow the scope of our project, we will not include skin detection as part of this project and assume that our algorithm is already given a mask of the skin areas of all the images. We will focus solely on the transfer of the hand skin colour. 
 
