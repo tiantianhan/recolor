@@ -1,25 +1,42 @@
 %boost algo
 \subsubsection*{Algorithm}
-To begin, we performed a simple addition of a value to each of the $rgb$ channels of the hand, such that the average colour of the hand in the processed image is equal to the average colour of the hand in the target image. The algorithm is shown in Equation \ref{eq:boost_algo}.
+To begin, we performed a simple addition of a value to each of the $RGB$ channels of the hand, such that the average colour of the hand in the processed image is equal to the average colour of the hand in the target image.
 
-\begin{equation} \label{eq:boost_algo}
-r' = r + \delta_r
-\end{equation}
+% \begin{equation} \label{eq:boost_algo}
+% r' = r + \delta_r
+% \end{equation}
 
-Where 
+% Where 
 
-\begin{equation*}
-\delta_r = \mean{r_t} - \mean{r}
-\end{equation*}
+% \begin{equation*}
+% \delta_r = \mean{r_t} - \mean{r}
+% \end{equation*}
 
-\nomenclature{$r$}{Value of the red channel of a pixel in the original hand image.}
-\nomenclature{$r'$}{Value of the red channel of the pixel after an algorithm is applied.}
-\nomenclature{$\mean{r}$}{Average value of the red channel of the original hand image.}
-\nomenclature{$\mean{r_t}$}{Average value of the red channel of the target hand image.}
-\nomenclature{$g$}{Value of the green channel of a pixel in the original hand image.}
-\nomenclature{$b$}{Value of the blue channel of a pixel in the original hand image.}
+\begin{algorithm}[H]
+\caption{Simple addition to $RGB$ channel.}
+\label{eq:boost_algo}
+\begin{algorithmic}
+\State $T$ is the set of pixels in the target image, and $U
+\State $\mean{C_T} \gets \Call{Mean}{\vect{C_T}(U)}$
+\State $\mean{C_S} \gets \Call{Mean}{\vect{C_S}(V)}$
+\For{each pixel $i$}
+\State $\vect{C_O}(i) = \vect{C_S}(i) + （\mean{C_{T，U}} - \mean{C_{S，V}})$
+\EndFor
+\end{algorithmic}
+\end{algorithm}
 
-With the same equation applying for the $g$ and $b$ channels.
+% \nomenclature{$r$}{Value of the red channel of a pixel in the original hand image.}
+% \nomenclature{$r'$}{Value of the red channel of the pixel after an algorithm is applied.}
+% \nomenclature{$\mean{r}$}{Average value of the red channel of the original hand image.}
+% \nomenclature{$\mean{r_t}$}{Average value of the red channel of the target hand image.}
+% \nomenclature{$g$}{Value of the green channel of a pixel in the original hand image.}
+% \nomenclature{$b$}{Value of the blue channel of a pixel in the original hand image.}
+
+% With the same equation applying for the $g$ and $b$ channels.
+\nomenclature{$S$}{The set of pixels in source image.}
+\nomenclature{$T$}{The set of pixels in target image.}
+\nomenclature{$O$}{The set of pixels in output image.}
+\nomenclature{$\mean{C_T, U}$}{The average RGB color of the target hand calculated over region $U$}
 
 \subsubsection*{Results}
 In Table \ref{tab:boost_test} we show the results for colour transfers between all possible combinations of our test images.
