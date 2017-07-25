@@ -12,12 +12,12 @@
 \contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{13}{subsubsection.2.2.4}
 \contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{13}{subsection.2.3}
 \contentsline {section}{\numberline {3}Hand Recolouration Algorithms}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Simple brightness addition / subtraction}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Naive approach: simple addition}{16}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{19}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{22}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Calculation of average skin colour with brightest pixels}{26}{subsection.3.4}
 \contentsline {section}{\numberline {4}Conclusion and Future Work}{30}{section.4}
-\contentsline {section}{References}{31}{section*.25}
+\contentsline {section}{References}{31}{section*.16}
 \contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{34}{appendix.A}
 \contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{36}{appendix.B}
 \contentsline {section}{\numberline {C}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}{38}{appendix.C}

@@ -2,12 +2,14 @@
 
  \nomgroup{A}
 
+  \item [{$\alpha$}]\begingroup The constant used to determine the strength of the dark spot correction\nomeqref {0}
+		\nompageref{23}
+  \item [{$\mean{C_S}$}]\begingroup The average RGB color of the output hand\nomeqref {0}
+		\nompageref{23}
   \item [{$\mean{C_S}$}]\begingroup The average RGB color of the source hand\nomeqref {0}
 		\nompageref{16}
   \item [{$\mean{C_T}$}]\begingroup The average RGB color of the target hand\nomeqref {0}
 		\nompageref{16}
-  \item [{$\mean{r'}$}]\begingroup Average value of the red channel of the hand image outputted by the first algorithm.\nomeqref {2}
-		\nompageref{22}
   \item [{$\vect{C_O}$}]\begingroup The vector of RGB values for the pixels in the output image\nomeqref {0}
 		\nompageref{16}
   \item [{$\vect{C_S}$}]\begingroup The vector of RGB values for the pixels in the source image\nomeqref {0}
@@ -16,11 +18,15 @@
 		\nompageref{16}
   \item [{$O$}]\begingroup The set of pixels in output image\nomeqref {0}
 		\nompageref{16}
-  \item [{$r''$}]\begingroup Value of the red channel of the pixel after a second algorithm is applied.\nomeqref {2}
-		\nompageref{22}
   \item [{$S$}]\begingroup The set of pixels in source image\nomeqref {0}
 		\nompageref{16}
   \item [{$T$}]\begingroup The set of pixels in target image\nomeqref {0}
 		\nompageref{16}
+  \item [{$U$}]\begingroup The subset of pixels used to calculate the average color of the hand in the target image\nomeqref {0}
+		\nompageref{16}
+  \item [{$V$}]\begingroup The subset of pixels used to calculate the average color of the hand in the source image\nomeqref {0}
+		\nompageref{16}
+  \item [{$W$}]\begingroup The subset of pixels used to calculate the average color of the hand in the output image\nomeqref {0}
+		\nompageref{23}
 
 \end{thenomenclature}

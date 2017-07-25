@@ -1,26 +1,25 @@
 %prop algorithm methods
-\subsubsection*{Algorithm}
-To correct for the effect of the bright spots in the image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the black and white points of the image to the same value, and adjusts the colours in between to match the target average colour. The algorithm is shown in Equation \ref{eq:prop_algo}.
+To correct for the effect of the bright spots in the image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the black and white points of the image to the same value, and adjusts the colours in between to match the target average colour.
 
-\begin{equation} \label{eq:prop_algo}
-  r' = \left.
-  \begin{dcases}
-    \displaystyle \Big(\frac{\mean{r_t}}{\mean{r}}\Big)r, & \text{for } r \leq \mean{r} \\
-    \displaystyle 255 - 
-    \Big(\frac{255 - \mean{r_t}}{255 - \mean{r}}\Big)(255 - r), & \text{for } r > \mean{r} \\
-  \end{dcases}
-  \right.
-\end{equation}
+\begin{algorithm}[H]
+\caption{Proportional adjustment relative to average color}
+\label{eq:prop_algo}
+\begin{algorithmic}
+\State $\mean{C_T} \gets \Call{Mean}{\vect{C_T}(U)}$
+\State $\mean{C_S} \gets \Call{Mean}{\vect{C_S}(V)}$
+\For{each pixel $i \in S$}
+\If{$\vect{C_S}(i) \leq \mean{C_S}$}
+\State $\vect{C_O}(i) \gets \displaystyle \left(\frac{\mean{C_T}}{\mean{C_S}}\right)\vect{C_S}(i)$
+\Else
+\State $\vect{C_O}(i) \gets \displaystyle 255 - \left(\frac{255 - \mean{C_T}}{255 - \mean{C_S}}\right)(255 - \vect{C_S}(i))$
+\EndIf
+\EndFor
+\end{algorithmic}
+\end{algorithm}
 
-
-
-With the same equation applying for the $g$ and $b$ channels.
-
-\subsubsection*{Results}
 In Table \ref{tab:prop_test} we show the results for colour transfers between all possible combinations of our test images.
 \input{latex_maker/prop_test-summary}
 
-\subsubsection*{Evaluation} \label{sec:algo_prop_eval}
 This method improved the appearance of cases with over-bright spots or ``high-key" appearance issues, as Figure \ref{img:compare_bright_spot} shows:
 \begin{figure}[H]
     \centering

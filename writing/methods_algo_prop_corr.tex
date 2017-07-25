@@ -1,28 +1,29 @@
 %proportional corrected algorithm methods
-\subsubsection*{Algorithm}
 We attempted to correct the dark spot issue by significantly reducing the absolute difference between dark pixels and the average colour, ensuring that the dark spots would instead have colours close to the average. We perform this correction on the output of the proportional adjustment algorithm.
 
-\begin{equation} \label{eq:prop_corr_algo}
-  r'' = \left.
-  \begin{dcases}
-    \displaystyle \mean{r'} - \frac{(\mean{r'} - r')}{\alpha}, & \text{for } r' < \mean{r'} \\
-    \displaystyle r', & \text{for } r' \geq \mean{r'} \\
-  \end{dcases}
-  \right.\\
-\end{equation}
+\begin{algorithm}[H]
+\caption{Dark spot correction}
+\label{eq:prop_corr_algo}
+\begin{algorithmic}
+\State Let $\alpha$ be a constant, $\alpha  > 1$. We expect that the larger the value of alpha, the stronger the effect of the reduced dark spot.
+\State Let $O$ be the set of pixels in the output image, and $W \subseteq O$ be the set of pixels used to calculate the average colour of the output image. $W$ corresponds to the region $V \subseteq S$, and $\left|W\right| = \left|V\right|$  
+\State $\mean{C_O} \gets \Call{Mean}{\vect{C_O}(W)}$
+\For{each pixel $i \in O$}
+\If{$\vect{C_O}(i) \leq \mean{C_O}$}
+\State $\vect{C_O}(i) \gets \displaystyle \mean{C_O} - \frac{\left(\mean{C_O} - \vect{C_O}(i)\right)}{\alpha}$
+\EndIf
+\EndFor
+\end{algorithmic}
+\end{algorithm}
 
-\nomenclature{$r''$}{Value of the red channel of the pixel after a second algorithm is applied.}
-\nomenclature{$\mean{r'}$}{Average value of the red channel of the hand image outputted by the first algorithm.}
-
-Where $\alpha$ is a constant, $\alpha  > 1$. We expect that the larger the value of alpha, the stronger the effect of the reduced dark spot. The same equation applies for the $g$ and $b$ channels.
-
-\subsubsection*{Results}
+\nomenclature{$\mean{C_S}$}{The average RGB color of the output hand}
+\nomenclature{$W$}{The subset of pixels used to calculate the average color of the hand in the output image}
+\nomenclature{$\alpha$}{The constant used to determine the strength of the dark spot correction}
 
 In Table \ref{tab:prop_correct_test_a1p1} we show the results for colour transfers between all possible combinations of our test images for $\alpha = 1.1$. The results for some of the other $\alpha$ values we tried are shown in Appendices \ref{app:prop_corr_ave_a1p5} and \ref{app:prop_corr_ave_a5}.
 
 \input{latex_maker/prop_correct_test_a1p1-summary}
 
-\subsubsection*{Evaluation}
 As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted in Section \ref{sec:algo_prop_eval} are reduced.
 
 \begin{figure}[H]

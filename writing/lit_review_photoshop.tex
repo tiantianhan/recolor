@@ -7,10 +7,12 @@ Skin colour correction is a frequent problem encountered in photo retouching and
 
 Shaver demonstrated how to change a person's skin colour from dark to light \cite{photoshop:obama}. Shaver used levels and curves, which are tools that manipulate the $rgb$ colour histogram of the image, to increase brightness to an extent, then performed further brightening by using a grey scale conversion to brighten the skin area of a black and white image and then using the luminosity blend mode to place the colour back into the image. We show the results achieved in Table \ref{tab:obama_demo}.
 
-\begin{longtable}{|c|c|}
-    \caption{Screen captures from Photoshop tutorial for changing skin colour from dark to light. \label{tab:obama_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Screen captures from Photoshop tutorial for changing skin colour from dark to light. \label{tab:obama_demo}}
+\begin{tabular}{|c|c|}
     \hline
-    Original & Result \\
+    Source & Output \\
     \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_orig}
@@ -19,16 +21,19 @@ Shaver demonstrated how to change a person's skin colour from dark to light \cit
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/obama_res}
   \end{minipage} \\
     \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 
 Phlearn demonstrated an effect in the reverse direction by demonstrating a technique for giving the model the appearance of a dark tan \cite{photoshop:tan}. The highlights and shadows of the image are adjusted separately by using the ``blend if" function of Photoshop, which blends in an effect only if the original pixel is above or below a certain threshold of brightness.
 
 Phlearn also demonstrated a method for matching the skin colour of body and face in an image where the two appear mismatched \cite{photoshop:match_body}. The author sampled a range of colours from the body and adjusted the face with the levels tool for each colour channel. We show the results achieved in Table \ref{tab:match_body_demo}.
 
-\begin{longtable}{|c|c|c|}
-    \caption{Screen captures from Photoshop tutorial for matching the skin tones of face and body. \label{tab:match_body_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Screen captures from Photoshop tutorial for matching the skin tones of face and body. \label{tab:match_body_demo}}
+\begin{tabular}{|c|c|c|}
     \hline
-    Original & Target & Result \\
+    Source & Target & Output \\
     \hline
   \begin{minipage}{.29\textwidth}
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_body_orig}
@@ -40,12 +45,15 @@ Phlearn also demonstrated a method for matching the skin colour of body and face
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_body_res}
   \end{minipage} \\
     \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 
 PiXimperfect demonstrated a method for matching skin colour in one portrait to another \cite{photoshop:match_other}. PiXimperfect first calculates the two average colours of the faces and uses the Photoshop curves tool to match the average colours of the original image to the target image. There must then be further adjustments by eye to change colour, brightness and contrast. Examples of the results from PiXimperfect is show in Table \ref{tab:match_other_demo}
 
-\begin{longtable}{|N||c|c|c|}
-    \caption{Screen captures from Photoshop tutorial for matching the skin tones of portraits of different people. \label{tab:match_other_demo}}\\
+\begin{table}[H]
+    \centering
+    \caption{Screen captures from Photoshop tutorial for matching the skin tones of portraits of different people. \label{tab:match_other_demo}}
+\begin{tabular}{|N||c|c|c|}
     \hline
     \multicolumn{1}{|c||}{No.} & Original & Target & Result \\
     \hline  \label{row:photoshop_match_other_1} &
@@ -69,7 +77,8 @@ PiXimperfect demonstrated a method for matching skin colour in one portrait to a
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/match_other_2_res}
   \end{minipage} \\
     \hline
-\end{longtable}
+\end{tabular}
+\end{table}
 
 Generally, for most of the techniques surveyed, levels and curves are used for small brightness adjustments \cite{photoshop:obama, photoshop:match_body, photoshop:match_other}, and often to reduce the vividness of the colour adjustments the saturation must be slightly decreased \cite{photoshop:obama, photoshop:match_body}. After all other effects are applied, the opacity of the overall effect is often reduced from 100\% for a more natural appearance \cite{photoshop:obama, photoshop:match_body}.
 

@@ -1,17 +1,24 @@
 %adding correction for percentage of skin
-\subsubsection*{Algorithm}
 We noticed that in the case where the target image has a pale hand and relatively dark shadows such as in Figure \ref{img:input_hands_1_light}, the average colour calculated for the target hand is too dark, causing the skin colour of the results to appear darker than the skin colour of the target. We correct this by calculating the average skin colour of the target hand with only a percentage of the brightest pixels in the original region of interest used to calculate the average. 
 
-\begin{equation} \label{eq:prop_corr_ave_algo}
-  %TODO add equation
-\end{equation}
+% \begin{equation} \label{eq:prop_corr_ave_algo}
+%   %TODO add equation
+% \end{equation}
 
-\subsubsection*{Results}
-We generated the resultant images using several different values for the percentile of brightest pixels, and determined that the 10th percentile gave the best results, as shown in Table \ref{tab:prop_correct_test_a1p1_ave10}. In Appendices \ref{app:prop_corr_ave_a1p1_perc5} and \ref{app:prop_corr_ave_a1p1_perc25} we show the results for some other percentiles.
+\begin{algorithm}[H]
+\caption{Calculation of average skin colour with brightest pixels}
+\label{eq:prop_corr_ave_algo}
+\begin{algorithmic}
+\State Let $p$ be a constant, $0 < p  < 100$
+\State Let $U_p \subseteq U \subseteq T$ be the brightest $p$th percentile of pixels in $U$
+\State $\mean{C_T} \gets \Call{Mean}{\vect{C_T}(U_p)}$
+\end{algorithmic}
+\end{algorithm}
+
+We generated the resultant images using several different values for $p$, the percentile of brightest pixels, and determined that the $p = 10$ gave the best results, as shown in Table \ref{tab:prop_correct_test_a1p1_ave10}. In Appendices \ref{app:prop_corr_ave_a1p1_perc5} and \ref{app:prop_corr_ave_a1p1_perc25} we show the results for some other percentiles.
 
 \input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
 
-\subsubsection*{Evaluation}
 Figure \ref{img:10_perc_mask} demonstrates the new regions used to calculate the average skin colour. We can see that the areas with shadows are effectively discarded, and the average colour calculated is significantly lighter and visually closer to the skin colour of the target hand. 
 
 \begin{figure}[H]
