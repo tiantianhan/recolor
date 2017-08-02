@@ -12,9 +12,9 @@
 \BOOKMARK [3][-]{subsubsection.2.2.4}{Skin colour enhancement mobile applications}{subsection.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.3}{Summary of differences between prior studies and this project}{section.2}% 13
 \BOOKMARK [1][-]{section.3}{Hand Recolouration Algorithms}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Naive approach: simple addition}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Proportional adjustment relative to average color}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Proportional adjustment with dark spot correction}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.1}{Naive approach: simple RGB colour addition}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Proportional adjustment relative to average colour}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Correcting for dark spots}{section.3}% 17
 \BOOKMARK [2][-]{subsection.3.4}{Ignoring shadows in calculating average colour}{section.3}% 18
 \BOOKMARK [1][-]{section.4}{Conclusion and Future Work}{}% 19
 \BOOKMARK [1][-]{section*.22}{References}{}% 20

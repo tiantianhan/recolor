@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  25 JUL 2017 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.13)  2 AUG 2017 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,19 +690,19 @@ ion with the same identifier (name{page.1}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.10 
+l.14 
       [1] <../inputs/hand_brown.jpg, id=292, 738.76pt x 526.96875pt>
 File: ../inputs/hand_brown.jpg Graphic file (type jpg)
 
 <use ../inputs/hand_brown.jpg>
-Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 26.
+Package pdftex.def Info: ../inputs/hand_brown.jpg used on input line 30.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
 
 <../inputs/hand_light.jpg, id=293, 1003.75pt x 857.2025pt>
 File: ../inputs/hand_light.jpg Graphic file (type jpg)
 
 <use ../inputs/hand_light.jpg>
-Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 29.
+Package pdftex.def Info: ../inputs/hand_light.jpg used on input line 33.
 (pdftex.def)             Requested size: 131.34978pt x 112.1727pt.
 
 <../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg
@@ -713,7 +713,7 @@ t.jpg Graphic file (type jpg)
 <use ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light
 .jpg>
 Package pdftex.def Info: ../rc_test/outputs/20170524_prop_corr_1p1_ave_100/hand
-_brown_to_hand_light.jpg used on input line 32.
+_brown_to_hand_light.jpg used on input line 36.
 (pdftex.def)             Requested size: 131.35909pt x 93.70042pt.
  [2 <../inputs/hand_brown.jpg> <../inputs/hand_light.jpg> <../rc_test/outputs/2
 0170524_prop_corr_1p1_ave_100/hand_brown_to_hand_light.jpg>]) [3]
@@ -964,6 +964,14 @@ Package pdftex.def Info: images/hand_pale.jpg used on input line 28.
 (pdftex.def)             Requested size: 90.5922pt x 68.16504pt.
  [15 <./images/hand_dark.jpg> <./images/hand_brown.jpg> <./images/hand_light.jp
 g> <./images/hand_pale.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 38.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 38.
+
 (./methods_algo_boost.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 5.
@@ -3279,18 +3287,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `final_report_draft.out' has not changed.
-(rerunfilecheck)             Checksum: 280F1AC7D5DDA961CB45B96E67336D34;2281.
+(rerunfilecheck)             Checksum: 25B734EC7069F6435EF4A7EA6524CC8B;2269.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11354 strings out of 494447
- 208877 string characters out of 6166766
- 291459 words of memory out of 5000000
- 14120 multiletter control sequences out of 15000+600000
- 13419 words of font info for 47 fonts, out of 8000000 for 9000
+ 11358 strings out of 494447
+ 208942 string characters out of 6166766
+ 291330 words of memory out of 5000000
+ 14124 multiletter control sequences out of 15000+600000
+ 14485 words of font info for 51 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  42i,18n,49p,1557b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -3307,7 +3315,7 @@ ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016basic/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016basi
 c/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on final_report_draft.pdf (50 pages, 14277735 bytes).
+Output written on final_report_draft.pdf (50 pages, 14277623 bytes).
 PDF statistics:
  948 PDF objects out of 1000 (max. 8388607)
  696 compressed objects within 7 object streams

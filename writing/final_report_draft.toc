@@ -12,9 +12,9 @@
 \contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{13}{subsubsection.2.2.4}
 \contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{13}{subsection.2.3}
 \contentsline {section}{\numberline {3}Hand Recolouration Algorithms}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Naive approach: simple addition}{16}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average color}{19}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Proportional adjustment with dark spot correction}{22}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.1}Naive approach: simple $RGB$ colour addition}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average colour}{19}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Correcting for dark spots}{22}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Ignoring shadows in calculating average colour}{26}{subsection.3.4}
 \contentsline {section}{\numberline {4}Conclusion and Future Work}{30}{section.4}
 \contentsline {section}{References}{31}{section*.22}
