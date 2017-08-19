@@ -23,7 +23,7 @@ Our project is intended to manipulate image frames in a video of a model hand de
 
 To narrow the scope of our project, we will not include skin detection as part of this project and assume that our algorithm is already given a mask of the skin areas of all the images. We will focus solely on the transfer of the hand skin colour. 
 
-Based on our goals and the nature of our project, we list below several constraints and design paradigms for our algorithm:
+Based on our goals and the nature of our project, we list below several constraints and requirements for our algorithm:
 
 \textbf{Compatible with mobile device:} Our algorithm is ultimately intended to support an application on a mobile device, so we must ensure that our code is easily portable to mobile platforms and that the algorithm we develop can operate quickly with the limited resources of a mobile device so that the user will be able to see near-instant results.
 
@@ -35,4 +35,4 @@ Since the results of the algorithm are meant to invoke for the user the impressi
 \textbf{Accurate skin colour transfer:} 
 Since the purpose of the nail polish try-on application is to demonstrate to the user how a particular shade of nail polish will appear on the user's own hand, we must ensure that the results of the algorithm, more than looking pleasing to the user, actually matches the skin colour sample provided by the user so as to give the user a realistic preview of the product.
 
-\textbf{Wide range of colour transfer:} Since the project is motivated by the goal to support users with a wide range of skin colours while avoiding the necessity of manually creating a large number of nail polish try-on videos of different skin colours, our algorithm needs to be able to transfer the skin colour of a mid-toned hand to as wide a range of skin colour as possible.
+\textbf{Wide range of colour transfer:} Since the project is motivated by the goal to support users with a wide range of skin colours while avoiding the necessity of manually creating a large number of nail polish try-on videos of different skin colours, our algorithm needs to be able to transfer the skin colour of at least a mid-toned hand to as wide a range of skin colour as possible.

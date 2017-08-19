@@ -1,0 +1,130 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, margin=1in]{geometry} %adjust margins
+\usepackage{cite} %citation formatting
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{etoolbox}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[nottoc]{tocbibind}
+\usepackage[intoc]{nomencl} %nomenclature in table of contents
+% \usepackage{subfig} %for subfigures organized as grids
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}%algorithms
+\usepackage{algpseudocode}%algorithms
+
+% \usepackage{subfig} 
+\usepackage{multirow} %for having cell spanning multiple rows in tabular
+
+\usepackage{pdfpages} %including front page
+
+\usepackage{setspace} %1.5 spacing
+\setstretch{1.5}
+
+%for clickable table of contents
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%define command for symbol denoting "average of"
+\newcommand*\mean[1]{\bar{#1}}
+
+%define command for denoting vector
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+%paragraph spacing and indentation
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+%counter for numbering the rows of tables
+\newcounter{rowcntr}[table]
+\renewcommand{\therowcntr}{\thetable.\arabic{rowcntr}}
+% A new columntype to apply automatic stepping
+\newcolumntype{N}{>{\refstepcounter{rowcntr}\therowcntr}c}
+% Reset the rowcntr counter at each new tabular
+\AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
+
+\makenomenclature
+
+\begin{document}
+
+\includepdf{frontcover}
+
+\renewcommand{\thepage}{\roman{page}}% Roman numerals for page counter
+\setcounter{page}{1}
+
+\section*{Abstract}
+In the make up, beauty, and apparel industries, there has been a growing trend to personalize images of models to take on the user's own bodily features in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and our goal is to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within each frame of the video to the user's skin colour. We developed an algorithm in C++ using OpenCV libraries and tested the effect on several hand images of various skin colours. We iterated through several different versions of the algorithm and determined that the best results are yielded by using an adjustment of the $RGB$ colours to match the average skin colour exactly to the target image, while proportionally fading off the adjustment based on distance to the average. Our results appear realistic on moderate skin colour changes but not on extremely large skin colour changes. Future work should better address this and also test on a wider range of images and video frames, as well as optimize the algorithm for a mobile application.
+
+\pagebreak
+
+\section*{Acknowledgements}
+The author is extremely grateful to Parham Aarabi, Brendan Heath and Shahad Abdulnour for all their help and encouragement.
+
+Special thanks to Curtis Yu, Ann Sai\\
+and Kevin.
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\listoffigures
+\listoftables
+\pagebreak
+
+\renewcommand{\nomname}{List of Symbols}
+\printnomenclature
+\pagebreak
+
+\renewcommand{\thepage}{\arabic{page}}% Roman numerals for page counter
+\setcounter{page}{1}
+
+\section{Introduction: the need for an effective mobile compatible skin recolouration algorithm}
+\input{intro}
+\pagebreak
+
+\section{Background: existing methods of skin colour transfer}
+\input{lit_review}
+\pagebreak
+
+\section{The constraints and requirements for our skin colour transfer algorithm \label{sec:goals}}
+\input{goals}
+\pagebreak
+
+\section{Hand Recolouration Algorithms}
+\input{methods}
+\pagebreak
+
+\section{Conclusion and Future Work}
+We have determined that it is feasible to produce a software that satisfies our requirements for fully automatic skin transfer for a range of skin colours starting from a hand of mid-toned or light skin colour. However, for a realistic appearance and for the final result to be accurate to the skin colour of the target hand, the original hand cannot have very significant skin colour differences with the target.
+
+As a next step, we would like to improve our algorithm so that the results for transforming between very large colour differences are more convincing. We would also like to optimize our results to have sufficient speed to operate on a mobile platform.
+\pagebreak
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,my_references}
+\pagebreak
+
+\appendix
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}\label{app:prop_corr_ave_a1p5}
+\input{latex_maker/prop_correct_test_a1p5-summary}
+
+\section{Results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
+\input{latex_maker/prop_correct_test_a5-summary}
+
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
+\input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
+
+\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
+\input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
+
+\end{document}

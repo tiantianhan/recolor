@@ -13,6 +13,8 @@
 \usepackage[intoc]{nomencl} %nomenclature in table of contents
 % \usepackage{subfig} %for subfigures organized as grids
 
+\usepackage{setspace} %different spacing on different parts of the document
+
 \usepackage{algorithm}
 \usepackage{algorithmicx}%algorithms
 \usepackage{algpseudocode}%algorithms
@@ -62,17 +64,18 @@
 \renewcommand{\thepage}{\roman{page}}% Roman numerals for page counter
 \setcounter{page}{1}
 
+\begin{spacing}{1}
 \section*{Abstract}
 In the make up, beauty, and apparel industries, there has been a growing trend to personalize images of models to take on the user's own bodily features in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and our goal is to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within each frame of the video to the user's skin colour. We developed an algorithm in C++ using OpenCV libraries and tested the effect on several hand images of various skin colours. We iterated through several different versions of the algorithm and determined that the best results are yielded by using an adjustment of the $RGB$ colours to match the average skin colour exactly to the target image, while proportionally fading off the adjustment based on distance to the average. Our results appear realistic on moderate skin colour changes but not on extremely large skin colour changes. Future work should better address this and also test on a wider range of images and video frames, as well as optimize the algorithm for a mobile application.
 
 \pagebreak
 
 \section*{Acknowledgements}
-The author is extremely grateful to Parham Aarabi, Brendan Heath and Shahad Abdulnour for all their help and encouragement.
+The author is extremely grateful to supervising Professor Parham Aarabi as well as Brendan Heath, Laurie Coleman and especially Shahad Abdulnour for all of their help and encouragement.
 
-Special thanks to Curtis Yu, Ann Sai\\
-and Kevin.
+Special thanks to Kevin, and Curtis, Yu and Sai.
 \pagebreak
+\end{spacing}
 
 \tableofcontents
 \pagebreak
@@ -115,16 +118,16 @@ As a next step, we would like to improve our algorithm so that the results for t
 \pagebreak
 
 \appendix
-\section{Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}\label{app:prop_corr_ave_a1p5}
+\section{Results for proportional adjustment with dark spot correction, $\alpha = 1.5$}\label{app:prop_corr_ave_a1p5}
 \input{latex_maker/prop_correct_test_a1p5-summary}
 
-\section{Results for proportional adjustment with darkspot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
+\section{Results for proportional adjustment with dark spot correction, $\alpha = 5$}\label{app:prop_corr_ave_a5}
 \input{latex_maker/prop_correct_test_a5-summary}
 
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc5}
+\section{Results for proportional adjustment with dark spot correction, $\alpha = 1.1$, calculating target average colour with 5 percent brightest pixels}\label{app:prop_corr_ave_a1p1_perc5}
 \input{latex_maker/prop_correct_ave_test_a1p1_perc5-label}
 
-\section{Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}\label{app:prop_corr_ave_a1p1_perc25}
+\section{Results for proportional adjustment with dark spot correction, $\alpha = 1.1$, calculating target average colour with 25 percent brightest pixels}\label{app:prop_corr_ave_a1p1_perc25}
 \input{latex_maker/prop_correct_ave_test_a1p1_perc25-label}
 
 \end{document}

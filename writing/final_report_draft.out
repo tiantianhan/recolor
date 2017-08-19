@@ -19,7 +19,7 @@
 \BOOKMARK [2][-]{subsection.4.5}{Summary and evaluation of the complete algorithm}{section.4}% 19
 \BOOKMARK [1][-]{section.5}{Conclusion and Future Work}{}% 20
 \BOOKMARK [1][-]{section*.24}{References}{}% 21
-\BOOKMARK [1][-]{appendix.A}{Results for proportional adjustment with darkspot correction, = 1.5}{}% 22
-\BOOKMARK [1][-]{appendix.B}{Results for proportional adjustment with darkspot correction, = 5}{}% 23
-\BOOKMARK [1][-]{appendix.C}{Complete results for proportional adjustment with darkspot correction, = 1.1, calculating target average color with 5th percentile bright pixels}{}% 24
-\BOOKMARK [1][-]{appendix.D}{Complete results for proportional adjustment with darkspot correction, = 1.1, calculating target average color with 25th percentile bright pixels}{}% 25
+\BOOKMARK [1][-]{appendix.A}{Results for proportional adjustment with dark spot correction, = 1.5}{}% 22
+\BOOKMARK [1][-]{appendix.B}{Results for proportional adjustment with dark spot correction, = 5}{}% 23
+\BOOKMARK [1][-]{appendix.C}{Results for proportional adjustment with dark spot correction, = 1.1, calculating target average colour with 5 percent brightest pixels}{}% 24
+\BOOKMARK [1][-]{appendix.D}{Results for proportional adjustment with dark spot correction, = 1.1, calculating target average colour with 25 percent brightest pixels}{}% 25

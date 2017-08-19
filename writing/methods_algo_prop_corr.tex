@@ -5,7 +5,7 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 \caption{Dark spot correction}
 \label{eq:prop_corr_algo}
 \begin{algorithmic}
-\State Let $\alpha$ be a constant, $\alpha  > 1$. We expect that the larger the value of alpha, the stronger the effect of the reduced dark spot.
+\State Let $\alpha$ be a constant, $\alpha  > 1$. We expect that the larger the value of $\alpha$, the stronger the effect of the reduced dark spot.
 \State Let $O$ be the set of pixels in the output image, and $W \subseteq O$ be the set of pixels used to calculate the average colour of the output image. $W$ corresponds to the region $V \subseteq S$, and $\left|W\right| = \left|V\right|$ \\
 \State We calculate the average skin colour of the output of Algorithm \ref{eq:prop_algo}
 \State $\mean{C_O} \gets \Call{Mean}{\vect{C_O}(W)}$\\
@@ -18,8 +18,8 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 \end{algorithmic}
 \end{algorithm}
 
-\nomenclature{$\mean{C_S}$}{The average RGB color of the output hand}
-\nomenclature{$W$}{The subset of pixels used to calculate the average color of the hand in the output image}
+\nomenclature{$\mean{C_S}$}{The average RGB colour of the output hand}
+\nomenclature{$W$}{The subset of pixels used to calculate the average colour of the hand in the output image}
 \nomenclature{$\alpha$}{The constant used to determine the strength of the dark spot correction}
 
 In Table \ref{tab:prop_correct_test_a1p1} we show the results for colour transfers between all possible combinations of our test images for $\alpha = 1.1$. The results for some of the other $\alpha$ values we tried are shown in Appendices \ref{app:prop_corr_ave_a1p5} and \ref{app:prop_corr_ave_a5}.
