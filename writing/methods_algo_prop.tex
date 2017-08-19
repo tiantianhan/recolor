@@ -1,12 +1,15 @@
 %prop algorithm methods
-To correct for the effect of the bright spots in the image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the black and white points of the image to the same value, and adjusts the colours in between to match the target average colour.
+To correct for the effect of the bright spots in the image being over bright and the high-key appearance resulting from all the shadows being brightened, we used an algorithm that maps the \textit{black and white points}, the $RGB$ colours of $(0, 0, 0)$ and $(255, 255, 255)$ respectively, of the image to the same value, and adjusts the colours inbetween proportionally so that colours closer to the average are adjusted more, and the source average colour is matched to the target average colour.
 
 \begin{algorithm}[H]
 \caption{Proportional adjustment relative to average color}
 \label{eq:prop_algo}
 \begin{algorithmic}
-\State $\mean{C_T} \gets \Call{Mean}{\vect{C_T}(U)}$
+\State We calculate the average colours of the source and target images
 \State $\mean{C_S} \gets \Call{Mean}{\vect{C_S}(V)}$
+\State $\mean{C_T} \gets \Call{Mean}{\vect{C_T}(U)}$\\
+
+\State We adjust pixels with colours below the average of the source according to their distance to black and the pixels above average according to their distance to white
 \For{each pixel $i \in S$}
 \If{$\vect{C_S}(i) \leq \mean{C_S}$}
 \State $\vect{C_O}(i) \gets \displaystyle \left(\frac{\mean{C_T}}{\mean{C_S}}\right)\vect{C_S}(i)$
@@ -25,14 +28,14 @@ This method improved the appearance of cases with over-bright spots or ``high-ke
     \centering
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_boost_test/hand_dark_to_hand_light.jpg}
-        \caption{Simple addition algorithm (Equation \ref{eq:boost_algo})result}
+        \caption{Simple addition algorithm (Algorithm \ref{eq:boost_algo}) result}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_proportional_test/hand_dark_to_hand_light.jpg}
-        \caption{Proportional adjustment algorithm (Equation \ref{eq:prop_algo}) result}
+        \caption{Proportional adjustment algorithm (Algorithm \ref{eq:prop_algo}) result}
     \end{subfigure}
-    \caption{Comparison of algorithms \ref{eq:boost_algo} and \ref{eq:prop_algo} results for transforming a dark hand (Figure \ref{img:input_hands_1_dark}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_bright_spot}}
+    \caption{Comparison of Algorithms \ref{eq:boost_algo} and \ref{eq:prop_algo} results for transforming a dark hand (Figure \ref{img:input_hands_1_dark}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_bright_spot}}
 \end{figure}
 
-We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to the simple addition algorithm the dark spots at the joints and creases of a hand of darker skin tone when it is transformed to a lighter skin tone (Row \ref{row:prop_test_hand_brown_to_hand_light}). Other results are similar to the results of the simple addition algorithm.
+We noted however, that this method noticeably does not correct for, and even exacerbates slightly relative to the simple addition algorithm the dark spots at the joints and creases of a hand of darker skin tone when it is transformed to a lighter skin tone (Row \ref{row:prop_test_hand_brown_to_hand_light}). We note that results for colour transfer between very different colours, such as in Row \ref{row:prop_test_hand_pale_to_hand_dark}, have similar issues to the results of Algorithm \ref{eq:boost_algo} and are lacking in realism.

@@ -1,0 +1,16 @@
+Recolor transfers the colour of the hand in the target image to the hand in the input image. 
+
+Note: the executable requires OpenCV libraries and is not portable. Users should download the source code and recompile the executable.
+
+usage: recolor input_file_path target_file_path -d -inmask file_path_to_input_mask -targmask file_path_to_target_mask -ofile file_path_to_output -algo algorithm -alpha alpha
+-aveperc average_percentile
+
+	input_file_path: path from current location to input image
+    target_file_path: path from current location to target image
+    -d  use flag to indicate debug mode
+    file_path_to_input_mask (optional): path to the mask image, a black and white imageshowing which region of the input image to obtain the average color from.If not provided a region at the center of the image will be used.
+    file_path_to_input_mask (optional): path to the mask image, a black and white imageshowing which region of the input image to obtain the average color from.If not provided a region at the center of the image will be used.
+    file_path_to_output (optional): name and location to save the output image. Otherwise saved in default outputs/ folder 
+    algorithm (optional): can be linear, pw or pw_dark_corr.If not give or name is invalid pw_dark_corr is used by default
+    alpha (optional): only used for pw_dark_corr algorithm, the alpha value for the correction
+    average_percentile (optional): the percentile of brightest pixels used for finding the average color of the target hand. 100 percent uses all pixels for finding the average.

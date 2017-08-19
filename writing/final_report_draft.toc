@@ -1,24 +1,25 @@
 \contentsline {section}{List of Figures}{v}{section*.4}
 \contentsline {section}{List of Tables}{v}{section*.5}
 \contentsline {section}{List of Symbols}{vii}{section*.6}
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}The goals, constraints and requirements for an effective skin colour transfer algorithm}{2}{subsection.1.1}
-\contentsline {section}{\numberline {2}Background and Literature Review}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{7}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{8}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{9}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{12}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{13}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{13}{subsection.2.3}
-\contentsline {section}{\numberline {3}Hand Recolouration Algorithms}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Naive approach: simple $RGB$ colour addition}{16}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Proportional adjustment relative to average colour}{19}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Correcting for dark spots}{22}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Ignoring shadows in calculating average colour}{26}{subsection.3.4}
-\contentsline {section}{\numberline {4}Conclusion and Future Work}{30}{section.4}
-\contentsline {section}{References}{31}{section*.22}
-\contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{34}{appendix.A}
-\contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{36}{appendix.B}
-\contentsline {section}{\numberline {C}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}{38}{appendix.C}
-\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}{40}{appendix.D}
+\contentsline {section}{\numberline {1}Introduction: the need for an effective mobile compatible skin recolouration algorithm}{1}{section.1}
+\contentsline {section}{\numberline {2}Background: existing methods of skin colour transfer}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Changing and matching skin colour in Photoshop}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Academic work related to colour transfer and skin colour enhancement }{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Colour transfer by example image for general images}{7}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Colour transfer by example for images with human skin}{8}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Skin colour transfer as part of other applications}{11}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Skin colour enhancement mobile applications}{12}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Summary of differences between prior studies and this project}{12}{subsection.2.3}
+\contentsline {section}{\numberline {3}The constraints and requirements for our skin colour transfer algorithm }{14}{section.3}
+\contentsline {section}{\numberline {4}Hand Recolouration Algorithms}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}Naive approach: simple $RGB$ colour addition}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Proportional adjustment relative to average colour}{20}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Correcting for dark spots}{23}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Ignoring shadows in calculating average colour}{27}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Summary and evaluation of the complete algorithm}{32}{subsection.4.5}
+\contentsline {section}{\numberline {5}Conclusion and Future Work}{34}{section.5}
+\contentsline {section}{References}{35}{section*.24}
+\contentsline {section}{\numberline {A}Results for proportional adjustment with darkspot correction, $\alpha = 1.5$}{38}{appendix.A}
+\contentsline {section}{\numberline {B}Results for proportional adjustment with darkspot correction, $\alpha = 5$}{40}{appendix.B}
+\contentsline {section}{\numberline {C}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 5th percentile bright pixels}{42}{appendix.C}
+\contentsline {section}{\numberline {D}Complete results for proportional adjustment with darkspot correction, $\alpha = 1.1$, calculating target average color with 25th percentile bright pixels}{44}{appendix.D}

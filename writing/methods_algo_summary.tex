@@ -1,0 +1,10 @@
+%Summary of the complete algorithm
+The complete algorithm (comprised of Algorithms \ref{eq:prop_algo}, \ref{eq:prop_corr_algo} and \ref{eq:prop_corr_ave_algo}) is summarized in the flow chart in Figure \ref{img:algo_summary}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/algo_diagram}
+    \caption{Summary of complete algorithm for hand colour transfer}\label{img:algo_summary}
+\end{figure}
+
+In reference to our original goals and constraints listed in Section \ref{sec:goals}, we have made the most progress in the area of accurate and realistic transfer of skin colour from mid-toned and light coloured hands to other colours. However, the range of colours that we can realistic transfer between remains limited. For future work, we should further test our algorithm on a larger set of hand images to determine whether there are any other issues. Finally, we have yet to profile and optimize the code for performance on a mobile devices; however, since we have written the code using a language and libraries that should be easy to port to a mobile platform, we believe that optimizing and porting the code should be a very feasible task for future work.

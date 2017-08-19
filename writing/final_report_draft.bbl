@@ -21,6 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{photoshop:obama}
+\BIBentryALTinterwordspacing
+J.~Shaver. (2014) How to change a person's skin color from dark to light in
+  photoshop. [Online]. Available:
+  \url{http://www.designpanoply.com/blog/how-to-change-a-persons-skin-color-from-dark-to-light-in-photoshop}
+\BIBentrySTDinterwordspacing
+
 \bibitem{reinhard_2001_transfer}
 E.~Reinhard, M.~Ashikhmin, B.~Gooch, and P.~Shirley, ``Color transfer between
   images,'' \emph{IEEE Computer Graphics Applications}, vol.~21, no.~5, pp.
@@ -68,6 +75,11 @@ R.~Shilkrot, D.~Cohen-Or, A.~Shamir, and L.~Liu, ``Garment personalization via
 L.~Jun, Z.~Mingmin, and P.~Zhigeng, ``Virtual try-on by replacing the person in
   image,'' \emph{J. Comput. Aided Des. Comput. Graph. (China)}, vol.~27, no.~9,
   pp. 1694 -- 700, Sept. 2015.
+
+\bibitem{merle_2012_tryon}
+A.~Merle, S.~Senecal, and A.~St-Onge, ``Whether and how virtual try-on
+  influences consumer responses to an apparel web site,'' \emph{International
+  Journal of Electronic Commerce}, vol.~16, no.~3, pp. 41--64, 2012.
 
 \bibitem{pitie_2005_pdf}
 F.~Pitie, A.~C. Kokaram, and R.~Dahyot, ``N-dimensional probability density
@@ -122,13 +134,6 @@ PiXimperfect. (2017) How to match skin tone in photoshop cc 2017. [Online].
 \BIBentryALTinterwordspacing
 Phlearn. (2014) How to match skin tones in photoshop. [Online]. Available:
   \url{https://www.youtube.com/watch?v=5-DE49Muc0g}
-\BIBentrySTDinterwordspacing
-
-\bibitem{photoshop:obama}
-\BIBentryALTinterwordspacing
-J.~Shaver. (2014) How to change a person's skin color from dark to light in
-  photoshop. [Online]. Available:
-  \url{http://www.designpanoply.com/blog/how-to-change-a-persons-skin-color-from-dark-to-light-in-photoshop}
 \BIBentrySTDinterwordspacing
 
 \bibitem{photoshop:actions}

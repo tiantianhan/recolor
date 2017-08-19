@@ -6,8 +6,10 @@ We attempted to correct the dark spot issue by significantly reducing the absolu
 \label{eq:prop_corr_algo}
 \begin{algorithmic}
 \State Let $\alpha$ be a constant, $\alpha  > 1$. We expect that the larger the value of alpha, the stronger the effect of the reduced dark spot.
-\State Let $O$ be the set of pixels in the output image, and $W \subseteq O$ be the set of pixels used to calculate the average colour of the output image. $W$ corresponds to the region $V \subseteq S$, and $\left|W\right| = \left|V\right|$  
-\State $\mean{C_O} \gets \Call{Mean}{\vect{C_O}(W)}$
+\State Let $O$ be the set of pixels in the output image, and $W \subseteq O$ be the set of pixels used to calculate the average colour of the output image. $W$ corresponds to the region $V \subseteq S$, and $\left|W\right| = \left|V\right|$ \\
+\State We calculate the average skin colour of the output of Algorithm \ref{eq:prop_algo}
+\State $\mean{C_O} \gets \Call{Mean}{\vect{C_O}(W)}$\\
+\State For all pixels below the average colour we limit their distance to the average 
 \For{each pixel $i \in O$}
 \If{$\vect{C_O}(i) \leq \mean{C_O}$}
 \State $\vect{C_O}(i) \gets \displaystyle \mean{C_O} - \frac{\left(\mean{C_O} - \vect{C_O}(i)\right)}{\alpha}$
@@ -30,16 +32,16 @@ As shown in Figure \ref{img:compare_dark_spot}, the dark spots and creases noted
     \centering
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170516_proportional_test/hand_brown_to_hand_light.jpg}
-        \caption{Proportional adjustment algorithm (Equation \ref{eq:prop_algo})result}
+        \caption{Proportional adjustment algorithm (Algorithm \ref{eq:prop_algo}) result}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.40\textwidth}
         \includegraphics[width=\textwidth]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_brown_to_hand_light.jpg}
-        \caption{Proportional adjustment algorithm with correction (Equation \ref{eq:prop_corr_algo}) result}
+        \caption{Proportional adjustment algorithm with correction (Algorithm \ref{eq:prop_corr_algo}) result}
     \end{subfigure}
-    \caption{Comparison of algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
+    \caption{Comparison of Algorithms \ref{eq:prop_algo} and \ref{eq:prop_corr_algo} results for transforming a mid-toned hand (Figure \ref{img:input_hands_1_brown}) to a light hand (Figure \ref{img:input_hands_1_light}).\label{img:compare_dark_spot}}
 \end{figure}
 
-We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ (such as the case for $\alpha = 5$ shown in \ref{app:prop_corr_ave_a5}) would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
+We tried this effect for a range of $\alpha$ and found that $\alpha = 1.1$ gives an acceptably realistic result. A larger $\alpha$ (such as the case for $\alpha = 5$ shown in Appendix \ref{app:prop_corr_ave_a5}) would further reduce the dark spots on the skin but may begin to strongly brighten the shadows of the image, resulting in an unrealistic effect.
 
-Up to the current iteration the more extreme changes of luminosity, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} may be causing the average colour of the entire hand to be of lower luminosity than it should be. 
+Up to the current iteration the more extreme changes of colour, such as from Figure \ref{img:input_hands_1_dark} to Figure \ref{img:input_hands_1_pale} and vice versa are especially unrealistic. Part of the reason is that the shadows, most prominent in Figure \ref{img:input_hands_1_pale} is causing the calculated average colour of the entire hand to be of lower luminosity than it should be. 

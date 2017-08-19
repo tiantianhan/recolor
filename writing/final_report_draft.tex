@@ -63,12 +63,15 @@
 \setcounter{page}{1}
 
 \section*{Abstract}
-In the make up, beauty, and garment industries, there has been a growing trend to personalize images of models to take on the user's own bodily features in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and our goal was to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within each frame of the video to the user's skin colour. We developed an algorithm in C++ using OpenCV libraries and tested the effect on several hand images of various skin colours. We iterated through several different versions of the algorithm and determined that the best results are yielded by using an adjustment of the $rgb$ colours to match the average skin colour exactly to the target image, while proportionally fading off the adjustment based on distance to the average. Our results appear realistic on smaller skin colour changes but not on large skin colour changes. Future work would better address this and also test on a wider range of images and video frames, as well as optimize the algorithm for a mobile application.
+In the make up, beauty, and apparel industries, there has been a growing trend to personalize images of models to take on the user's own bodily features in order to allow for users to better visualize products worn on themselves when making a purchasing decision. Specifically for this project, we have a nail polish virtual try-on mobile application that demonstrates nail polish colours on a video of a model hand of mid-toned skin colour, and our goal is to develop a software that would be able to tailor this video to each user by automatically adjusting the skin colour of the hand within each frame of the video to the user's skin colour. We developed an algorithm in C++ using OpenCV libraries and tested the effect on several hand images of various skin colours. We iterated through several different versions of the algorithm and determined that the best results are yielded by using an adjustment of the $RGB$ colours to match the average skin colour exactly to the target image, while proportionally fading off the adjustment based on distance to the average. Our results appear realistic on moderate skin colour changes but not on extremely large skin colour changes. Future work should better address this and also test on a wider range of images and video frames, as well as optimize the algorithm for a mobile application.
 
 \pagebreak
 
 \section*{Acknowledgements}
-Acknowledge persons and/or supporting agencies in a single-spaced paragraph in block form in centre of separate page.
+The author is extremely grateful to Parham Aarabi, Brendan Heath and Shahad Abdulnour for all their help and encouragement.
+
+Special thanks to Curtis Yu, Ann Sai\\
+and Kevin.
 \pagebreak
 
 \tableofcontents
@@ -85,12 +88,16 @@ Acknowledge persons and/or supporting agencies in a single-spaced paragraph in b
 \renewcommand{\thepage}{\arabic{page}}% Roman numerals for page counter
 \setcounter{page}{1}
 
-\section{Introduction}
+\section{Introduction: the need for an effective mobile compatible skin recolouration algorithm}
 \input{intro}
 \pagebreak
 
-\section{Background and Literature Review}
+\section{Background: existing methods of skin colour transfer}
 \input{lit_review}
+\pagebreak
+
+\section{The constraints and requirements for our skin colour transfer algorithm \label{sec:goals}}
+\input{goals}
 \pagebreak
 
 \section{Hand Recolouration Algorithms}
@@ -98,9 +105,9 @@ Acknowledge persons and/or supporting agencies in a single-spaced paragraph in b
 \pagebreak
 
 \section{Conclusion and Future Work}
-We have determined that it is feasible to produce a software that satisfies our requirements for fully automatic skin transfer for a range of skin colours starting from a hand of mid-toned skin colour. However, for a realistic appearance and for the final result to be accurate to the skin colour of the target hand, the original hand cannot have very significant skin colour differences with the target.
+We have determined that it is feasible to produce a software that satisfies our requirements for fully automatic skin transfer for a range of skin colours starting from a hand of mid-toned or light skin colour. However, for a realistic appearance and for the final result to be accurate to the skin colour of the target hand, the original hand cannot have very significant skin colour differences with the target.
 
-As a next step, we would like to improve our algorithm so that the results for transforming between large colour differences are more convincing. We would also like to optimize our results to have sufficient speed to operate on a mobile platform.
+As a next step, we would like to improve our algorithm so that the results for transforming between very large colour differences are more convincing. We would also like to optimize our results to have sufficient speed to operate on a mobile platform.
 \pagebreak
 
 \bibliographystyle{IEEEtran}

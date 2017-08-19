@@ -15,7 +15,7 @@ We generated the resultant images using several different values for $p$, the pe
 
 \input{latex_maker/prop_correct_ave_test_a1p1_perc10-label}
 
-Figure \ref{img:10_perc_mask} demonstrates the new regions used to calculate the average skin colour. We can see that the areas with shadows are effectively discarded, and the average colour calculated is significantly lighter and visually closer to the skin colour of the target hand. 
+Figure \ref{img:10_perc_mask} demonstrates the new regions used to calculate the average skin colour. We can see that the areas with shadows are effectively discarded, and the average colour calculated is significantly lighter and visually more accurate to the skin colour of the target hand. 
 
 \begin{figure}[H]
 \centering
@@ -42,5 +42,23 @@ Figure \ref{img:10_perc_mask} demonstrates the new regions used to calculate the
         \caption{Average color calculated with Algorithm \ref{eq:prop_corr_ave_algo}}\label{img:ave_col_10}
     \end{subfigure}
 \end{tabular}
-\caption{The average color calculation process in Algorithm \ref{eq:prop_corr_ave_algo} compared the previous version, Algorithm \ref{eq:prop_corr_algo}}\label{img:10_perc_mask}
+\caption{The average color calculation process in Algorithm \ref{eq:prop_corr_ave_algo} compared to that in the previous version, Algorithm \ref{eq:prop_corr_algo}}\label{img:10_perc_mask}
 \end{figure}
+
+As a result of the more accurate target colour, the resulting output image is more accurate to the colour of the hand in the target image, as show in Figure \ref{img:compare_perc}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.40\textwidth}
+        \includegraphics[width=\textwidth]{../rc_test/outputs/20170522_proportional_corrected_test_alpha1p1/hand_light_to_hand_pale.jpg}
+        \caption{Output obtained using all pixels for target average (Algorithm \ref{eq:prop_corr_algo})}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.40\textwidth}
+        \includegraphics[width=\textwidth]{../rc_test/outputs/20170524_prop_corr_1p1_ave_10/hand_light_to_hand_pale.jpg}
+        \caption{Output obtained using brightest pixels for target average (Algorithm \ref{eq:prop_corr_ave_algo})}
+    \end{subfigure}
+    \caption{Comparison of Algorithms \ref{eq:prop_corr_algo} and \ref{eq:prop_corr_ave_algo} results for transforming a light hand (Figure \ref{img:input_hands_1_light}) to a pale hand (Figure \ref{img:input_hands_1_pale}).\label{img:compare_perc}}
+\end{figure}
+
+We note that, overall, the more moderate skin colour changes which use mid-toned and light hands as the source image in Rows \ref{row:prop_corr_ave_test_hand_brown_to_hand_dark} to \ref{row:prop_corr_ave_test_hand_light_to_hand_pale} now show relatively realistic and accurate results. However, for other tests with more extreme colour changes, such as in Row \ref{row:prop_corr_ave_test_hand_dark_to_hand_pale} and \ref{row:prop_corr_ave_test_hand_pale_to_hand_dark}, the colour change is still not convincing.

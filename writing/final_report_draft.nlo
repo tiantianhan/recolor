@@ -1,13 +1,13 @@
-\nomenclatureentry{a$S$@[{$S$}]\begingroup The set of pixels in source image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$T$@[{$T$}]\begingroup The set of pixels in target image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$O$@[{$O$}]\begingroup The set of pixels in output image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$U$@[{$U$}]\begingroup The subset of pixels used to calculate the average color of the hand in the target image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$V$@[{$V$}]\begingroup The subset of pixels used to calculate the average color of the hand in the source image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\vect{C_S}$@[{$\vect{C_S}$}]\begingroup The vector of RGB values for the pixels in the source image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\vect{C_T}$@[{$\vect{C_T}$}]\begingroup The vector of RGB values for the pixels in the target image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\vect{C_O}$@[{$\vect{C_O}$}]\begingroup The vector of RGB values for the pixels in the output image\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\mean{C_T}$@[{$\mean{C_T}$}]\begingroup The average RGB color of the target hand\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\mean{C_S}$@[{$\mean{C_S}$}]\begingroup The average RGB color of the source hand\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a$\mean{C_S}$@[{$\mean{C_S}$}]\begingroup The average RGB color of the output hand\nomeqref {0}|nompageref}{22}
-\nomenclatureentry{a$W$@[{$W$}]\begingroup The subset of pixels used to calculate the average color of the hand in the output image\nomeqref {0}|nompageref}{22}
-\nomenclatureentry{a$\alpha$@[{$\alpha$}]\begingroup The constant used to determine the strength of the dark spot correction\nomeqref {0}|nompageref}{22}
+\nomenclatureentry{a$S$@[{$S$}]\begingroup The set of pixels in source image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$T$@[{$T$}]\begingroup The set of pixels in target image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$O$@[{$O$}]\begingroup The set of pixels in output image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$U$@[{$U$}]\begingroup The subset of pixels used to calculate the average color of the hand in the target image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$V$@[{$V$}]\begingroup The subset of pixels used to calculate the average color of the hand in the source image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\vect{C_S}$@[{$\vect{C_S}$}]\begingroup The vector of RGB values for the pixels in the source image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\vect{C_T}$@[{$\vect{C_T}$}]\begingroup The vector of RGB values for the pixels in the target image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\vect{C_O}$@[{$\vect{C_O}$}]\begingroup The vector of RGB values for the pixels in the output image\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\mean{C_T}$@[{$\mean{C_T}$}]\begingroup The average RGB color of the target hand\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\mean{C_S}$@[{$\mean{C_S}$}]\begingroup The average RGB color of the source hand\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a$\mean{C_S}$@[{$\mean{C_S}$}]\begingroup The average RGB color of the output hand\nomeqref {0}|nompageref}{24}
+\nomenclatureentry{a$W$@[{$W$}]\begingroup The subset of pixels used to calculate the average color of the hand in the output image\nomeqref {0}|nompageref}{24}
+\nomenclatureentry{a$\alpha$@[{$\alpha$}]\begingroup The constant used to determine the strength of the dark spot correction\nomeqref {0}|nompageref}{24}

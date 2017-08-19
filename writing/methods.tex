@@ -1,7 +1,9 @@
 %methods 
-To accomplish the objective of recolouring the skin tone of a hand to a target colour, we wrote algorithms in C++ in Eclipse on OS X using OpenCV libraries. Eclipse is used to compile each iteration of the algorithm into a debug-mode executable program named Recolor. For ease of testing, as the algorithm is modified, we add more functionality to the Recolor program and retain the ability to use previous versions of the algorithm. We use a custom Python script to run new versions of Recolor from the terminal to test it. All of the relevant code and its versions are hosted on a git repository at github.com/tiantianhan/recolor
+We chose to write our algorithms in C++ using OpenCV libraries. Since C++ and OpenCV are available on both Android and iOS platforms as well, the code should be relatively easy to port to those platforms. To allow for faster testing of our code, we develop the code on OS X.
 
-Recolor takes as input a hand image, a mask instructing it where to find the average skin colour of the hand, and a desired target skin colour. (Other flags and inputs are also used for testing purposes, see the Github repository readme file for a full description of the usage.) Recolor then outputs the processed image where the skin tone is adjusted to the target colour.
+Eclipse is used to compile each iteration of the algorithm into a debug-mode executable program named Recolor. For ease of testing, as the algorithm is modified, we add more functionality to the Recolor program and retain the ability to use previous versions of the algorithm. We use a custom Python script to run new versions of Recolor from the terminal to test it. All of the relevant code and its versions are hosted on a git repository at github.com/tiantianhan/recolor
+
+Recolor takes as input a hand image, a mask instructing it where to find the average skin colour of the hand, and a desired target skin colour. (Other flags and inputs are also used for testing purposes, see the Github repository README file for a full description of the usage.) Recolor then outputs the processed image where the skin tone is adjusted to the target colour.
 
 We iterated from simple to more complex algorithms, at each step testing the algorithm and evaluating the results. We tested progressive iterations on a set of hand images with varying skin tones. The images are are shown in Figure \ref{img:input_hands_1}.
 
@@ -46,3 +48,7 @@ In the following subsections we summarize the results of each algorithm and our 
 
 \subsection{Ignoring shadows in calculating average colour}
 \input{methods_algo_prop_corr_perc}
+\pagebreak
+
+\subsection{Summary and evaluation of the complete algorithm}
+\input{methods_algo_summary}
